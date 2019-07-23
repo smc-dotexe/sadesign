@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.slide {
+  height: 100vmin;
+}
+
+/*****************
+INTRO PAGE SECTION
+******************/
+.intro {
+  background-image: url('./images/introbg.png');
+  background-size: cover; /* or contain depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-areas:
+    "lNav header header rNav"
+    "lNav . quote rNav"
+    "lNav . arrow rNav"
+    "lNav goal goal rNav";
+}
+
+.leftNav {
+  grid-area: lNav;
+  display: flex;
+  border-right: 1px solid white;
+}
+
+#saLogo {
+  position: fixed;
+  margin: 10px 0 0 10px;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 50px 15vmin 15vmin 1fr; */
+  grid-template-rows: 50px auto auto auto;
+  grid-template-areas:
+    ". ." 
+    "sarah ."
+    "alonso alonso"
+    "design year";
+  grid-gap: 0 10px;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Chap, Light;
+  font-size: 87px;
+  font-weight: normal;
+}
+
+header #sarah {
+  grid-area: sarah;
+  align-self: start;
+}
+
+header #alonso {
+  grid-area: alonso;
+  margin-left: -100px;
+  justify-self: middle;
+  align-self: start;
+}
+
+header #design {
+  grid-area: design;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black; 
+}
+header #year {
+  grid-area: year;
+  justify-self: middle;
+}
+
+#quote {
+  grid-area: quote;
+}
+
+#goal {
+  grid-area: goal;
+  font-weight: normal;
+  font-size: 107px;
+  color: white;
+}
+
+/*********************
+DESIGNERS ART SECTION
+**********************/
+.designersArt {
+  background-color: black;
+}
