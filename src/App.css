@@ -21,7 +21,7 @@ INTRO PAGE SECTION
   color: white;
   display: grid;
   grid-template-columns: 10% 1fr 1fr 10%;
-  /* grid-template-rows: 1fr 1fr 1fr; */
+  grid-template-rows: 1fr 40vmin 1fr 1fr;
   grid-template-areas:
     "lNav header header rNav"
     "lNav . quote rNav"
@@ -45,7 +45,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* grid-template-rows: 50px 15vmin 15vmin 1fr; */
-  grid-template-rows: 50px auto auto auto;
+  grid-template-rows: 50px 10vmin 10vmin 10vmin;
   grid-template-areas:
     ". ." 
     "sarah ."
@@ -65,12 +65,14 @@ header h1 {
 header #sarah {
   grid-area: sarah;
   align-self: start;
+  justify-self: start;
+  margin-left: 5vmin;
 }
 
 header #alonso {
   grid-area: alonso;
-  margin-left: -100px;
-  justify-self: middle;
+  justify-self: start;
+  margin-left: 30vmin;
   align-self: start;
 }
 
@@ -78,7 +80,9 @@ header #design {
   grid-area: design;
   color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black; 
+  -webkit-text-stroke-color: black;
+  justify-self: start;
+  margin-left: 5vmin; 
 }
 header #year {
   grid-area: year;
@@ -87,6 +91,7 @@ header #year {
 
 #quote {
   grid-area: quote;
+  align-self: center;
 }
 
 #goal {
