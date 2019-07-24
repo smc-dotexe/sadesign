@@ -4,6 +4,7 @@ class DesignersArt extends React.Component {
     render() {
         return (
             <div className='slide designersArt'>
+                <div id='border'></div>
                 <h1>THE DESIGNERS ART</h1>
                     <p>
                         I aim to improve the world around me through human <br/>

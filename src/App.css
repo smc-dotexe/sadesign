@@ -131,7 +131,7 @@ DESIGNERS ART SECTION
   background-color: black;
   display: grid;
   grid-template-columns: 10% 1fr 1fr 5%;
-  grid-template-rows: minmax(30vmin, auto) 40vmin minmax(700px, auto) 1fr 1fr;
+  grid-template-rows: minmax(30vmin, auto) 40vmin minmax(400px, auto) minmax(20vmin, auto);
   /* grid-template-areas: 
     ". . . ."
     "lNav daHeader daDescription daArrow1"
@@ -140,8 +140,14 @@ DESIGNERS ART SECTION
     "lNav . brandVoice daArrow2"; */
 }
 
+#border {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  border-right: 1px solid white;
+}
+
 .designersArt h1 {
-  margin-top: 20;
+  margin-top: 40px;
   grid-column: 2;
   grid-row: 2;
   height: 15vmin;
@@ -160,6 +166,7 @@ DESIGNERS ART SECTION
   /* grid-area: daDescription; */
   color: white;
   font-family: Arimo;
+  font-size: 23px;
 }
 
 #arr1 {
@@ -171,7 +178,7 @@ DESIGNERS ART SECTION
 #daBG {
   background-image: url('./images/webstrokebg.png');
   grid-column: 1 / span 4;
-  grid-row: 3 / span 6;
+  grid-row: 3 / span 5;
   line-height: 6em;
 }
 
@@ -186,14 +193,26 @@ DESIGNERS ART SECTION
 }
 
 #daAuthor {
-  grid-column: 2;
-  grid-row:7;
-  background-color: blue;
+  grid-column: 2 / span 3;
+  grid-row:4;
+  font-size: 24px;
+  font-family: Arimo;
+  margin-left: 100px;
 }
 
 #buildBrand {
   grid-column: 3;
-  grid-row: 7;
+  grid-row: 4;
+  align-self: end;
+  font-family: Arimo;
+  font-size: 34px;
+}
+
+#arr2 {
+  grid-column: 3;
+  grid-row: 4;
+  align-self: end;
+  justify-self: end;
 }
 /************************
 DESIGN TRAINING SECTION
