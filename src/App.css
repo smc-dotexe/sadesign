@@ -94,8 +94,19 @@ header #year {
   align-self: center;
 }
 
+#focusQuote {
+font-family: Avenir;
+font-size: 23px;
+}
+
+#authorQuote {
+  font-family: Arimo;
+  font-size: 19px;
+}
+
 #goal {
   grid-area: goal;
+  font-family: Chap Light;
   font-weight: normal;
   font-size: 107px;
   color: white;

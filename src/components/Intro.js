@@ -15,16 +15,16 @@ class Intro extends React.Component {
                 <h1 id='year'>2019</h1>
                 </header>
                 <div id='quote'>
-                <p>"The people that matter realize
+                <p id='focusQuote'>"The people that matter realize
                     that all <br/>that you should focus on
                     is the work"<br/> 
-                    <span>-Jerrod Carmichael, Comedian on the
+                    <span id='authorQuote'>-Jerrod Carmichael, Comedian on the
                         <br/>Tim Ferris Podcast, Ep. 222.
                     </span>
                 </p>
                 </div>
                 <h1 id='goal'>My goal is simple <br/>
-                    --Good design
+                    &#8212; Good design
                 </h1>
                 <div className='rightNav'>
                     <h4>right nav</h4>
