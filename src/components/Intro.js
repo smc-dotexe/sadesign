@@ -23,9 +23,14 @@ class Intro extends React.Component {
                     </span>
                 </p>
                 </div>
+                <div id='arrow'>
+                    <p>V</p>
+                </div>
+                <div id='goalDiv'>
                 <h1 id='goal'>My goal is simple <br/>
                     &#8212; Good design
                 </h1>
+                </div>
                 <div className='rightNav'>
                     <h4>right nav</h4>
                 </div>

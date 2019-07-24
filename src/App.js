@@ -2,18 +2,17 @@ import React from 'react';
 import './App.css';
 import Intro from './components/Intro'
 import DesignersArt from './components/DesignersArt'
+import DesignTraining from './components/DesignTraining'
 
 function App() {
   return (
     <div className="App">
       <Intro />
-      {/* <div className='slide designersArt'>
-        <h1>designer's art</h1>
-      </div> */}
       <DesignersArt />
-      <div className='slide designTraining'>
+      {/* <div className='slide designTraining'>
         <h1>Design Training</h1>
-      </div>
+      </div> */}
+      <DesignTraining />
       <div className='slide smlBusiness'>
         <h1>SML BUSINESS</h1>
       </div>

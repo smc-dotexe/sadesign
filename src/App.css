@@ -10,6 +10,10 @@
   height: 100vmin;
 }
 
+h1{
+  margin:0;
+}
+
 /*****************
 INTRO PAGE SECTION
 ******************/
@@ -95,7 +99,7 @@ header #year {
 }
 
 #focusQuote {
-font-family: Avenir;
+font-family: Arimo;
 font-size: 23px;
 }
 
@@ -104,8 +108,16 @@ font-size: 23px;
   font-size: 19px;
 }
 
-#goal {
+#arrow {
+  grid-area: arrow;
+}
+
+#goalDiv {
   grid-area: goal;
+  margin-top: 14px;
+  line-height: 7em;
+}
+#goal {
   font-family: Chap Light;
   font-weight: normal;
   font-size: 107px;
@@ -116,5 +128,77 @@ font-size: 23px;
 DESIGNERS ART SECTION
 **********************/
 .designersArt {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 5%;
+  grid-template-rows: minmax(30vmin, auto) 40vmin minmax(700px, auto) 1fr 1fr;
+  /* grid-template-areas: 
+    ". . . ."
+    "lNav daHeader daDescription daArrow1"
+    "1Nav daQuote daQuote ."
+    "lNav daAuthor . ."
+    "lNav . brandVoice daArrow2"; */
+}
+
+.designersArt h1 {
+  margin-top: 20;
+  grid-column: 2;
+  grid-row: 2;
+  height: 15vmin;
+  align-self: start;
+  color: white;
+  font-family: Arimo;
+  font-weight: normal;
+  font-size: 35px;
+}
+
+.designersArt p {
+  grid-column: 3;
+  grid-row: 2;
+  align-self: start;
+  text-align: left;
+  /* grid-area: daDescription; */
+  color: white;
+  font-family: Arimo;
+}
+
+#arr1 {
+  color: white;
+  align-self: start;
+  grid-column: 4;
+}
+
+#daBG {
+  background-image: url('./images/webstrokebg.png');
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 6;
+  line-height: 6em;
+}
+
+#daBG h1{
+  color: white;
+  padding: 0;
+  grid-row: 3;
+  font-family: Chap Light;
+  font-weight: normal;
+  font-size: 110px;
+  margin-top: 40px;
+}
+
+#daAuthor {
+  grid-column: 2;
+  grid-row:7;
+  background-color: blue;
+}
+
+#buildBrand {
+  grid-column: 3;
+  grid-row: 7;
+}
+/************************
+DESIGN TRAINING SECTION
+************************/
+
+.designTraining {
   background-color: black;
 }
