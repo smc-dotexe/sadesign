@@ -134,17 +134,11 @@ DESIGNERS ART SECTION
   min-height: 170vmin;
   grid-template-columns: 10% 1fr 1fr 5%;
   grid-template-rows: minmax(30vmin, auto) 40vmin minmax(60vmin, auto) minmax(15vmin, auto);
-  /* grid-template-areas: 
-    ". . . ."
-    "lNav daHeader daDescription daArrow1"
-    "1Nav daQuote daQuote ."
-    "lNav daAuthor . ."
-    "lNav . brandVoice daArrow2"; */
 }
 
 #border {
   grid-column: 1;
-  grid-row: 1 / span 4;
+  grid-row: 1 / span 8;
   border-right: 1px solid white;
 }
 
@@ -227,10 +221,148 @@ DESIGN TRAINING SECTION
 .designTraining {
   background-color: black;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 10% 1fr 1fr;
 
 }
 
+#dtBorder {
+  grid-column: 1;
+  border-right: 1px solid white;
+}
+
 #dtDescriptorDiv {
+  grid-column: 2;
   color: white;
+  align-self: center;
+}
+
+#dtDescriptorDiv h3 {
+  color: #D9D9D9;
+  font-family: Arimo;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+#dtDescriptorDiv p {
+  font-family: Arimo;
+  font-size: 23px;
+}
+
+#rumbleSlideShow {
+  grid-column: 3;
+  align-self: center;
+}
+
+#rumbleGram1 {
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/**********************
+SMALL BUSINESS SECTION
+***********************/
+.smallBusiness {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#pdbBorder {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  border-right: 1px solid white;
+}
+
+#smlHeading {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  margin-left: 40px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: Chap Light;
+  font-size: 82px;
+  font-weight: normal;
+}
+
+#pdb {
+  background-color: rgba(0, 0, 0, 0.6);
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+  margin-left: 40px;
+  height: 358.66px;
+  width: 956.42px;
+  object-fit: none;
+}
+
+#pdbGlitch {
+  grid-column: 2;
+  grid-row: 1;
+  height: 542.4px;
+  width: 980.49px;
+}
+
+#lrgROI {
+  color: white;
+  font-family: Chap Light;
+  font-size: 82px;
+  font-weight: normal;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  justify-self: start;
+  margin-left: 40px;
+  margin-bottom: 47px;
+
+}
+
+#onethousand {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: Chap Light;
+  font-size: 82px;
+  font-weight: normal;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-self: end;
+  margin-bottom: 60px;
+  margin-right: 115px;
+}
+
+#pdbQuote {
+  font-family: Arimo;
+  color: white;
+  font-size: 24px;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+}
+
+#pdbArrow {
+  grid-column: 3;
+  grid-row: 2;
+  color: white;
+  align-self: center;
+}
+
+/******************
+BLOG SECTION
+*******************/
+.blog {
+  background-color: black;
 }
