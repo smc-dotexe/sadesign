@@ -414,3 +414,83 @@ BLOG SECTION
   font-size: 36px;
   color: #D9D9D9;
 }
+
+/******************
+CONTACT SECTION
+******************/
+.contact {
+  min-height: 70vmin;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-template-rows: 10vmin 1fr;
+  grid-gap: 10vmin;
+}
+
+#contactBorder {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  border-right: 1px solid white;
+}
+
+#contactInfo {
+  grid-column: 2;
+  grid-row: 2;
+  border-top: 1px solid white;
+  display: grid;
+  grid-template-columns: 75%;
+}
+
+#contactMe {
+  margin-top: 11px;
+  font-family: Arimo;
+  font-size: 18px;
+  color: #D9D9D9;
+  font-weight: normal;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: start;
+}
+
+#contactAddress {
+  margin-top: 11px;
+  font-family: Chap Light;
+  font-size: 16px;
+  color: #D9D9D9;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: center;
+}
+
+#contactPhone {
+  margin-top: 11px;
+  font-family: Chap Light;
+  font-size: 11px;
+  color: #D9D9D9;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+}
+
+#collaborate {
+  font-family: Arimo;
+  font-size: 12px;
+  color: white;
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  align-self: center;
+}
+
+#socialMedia {
+  font-family: Arimo;
+  font-size: 11px;
+  color: #D9D9D9;
+  text-align: left;
+  grid-row: 3;
+  align-self: end;
+  line-height: 2em;
+}
