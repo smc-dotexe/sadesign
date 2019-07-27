@@ -45,6 +45,33 @@ INTRO PAGE SECTION
   margin: 10px 0 0 10px;
 }
 
+#hours {
+  font-family: Chap Light;
+  font-size: 18px;
+  writing-mode: sideways-lr;
+  position: fixed;
+  bottom:0;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.rightNav {
+  grid-area: rNav;
+  justify-self: center;
+  margin-top: 40px;
+}
+
+.sandwichContainer {
+  cursor: pointer;
+}
+
+.sandwich {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  opacity: 0.7;
+}
 header {
   grid-area: header;
   display: grid;
@@ -97,6 +124,7 @@ header #year {
 #quote {
   grid-area: quote;
   align-self: center;
+  height: 10vmin;
 }
 
 #focusQuote {
@@ -111,11 +139,16 @@ font-size: 23px;
 
 #arrow {
   grid-area: arrow;
+  justify-self: end;
+  margin-top: -40px;
+  margin-right: 50px;
 }
 
+#redArrowDown {
+  color: red;
+}
 #goalDiv {
   grid-area: goal;
-  margin-top: 14px;
   line-height: 7em;
 }
 #goal {
@@ -419,7 +452,7 @@ BLOG SECTION
 CONTACT SECTION
 ******************/
 .contact {
-  min-height: 70vmin;
+  min-height: 60vmin;
   background-color: black;
   display: grid;
   grid-template-columns: 10% 1fr;
@@ -436,7 +469,7 @@ CONTACT SECTION
 #contactInfo {
   grid-column: 2;
   grid-row: 2;
-  border-top: 1px solid white;
+  border-top: 1px solid #D9D9D9;
   display: grid;
   grid-template-columns: 75%;
 }
@@ -490,7 +523,28 @@ CONTACT SECTION
   font-size: 11px;
   color: #D9D9D9;
   text-align: left;
+  grid-column: 1;
   grid-row: 3;
   align-self: end;
   line-height: 2em;
+}
+
+#privacyPolicy {
+  font-family: Arimo;
+  font-size: 10px;
+  color: #D9D9D9;
+  grid-column: 1;
+  grid-row: 4;
+}
+
+#copyright {
+  font-family: Chap Light;
+  font-size: 11px;
+  color: #D9D9D9;
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: end;
+  align-self: end;
+  opacity: 0.3;
+  margin-right: -100px;
 }

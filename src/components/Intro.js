@@ -1,12 +1,27 @@
 import React from 'react'
 import saLogo from '../images/sa.png'
+import redArrowDown from '../images/redarrowdown2.png'
+import SandwichMenu from './sandwichComp/SandwichMenu'
 
 class Intro extends React.Component {
+    constructor() {
+        super()
+        this.state = { 
+            displayMenu: false
+        }
+    }
+
+    sandwichMenu = () => {
+        this.setState(prevState=>({displayMenu: !prevState.displayMenu}))
+        console.log(this.state.displayMenu)
+    }
+
     render() {
         return (
             <div className='slide intro'>
                 <div className='leftNav'>
                     <img id='saLogo' src={saLogo} alt='logo' />
+                    <p id='hours'>M-M <br/> 00:00-00:00</p>
                 </div>
                 <header>
                 <h1 id='sarah'>SARAH</h1>
@@ -24,7 +39,7 @@ class Intro extends React.Component {
                 </p>
                 </div>
                 <div id='arrow'>
-                    <p>V</p>
+                    <img id='redArrowDown' src={redArrowDown} alt='red arrow'/>
                 </div>
                 <div id='goalDiv'>
                 <h1 id='goal'>My goal is simple <br/>
@@ -32,8 +47,13 @@ class Intro extends React.Component {
                 </h1>
                 </div>
                 <div className='rightNav'>
-                    <h4>right nav</h4>
+                    <div className='sandwichContainer' onClick={this.sandwichMenu}>
+                    <div className='sandwich'></div>
+                    <div className='sandwich'></div>
+                    <div className='sandwich'></div>
+                    </div>
                 </div>
+                    {this.state.displayMenu ? <SandwichMenu /> : null}                
             </div>
         )
     }

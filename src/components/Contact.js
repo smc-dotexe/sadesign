@@ -30,7 +30,7 @@ class Contact extends React.Component {
                         Privacy Policy 
                     </p>
                     <p id='copyright'>
-                        &copy;SARAHALONSO&#8212;DESIGN
+                        &copy;2019SARAHALONSO&#8212;DESIGN
                     </p>
                 </div>
             </div>
