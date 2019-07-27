@@ -4,8 +4,8 @@ import redArrowDown from '../images/redarrowdown2.png'
 import SandwichMenu from './sandwichComp/SandwichMenu'
 
 class Intro extends React.Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.state = { 
             displayMenu: false
         }
@@ -17,6 +17,9 @@ class Intro extends React.Component {
     }
 
     render() {
+
+        const sandwichStyle = this.state.displayMenu ? {display: 'none'} : {}
+
         return (
             <div className='slide intro'>
                 <div className='leftNav'>
@@ -47,13 +50,15 @@ class Intro extends React.Component {
                 </h1>
                 </div>
                 <div className='rightNav'>
-                    <div className='sandwichContainer' onClick={this.sandwichMenu}>
+                    <div className='sandwichContainer' 
+                         onClick={this.sandwichMenu}
+                         style={sandwichStyle}>
                     <div className='sandwich'></div>
                     <div className='sandwich'></div>
                     <div className='sandwich'></div>
                     </div>
                 </div>
-                    {this.state.displayMenu ? <SandwichMenu /> : null}                
+                    {this.state.displayMenu ? <SandwichMenu passSandwichMenu={this.sandwichMenu}/> : null}                
             </div>
         )
     }
