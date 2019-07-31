@@ -12,6 +12,14 @@ class SandwichMenu extends React.Component {
                 <h4 id='sandwichSarah'>Sarah</h4><br/>
                 <h4 id='sandwichAlonso'>Alonso</h4>
                 <h4 id='sandwichDesign'>Design</h4>
+                <ul id='sandwichLinks'>
+                    <li>About</li>
+                    <li>Personal Branding</li>
+                    <li>Rumble Boxing</li>
+                    <li>Work</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
             </div>
         )
     }

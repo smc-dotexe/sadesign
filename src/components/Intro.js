@@ -2,6 +2,7 @@ import React from 'react'
 import saLogo from '../images/sa.png'
 import redArrowDown from '../images/redarrowdown2.png'
 import SandwichMenu from './sandwichComp/SandwichMenu'
+import { CSSTransition } from 'react-transition-group'; 
 
 class Intro extends React.Component {
     constructor(props) {
@@ -58,7 +59,16 @@ class Intro extends React.Component {
                     <div className='sandwich'></div>
                     </div>
                 </div>
-                    {this.state.displayMenu ? <SandwichMenu passSandwichMenu={this.sandwichMenu}/> : null}                
+                    {this.state.displayMenu ? 
+                        <CSSTransition
+                            in={this.state.displayMenu}
+                            appear={true}
+                            timeout={300}
+                            classNames='slideIn'
+                            >
+                            <SandwichMenu passSandwichMenu={this.sandwichMenu}/>
+                        </CSSTransition> 
+                    : null}               
             </div>
         )
     }
