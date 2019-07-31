@@ -215,9 +215,10 @@ DESIGNERS ART SECTION
 }
 
 #arr1 {
-  color: white;
-  align-self: start;
+  align-self: center;
+  margin-top: -125px;
   grid-column: 4;
+  grid-row: 2;
 }
 
 #daBG {
@@ -258,10 +259,11 @@ DESIGNERS ART SECTION
 }
 
 #arr2 {
-  grid-column: 3;
+  grid-column: 4;
   grid-row: 4;
   align-self: end;
-  justify-self: end;
+  justify-self: start;
+  margin-left: -20px;
 }
 /************************
 DESIGN TRAINING SECTION
@@ -407,6 +409,7 @@ SMALL BUSINESS SECTION
   grid-row: 2;
   color: white;
   align-self: center;
+  margin-left: 30px;
 }
 
 /******************
@@ -453,7 +456,7 @@ BLOG SECTION
   color: #D9D9D9;
 }
 
-#blogDescription p {
+#blogDescription  {
   color: white;
   font-size: 23px;
 }
@@ -462,6 +465,11 @@ BLOG SECTION
   font-family: Arimo;
   font-size: 36px;
   color: #D9D9D9;
+  display: flex;
+}
+
+#blogArrow {
+  margin-left: 12px;
 }
 
 /******************

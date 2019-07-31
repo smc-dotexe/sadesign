@@ -1,6 +1,8 @@
 import React from 'react'
 import pdb from '.././images/pdb.png'
 import pdbGlitch from '.././images/pdbDualGlitch.png'
+import greyArrow from '../images/greyarrowright.png'
+
 
 class SmallBusiness extends React.Component {
     render() {
@@ -24,9 +26,7 @@ class SmallBusiness extends React.Component {
                     direct source of your income, but also your chief marketing force <br/>
                     for the ordinary fans."&#8212;Kevin Kelly, Author of 1,000 True Fans.
                 </p>
-                <p id='pdbArrow'>
-                -->
-                </p>
+                <img id='pdbArrow' src={greyArrow} alt='grey arrow'/>
             </div>
         )
     }

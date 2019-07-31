@@ -1,6 +1,7 @@
 import React from 'react'
 import dualGlitch from '.././images/pdbDualGlitch.png'
 import saPic from '.././images/sapic.png'
+import redBoxArrow from '.././images/redboxarrowright.png'
 
 class Blog extends React.Component {
     render() {
@@ -22,7 +23,7 @@ class Blog extends React.Component {
                     research, strategy, planning, teamwork and study. The<br/>
                     work takes place at all hours M-M.
                     </p>
-                    <h3 id='blogLink'>Blog --></h3>
+                    <p id='blogLink'>BLOG <img id='blogArrow' src={redBoxArrow} alt='red box arrow'/> </p>
                 </div>
             </div>
         )
