@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import saLogo from '../images/sa.png'
 import redArrowDown from '../images/redarrowdown2.png'
 import SandwichMenu from './sandwichComp/SandwichMenu'
-import { CSSTransition } from 'react-transition-group'; 
-
+import { Spring, Transition, animated } from 'react-spring/renderprops'
 class Intro extends React.Component {
     constructor(props) {
         super(props)
@@ -13,8 +12,8 @@ class Intro extends React.Component {
     }
 
     sandwichMenu = () => {
-        this.setState(prevState=>({displayMenu: !prevState.displayMenu}))
-        console.log(this.state.displayMenu)
+        this.setState({ displayMenu: !this.state.displayMenu }, ()=>{console.log(this.state.displayMenu)})
+        
     }
 
     render() {
@@ -50,6 +49,7 @@ class Intro extends React.Component {
                     &#8212; Good design
                 </h1>
                 </div>
+                
                 <div className='rightNav'>
                     <div className='sandwichContainer' 
                          onClick={this.sandwichMenu}
@@ -59,16 +59,27 @@ class Intro extends React.Component {
                     <div className='sandwich'></div>
                     </div>
                 </div>
-                    {this.state.displayMenu ? 
-                        <CSSTransition
-                            in={this.state.displayMenu}
-                            appear={true}
-                            timeout={300}
-                            classNames='slideIn'
-                            >
+                { this.state.displayMenu ?
+                    <SandwichMenu 
+                        passSandwichMenu={this.sandwichMenu}
+                        passDisplayMenu={this.state.displayMenu}
+                    />
+                    : null
+                }
+                
+                {/* <Transition
+                    native
+                    items={this.state.displayMenu}
+                    from={{opacity:0}}
+                    enter={{opacity: 1}}
+                    leave={{opacity: 0}}
+                >
+                    {show => show && (props => (
+                    <animated.div style={props}>
                             <SandwichMenu passSandwichMenu={this.sandwichMenu}/>
-                        </CSSTransition> 
-                    : null}               
+                        </animated.div>
+                    ))}
+                </Transition>             */}
             </div>
         )
     }

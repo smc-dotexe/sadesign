@@ -1,0 +1,11 @@
+/* .slideIn-appear {
+  opacity: 0;
+}
+
+
+.slideIn-appear.slideIn-appear-active {
+  opacity: 1; 
+  transition: opacity 1000ms linear;
+
+} */
+

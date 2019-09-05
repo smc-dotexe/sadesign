@@ -1,6 +1,6 @@
 import React from 'react'
 import pdb from '.././images/pdb.png'
-import pdbGlitch from '.././images/pdbDualGlitch.png'
+import pdbGlitch from '.././images/saDualGlitch_Web.svg'
 import greyArrow from '../images/greyarrowright.png'
 
 

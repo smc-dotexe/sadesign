@@ -77,16 +77,6 @@ INTRO PAGE SECTION
   opacity: 0.7;
 }
 
-.slideIn-appear {
-  opacity: 0;
-}
-
-
-.slideIn-appear.slideIn-appear-active {
-  opacity: 1;
-  transition: opacity 1000ms linear;
-  /* transform: translateX(200px); */
-}
 
 header {
   grid-area: header;
@@ -285,32 +275,52 @@ DESIGN TRAINING SECTION
   grid-column: 2;
   color: white;
   align-self: center;
+  display: grid;
+  grid-row-gap: 5px;
+  box-sizing: border-box;
 }
 
-#dtDescriptorDiv h3 {
+#designTrainingTitle {
   color: #D9D9D9;
   font-family: Arimo;
   font-size: 34px;
   font-weight: normal;
+  grid-row: 1;
+  grid-column: 1 / span 2;
 }
 
-#dtDescriptorDiv p {
+
+#dtDescription {
   font-family: Arimo;
   font-size: 23px;
+  text-align: left;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  justify-self: center;
 }
+
+#rumbleCaseStudyHeader {
+  color: #D9D9D9;
+  font-family: Chap Light;
+  font-size: 36px;
+  font-weight: normal;
+  grid-row: 3;
+  grid-column: 2;
+  justify-self: center;
+}
+
+#redBoxArrowRight {
+  grid-row: 3;
+  grid-column: 1;
+  justify-self: end;
+  align-self: center;
+}
+
 
 #rumbleSlideShow {
   grid-column: 3;
   align-self: center;
   cursor: pointer;
-}
-
-#rumbleGram1 {
-}
-
-#rumbleGram2 {
-  width: 668px;
-  height: 438px;
 }
 
 .dot {
@@ -333,6 +343,39 @@ DESIGN TRAINING SECTION
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+#rumbleGram1 {
+  width: 668px;
+  height: 438px;
+  background-image:url('./images/rumblegram1.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: fading 0.6s;
+}
+#rumbleGram1None {
+  display: none;
+}
+
+#rumbleGram2 {
+  grid-column: 3;
+  width: 668px;
+  height: 438px;
+  background-image: url('./images/rumblegram2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: fading 0.6s;
+}
+
+#rumbleGram2None {
+  display: none;
+}
+
+@keyframes fading {
+  from {opacity: 0.1;}
+  to {opacity:1;}
 }
 
 /**********************
@@ -381,6 +424,7 @@ SMALL BUSINESS SECTION
   grid-row: 1;
   height: 542.4px;
   width: 980.49px;
+  opacity: 0.2;
 }
 
 #lrgROI {
