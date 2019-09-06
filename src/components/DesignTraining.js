@@ -12,8 +12,7 @@ class DesignTraining extends React.Component {
     }
 
     slideshow = () => {
-        // this.setState(prevState => ({slideshow:!prevState.slideshow}))
-        this.setState({slideshow: !this.state.slideshow}, ()=>{console.log(this.state.slideshow)})
+        this.setState(prevState => ({slideshow:!prevState.slideshow}))
     }
 
 

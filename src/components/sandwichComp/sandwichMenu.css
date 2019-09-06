@@ -5,44 +5,19 @@
 .sandwichComp {
     background-color: black;
     grid-area: rNav;
-    margin-left: -50px;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20px 30px 20px 20px 1fr;
-    /* animation: slide-in 0.8s ease; */
+    transform: translateX(110%);
+    transition: transform 0.6s ease-out;
 }
 
-/* .sandwichCompNone {
-    animation: slide-out 0.8 ease;
-    /* background-color: black;
-    grid-area: rNav;
-    margin-left: -50px;
+.sandwichComp.slider {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20px 30px 20px 20px 1fr;
-    animation: slide-out 2s ease;
-    border: 1px solid white; 
-} */
-
-.slide-in {
-    animation: slide-in 0.5s ease;
-    -webkit-animation: slide-in 0.5s ease;
-}
-
-.slide-out {
-    animation: slide-out 0.5s ease;
-    -webkit-animation: slide-out 0.5 ease;
-}
-
-@keyframes slide-in {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(0%); }
-}
-
-@keyframes slide-out {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(100%); }
+    transform: translateX(0);
 }
 
 .sandwichComp h4 {
@@ -84,7 +59,6 @@
 }
 
 #sandwichLinks {
-    margin-top: -400px;
     padding: 0;
     text-align: left;
     list-style-type: none;
@@ -99,6 +73,7 @@
 
 #sandwichLinks li {
     padding-left: 10px;
+    padding-bottom: 20px;
     grid-row: 5;
     grid-column: 1;
 }

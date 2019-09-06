@@ -12,14 +12,18 @@ class Intro extends React.Component {
     }
 
     sandwichMenu = () => {
-        this.setState({ displayMenu: !this.state.displayMenu }, ()=>{console.log(this.state.displayMenu)})
+        this.setState(prevState => ({displayMenu: !prevState.displayMenu}))
+        console.log('clicked')
         
     }
 
     render() {
-
-        const sandwichStyle = this.state.displayMenu ? {display: 'none'} : {}
-
+        let sandwichBtnAnimation;
+        if (this.state.displayMenu) {
+            sandwichBtnAnimation = 'sandwichButtonContainer close'
+        } else {
+            sandwichBtnAnimation = 'sandwichButtonContainer'
+        }
         return (
             <div className='slide intro'>
                 <div className='leftNav'>
@@ -51,35 +55,19 @@ class Intro extends React.Component {
                 </div>
                 
                 <div className='rightNav'>
-                    <div className='sandwichContainer' 
-                         onClick={this.sandwichMenu}
-                         style={sandwichStyle}>
-                    <div className='sandwich'></div>
-                    <div className='sandwich'></div>
-                    <div className='sandwich'></div>
+                    <div className={sandwichBtnAnimation} 
+                         onClick={this.sandwichMenu}                       
+                    >
+                        <div className='sandwich'></div>
+                        <div className='sandwich'></div>
+                        <div className='sandwich'></div>
                     </div>
                 </div>
-                { this.state.displayMenu ?
+        
                     <SandwichMenu 
                         passSandwichMenu={this.sandwichMenu}
                         passDisplayMenu={this.state.displayMenu}
                     />
-                    : null
-                }
-                
-                {/* <Transition
-                    native
-                    items={this.state.displayMenu}
-                    from={{opacity:0}}
-                    enter={{opacity: 1}}
-                    leave={{opacity: 0}}
-                >
-                    {show => show && (props => (
-                    <animated.div style={props}>
-                            <SandwichMenu passSandwichMenu={this.sandwichMenu}/>
-                        </animated.div>
-                    ))}
-                </Transition>             */}
             </div>
         )
     }
