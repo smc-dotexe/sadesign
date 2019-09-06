@@ -26,6 +26,7 @@ class SmallBusiness extends React.Component {
                     direct source of your income, but also your chief marketing force <br/>
                     for the ordinary fans."&#8212;Kevin Kelly, Author of 1,000 True Fans.
                 </p>
+                <p id='phoDauBoLink'>PHO DAU BAO</p>
                 <img id='pdbArrow' src={greyArrow} alt='grey arrow'/>
             </div>
         )

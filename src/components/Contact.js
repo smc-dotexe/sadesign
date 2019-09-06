@@ -4,7 +4,6 @@ class Contact extends React.Component {
     render() {
         return (
             <div className='contact'>
-                <h1>contact</h1>
                 <div id='contactBorder'></div>
                 <div id='contactInfo'>
                     <h5 id='contactMe'>Contact Me</h5>
