@@ -7,17 +7,32 @@ class Intro extends React.Component {
     constructor(props) {
         super(props)
         this.state = { 
-            displayMenu: false
+            displayMenu: false,
+            windowHeight: window.innerHeight,
+            windowWidth: window.innerWidth,
         }
     }
 
     sandwichMenu = () => {
         this.setState(prevState => ({displayMenu: !prevState.displayMenu}))
-        console.log('clicked')
-        
+        console.log('clicked')  
+    }
+
+    handleResize = () => {
+        let resizeWindowHeight = window.innerHeight
+        let resizeWindowWidth = window.innerWidth
+        if (resizeWindowHeight !== this.state.windowHeight || resizeWindowWidth !== this.state.windowWidth) {
+            this.setState({ windowHeight: resizeWindowHeight, windowWidth: resizeWindowWidth})
+            console.log('called handle resize', 'resizeWindowHeight', resizeWindowHeight)
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResize)
     }
 
     render() {
+        console.log('window height', window.innerHeight)
         let sandwichBtnAnimation;
         if (this.state.displayMenu) {
             sandwichBtnAnimation = 'sandwichButtonContainer close'
@@ -25,7 +40,14 @@ class Intro extends React.Component {
             sandwichBtnAnimation = 'sandwichButtonContainer'
         }
         return (
-            <div className='slide intro'>
+            <div 
+                className='slide intro' 
+                style={{
+                    backgroundColor: 'blue',
+                    width: `${this.state.windowWidth}px`,
+                    height: `${this.state.windowHeight}px`
+                    }}
+            >
                 <div className='leftNav'>
                     <img id='saLogo' src={saLogo} alt='logo' />
                     <p id='hours'>M-M <br/> 00:00-00:00</p>
@@ -38,10 +60,9 @@ class Intro extends React.Component {
                 </header>
                 <div id='quote'>
                 <p id='focusQuote'>"The people that matter realize
-                    that all <br/>that you should focus on
-                    is the work"<br/> 
-                    <span id='authorQuote'>-Jerrod Carmichael, Comedian on the
-                        <br/>Tim Ferris Podcast, Ep. 222.
+                    that all that you should focus on
+                    is the work"<br />
+                    <span id='authorQuote'>-Jerrod Carmichael, Comedian on the <br/>Tim Ferris Podcast, Ep. 222.
                     </span>
                 </p>
                 </div>

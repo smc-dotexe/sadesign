@@ -1,0 +1,103 @@
+@media only screen and (max-width: 600px)
+ {
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .intro {
+    background-image: url('./images/placeDoubleExposure_Mobile.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 15%;
+    grid-template-rows: 1fr 40vmin 1fr 1fr;
+    grid-template-areas:
+        "lNav header header rNav"
+        "lNav quote quote rNav"
+        "lNav quote quote rNav"
+        "lNav goal arrow rNav";
+    }
+
+    .rightNav {
+        margin-top: -5px;
+    }
+
+    header{
+        margin-top: -20px;
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 10vmin 10vmin 10vmin 10vmin;
+        grid-template-areas:
+        ". ." 
+        "sarah ."
+        "alonso alonso"
+        "design ."
+        ". year" ;
+        grid-gap: 10px;
+    }
+
+    header h1 {
+        font-size: 49px;
+    }
+
+    header #sarah {
+        margin-left: 1vmin;
+    }
+
+    header #alonso {
+        margin-left: 10vmin;
+    }
+
+    header #design {
+        margin-left: 1vmin;
+    }
+
+    #year {
+        margin-top: 20px;
+        font-size: 31px;
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #quote {
+        margin-top: -15px;
+        margin-left: 15px;
+        align-self: center;
+        grid-column: 2 /span 3;
+        box-sizing: border-box;
+        width: 65vmin;
+    
+    }
+
+    #focusQuote {
+        font-size: 11px;
+        line-height: 1;
+        letter-spacing: 0.5px;
+        text-align: left;
+    }
+
+    #authorQuote {
+        margin-top: 10px;
+        margin-left: 0;
+        font-size: 8px;
+        float: right;
+
+    }
+
+    #saLogo {
+        width: 48.05px;
+        height: 39.48px;
+    }
+
+    #goalDiv{
+        display: none;
+    }
+
+}

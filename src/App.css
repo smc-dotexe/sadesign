@@ -155,8 +155,10 @@ font-size: 23px;
 }
 
 #authorQuote {
+  margin-left: 20px;
   font-family: Arimo;
   font-size: 19px;
+  text-align: center;
 }
 
 #arrow {
