@@ -24,6 +24,7 @@ class Intro extends React.Component {
         if (resizeWindowHeight !== this.state.windowHeight || resizeWindowWidth !== this.state.windowWidth) {
             this.setState({ windowHeight: resizeWindowHeight, windowWidth: resizeWindowWidth})
             console.log('called handle resize', 'resizeWindowHeight', resizeWindowHeight)
+            console.log('resizeWindowWidth', resizeWindowWidth)
         }
     }
 
@@ -46,33 +47,33 @@ class Intro extends React.Component {
                     backgroundColor: 'blue',
                     width: `${this.state.windowWidth}px`,
                     height: `${this.state.windowHeight}px`
-                    }}
+                }}
             >
                 <div className='leftNav'>
                     <img id='saLogo' src={saLogo} alt='logo' />
                     <p id='hours'>M-M <br/> 00:00-00:00</p>
                 </div>
                 <header>
-                <h1 id='sarah'>SARAH</h1>
-                <h1 id='alonso'>ALONSO</h1>
-                <h1 id='design'>DESIGN</h1>
-                <h1 id='year'>2019</h1>
+                    <h1 id='sarah'>SARAH</h1>
+                    <h1 id='alonso'>ALONSO</h1>
+                    <h1 id='design'>DESIGN</h1>
+                    <h1 id='year'>2019</h1>
                 </header>
                 <div id='quote'>
-                <p id='focusQuote'>"The people that matter realize
-                    that all that you should focus on
-                    is the work"<br />
-                    <span id='authorQuote'>-Jerrod Carmichael, Comedian on the <br/>Tim Ferris Podcast, Ep. 222.
-                    </span>
-                </p>
+                    <p id='focusQuote'>"The people that matter realize
+                        that all that you should focus on
+                        is the work"<br />
+                        <span id='authorQuote'>&#8212;Jerrod Carmichael, Comedian on the <br/>Tim Ferris Podcast, Ep. 222.
+                        </span>
+                    </p>
                 </div>
                 <div id='arrow'>
                     <img id='redArrowDown' src={redArrowDown} alt='red arrow'/>
                 </div>
                 <div id='goalDiv'>
-                <h1 id='goal'>My goal is simple <br/>
-                    &#8212; Good design
-                </h1>
+                    <h1 id='goal'>My goal is simple
+                        &#8212;
+                    </h1>
                 </div>
                 
                 <div className='rightNav'>
@@ -83,8 +84,7 @@ class Intro extends React.Component {
                         <div className='sandwich'></div>
                         <div className='sandwich'></div>
                     </div>
-                </div>
-        
+                </div>    
                     <SandwichMenu 
                         passSandwichMenu={this.sandwichMenu}
                         passDisplayMenu={this.state.displayMenu}

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 700px)
  {
     body {
         overflow-y: scroll;
@@ -9,19 +9,21 @@
 
 
     .intro {
+    position: relative;
     background-image: url('./images/placeDoubleExposure_Mobile.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     color: white;
     display: grid;
-    grid-template-columns: 20% 1fr 1fr 15%;
+    grid-template-columns: 20% 1fr 1fr 35%;
     grid-template-rows: 1fr 40vmin 1fr 1fr;
     grid-template-areas:
         "lNav header header rNav"
         "lNav quote quote rNav"
         "lNav quote quote rNav"
-        "lNav goal arrow rNav";
+        "lNav goal goal rNav"
+        ". . . arrow";
     }
 
     .rightNav {
@@ -67,28 +69,34 @@
     }
 
     #quote {
-        margin-top: -15px;
-        margin-left: 15px;
-        align-self: center;
-        grid-column: 2 /span 3;
-        box-sizing: border-box;
+        position: absolute;
+        top: 25%;
+        margin-left: 10px;
+        /* align-self: center; */
+        /* grid-column: 2 /span 3; */
+        /* box-sizing: border-box; */
         width: 65vmin;
     
     }
 
     #focusQuote {
-        font-size: 11px;
+        font-size: 16px;
         line-height: 1;
         letter-spacing: 0.5px;
         text-align: left;
+        background-color: rgb(0,0,0,0.5);
+        padding: 5px;
+        border-radius: 1px;
     }
 
     #authorQuote {
         margin-top: 10px;
         margin-left: 0;
-        font-size: 8px;
+        font-size: 11px;
         float: right;
-
+        background-color: rgb(0,0,0,0.5);
+        padding: 5px;
+        border-radius: 1px;
     }
 
     #saLogo {
@@ -96,8 +104,35 @@
         height: 39.48px;
     }
 
-    #goalDiv{
-        display: none;
+    #goalDiv {
+        grid-column: 2 / span 3;
+        position: absolute;
+        bottom: 0;
     }
+
+    #goal {
+        margin-top: 200px;
+        margin-left: 10px;
+        font-size: 45px;
+        line-height: 1;
+        text-align: left;
+    }
+
+    #arrow {
+        position: absolute;
+        bottom: 0;
+    }
+
+    #redArrowDown{
+        position: absolute;
+        bottom: 0;
+    }
+
+    #hours {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
 
 }
