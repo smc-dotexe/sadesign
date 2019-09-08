@@ -10,7 +10,7 @@
 
     .intro {
     position: relative;
-    background-image: url('./images/placeDoubleExposure_Mobile.png');
+    background-image: url('../images/placeDoubleExposure_Mobile.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -22,8 +22,7 @@
         "lNav header header rNav"
         "lNav quote quote rNav"
         "lNav quote quote rNav"
-        "lNav goal goal rNav"
-        ". . . arrow";
+        "lNav goal goal rNav";
     }
 
     .rightNav {

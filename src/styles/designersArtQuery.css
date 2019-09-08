@@ -1,0 +1,60 @@
+@media only screen and (max-width: 700px) {
+    .designersArt {
+        position: relative;
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        
+    }
+
+    #border {
+    }
+
+    #goodDesignTitle {
+        font-size: 45px;
+        font-family: Chap Light;
+        grid-row: 1;
+        grid-column: 2;
+        align-self: start;
+        justify-self: end;
+        margin-top: 0;
+        margin-left: 10px;
+        padding: 0;
+        line-height: 1;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    #daTitle {
+        font-size: 1.85rem;
+        margin-left: 10px;
+        text-align: left;
+        grid-column: 2 /span 3;
+        grid-row: 2;
+        width: 75%;
+        height: 50%;
+
+    }
+
+    #daTitleDescription {
+        grid-column: 2 / span 3;
+        width: 75%;
+        grid-row: 3;
+        font-size: 16pt;
+        margin-left: 10px;
+        margin-top: 0;
+    }
+
+    #arr1 {
+        margin-top: 2.0rem;
+        grid-row: 3;
+        grid-column: 3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #daBG {
+        background-image: url('../images/glitchSAWebStroke_Mobile.png');
+        grid-row: 4;
+    
+    }
+}

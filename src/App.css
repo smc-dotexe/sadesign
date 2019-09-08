@@ -199,6 +199,20 @@ DESIGNERS ART SECTION
   border-right: 1px solid white;
 }
 
+#goodDesignTitle {
+  font-size: 107px;
+  font-family: Chap Light;
+  margin-top: 0;
+  margin-left: 50px;
+  display: block;
+  grid-row: 1;
+  grid-column: 2 / span 3;
+  line-height: 1;
+  justify-self: start;
+  align-self: start;
+  
+}
+
 .designersArt h1 {
   margin-top: 40px;
   grid-column: 2;
@@ -214,6 +228,7 @@ DESIGNERS ART SECTION
 .designersArt p {
   grid-column: 3;
   grid-row: 2;
+  margin-top: 1rem;
   align-self: start;
   text-align: left;
   /* grid-area: daDescription; */
@@ -234,6 +249,8 @@ DESIGNERS ART SECTION
   grid-column: 1 / span 4;
   grid-row: 3 / span 5;
   line-height: 6em;
+  border: 1px solid green;
+  height: 100%;
 }
 
 #daBG h1{
