@@ -46,6 +46,7 @@
 
     #arr1 {
         margin-top: 2.0rem;
+        margin-right: 5px;
         grid-row: 3;
         grid-column: 3;
         align-self: center;
@@ -54,7 +55,55 @@
 
     #daBG {
         background-image: url('../images/glitchSAWebStroke_Mobile.png');
+        background-size: cover; 
+        background-position: center;
         grid-row: 4;
-    
+        height: 86vh;
+        border: 1px solid green;
     }
+
+    #daBG h1 {
+        font-size: 38pt;
+        line-height: 1;
+        grid-column: 2 / span 4;
+        grid-row: 1 / span 2;
+        justify-self: start;
+        align-self: start;
+        
+    }
+
+    #daAuthor {
+        font-size: 20pt;
+        color: yellow;
+        grid-row: 1;
+        grid-column: 2 / span 4;
+        line-height: 1;
+        align-self: end;
+        margin-bottom: 20px;
+    }
+
+    #myBrand {
+        grid-row: 2;
+        grid-column: 3;
+    }
+
+    #arr2 {
+        grid-row: 2;
+        grid-column: 4;
+    }
+
+
+    /* .designTraining {
+        display: none;
+    }
+
+    .smallBusiness {
+        display: none;
+    } */
+
+    /* .contact {
+        display: none;
+    } */
+
+
 }
