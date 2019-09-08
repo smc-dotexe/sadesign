@@ -15,20 +15,16 @@ class DesignersArt extends React.Component {
                         intuition.
                     </p>
                     <img id='arr1' src={redArrow} alt='red arrow' />
-                <div className='slide'>
                     <div id='daBG'>
-                        <h1>"If you want <br/>
-                            momentum, you'll <br/>
-                            have to create it"
+                        <h1>"If you want
+                            momentum, you'll 
+                            have to create it yourself, right now."
                         </h1>
                     
-                    <p id='daAuthor'> &#8212; Ryan Holiday, Author of The Obstacle Is The Way, 2014.</p>
-                    {/* <p id='arr2'>
-                        >
-                    </p> */}
-                    <img id='arr2' src={redArrow} alt='redarrow' />
+                        <p id='daAuthor'> &#8212; Ryan Holiday, Author of The Obstacle Is The Way, 2014.</p>
+                        <p id='myBrand'>My Brand</p>
+                        <img id='arr2' src={redArrow} alt='redarrow' />
                     </div>
-                </div>
             </div>
         )
     }
