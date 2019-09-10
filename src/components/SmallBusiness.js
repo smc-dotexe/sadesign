@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/smallBusinessQuery.css'
 import pdb from '.././images/pdb.png'
 import pdbGlitch from '.././images/saDualGlitch_Web.svg'
 import greyArrow from '../images/greyarrowright.png'

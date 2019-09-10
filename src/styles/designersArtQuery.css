@@ -1,26 +1,26 @@
 @media only screen and (max-width: 700px) {
+    .slide {
+        height: 100%;
+    }
     .designersArt {
-        position: relative;
         display: grid;
         grid-template-columns: 20% 1fr;
-        
-    }
+   }
 
     #border {
     }
-
     #goodDesignTitle {
         font-size: 45px;
         font-family: Chap Light;
         grid-row: 1;
         grid-column: 2;
         align-self: start;
-        justify-self: end;
+        justify-self: start;
         margin-top: 0;
         margin-left: 10px;
         padding: 0;
         line-height: 1;
-        box-sizing: border-box;
+        /* box-sizing: border-box; */
         text-align: left;
     }
 
@@ -56,10 +56,12 @@
     #daBG {
         background-image: url('../images/glitchSAWebStroke_Mobile.png');
         background-size: cover; 
-        background-position: center;
+        background-position: center center;
         grid-row: 4;
-        height: 86vh;
+        height: 70vh;
         border: 1px solid green;
+        display: grid;
+        grid-template-rows: 1fr 100px;
     }
 
     #daBG h1 {
@@ -68,28 +70,33 @@
         grid-column: 2 / span 4;
         grid-row: 1 / span 2;
         justify-self: start;
-        align-self: start;
-        
+        align-self: start;        
     }
 
     #daAuthor {
         font-size: 20pt;
-        color: yellow;
+        /* color: yellow; */
         grid-row: 1;
         grid-column: 2 / span 4;
         line-height: 1;
         align-self: end;
-        margin-bottom: 20px;
+        margin-bottom: -20px;
+        margin-left: 10px;
     }
 
     #myBrand {
         grid-row: 2;
         grid-column: 3;
+        align-self: start;
+        justify-self: center;
+        margin-top: 50px;
     }
 
     #arr2 {
         grid-row: 2;
         grid-column: 4;
+        margin-top: 35px;
+        align-self: start;
     }
 
 
@@ -99,9 +106,9 @@
 
     .smallBusiness {
         display: none;
-    } */
+    } 
 
-    /* .contact {
+    .contact {
         display: none;
     } */
 

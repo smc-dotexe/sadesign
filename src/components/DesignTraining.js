@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/designTrainingQuery.css'
 import rumbleGram1 from '.././images/rumble-gram1.png'
 import rumbleGram2 from '.././images/rumblegram2.jpg'
 import redBoxArrowRight from '.././images/redboxarrowright.png'
