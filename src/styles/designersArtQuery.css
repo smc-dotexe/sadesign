@@ -59,7 +59,6 @@
         background-position: center center;
         grid-row: 4;
         height: 70vh;
-        border: 1px solid green;
         display: grid;
         grid-template-rows: 1fr 100px;
     }
@@ -75,12 +74,11 @@
 
     #daAuthor {
         font-size: 20pt;
-        /* color: yellow; */
         grid-row: 1;
         grid-column: 2 / span 4;
         line-height: 1;
         align-self: end;
-        margin-bottom: -20px;
+        margin-bottom: -40px;
         margin-left: 10px;
     }
 
@@ -89,28 +87,13 @@
         grid-column: 3;
         align-self: start;
         justify-self: center;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     #arr2 {
         grid-row: 2;
         grid-column: 4;
-        margin-top: 35px;
+        margin-top: 60px;
         align-self: start;
     }
-
-
-    /* .designTraining {
-        display: none;
-    }
-
-    .smallBusiness {
-        display: none;
-    } 
-
-    .contact {
-        display: none;
-    } */
-
-
 }

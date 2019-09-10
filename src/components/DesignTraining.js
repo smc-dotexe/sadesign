@@ -24,18 +24,18 @@ class DesignTraining extends React.Component {
                 <div id='dtBorder'></div>
                 <div id='dtDescriptorDiv'>
                     <h3 id='designTrainingTitle'>Design Training</h3><br />
-                    <p id='dtDescription'>Training like a champion requires <br/>
-                    discipline, dedication and design. Rumble <br/>
-                    Boxing has been the Freddie Roach <br/>
-                    training experience. It has honed a <br/>
-                    strategic marketing mind, a team player <br/>
-                    attitude and a technical design hand <br/>
+                    <p id='dtDescription'>Training like a champion requires 
+                    discipline, dedication and design. Rumble 
+                    Boxing has been the Freddie Roach 
+                    training experience. It has honed a 
+                    strategic marketing mind, a team player 
+                    attitude and a technical design hand 
                     comparable to Ali.</p>
       
                     
                     <img id='redBoxArrowRight' src={redBoxArrowRight} alt='right red arrow' />
                     
-                    <h3 id='rumbleCaseStudyHeader'>RUMBLE CASE STUDY</h3>
+                    <h3 id='rumbleCaseStudyHeader'>RUMBLE</h3>
                 </div>
                 <div id='rumbleSlideShow' onClick={this.slideshow}>
                     {this.state.slideshow ? 
