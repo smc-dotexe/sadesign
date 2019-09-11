@@ -1,2 +1,76 @@
-.smallBusiness {
+@media only screen and (max-width: 600px) {
+    .smallBusiness {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+    }
+    #smlHeading {
+        font-size: 43px;
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 62px;
+        margin-left: 10px;
+        align-self: start;
+        justify-self: start;
+        z-index: 2;
+        
+    }
+
+    #lrgROI {
+        font-size: 50px;
+        grid-column: 2;
+        grid-row: 1;
+        margin-bottom: 70px;
+        margin-left: 10px;
+        z-index: 2;
+    }
+    
+    #pdbGlitch {
+        border: 1px solid yellow;
+        width: 400px;
+        height: 325px;
+        z-index: 0;
+    }
+
+    #pdb {
+        margin-left: 15px;
+        width: 280px;
+        height: 118px;
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: start;
+        display: inline;
+        z-index: 1;
+    }
+
+    #onethousand {
+        z-index: 2;
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0 100px 30px 0;
+        font-size: 51px;
+    }
+
+    #pdbQuote {
+        font-size: 16px;
+        width: 279px;
+        text-align: left;
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: start;
+    }
+
+    #phoDauBoLink {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 10px;
+        justify-self: start;
+        align-self: center;
+    }
+    
+    #pdbArrow {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+        margin-left: 200px;
+    }
 }

@@ -368,6 +368,13 @@ DESIGN TRAINING SECTION
   align-self: center;
 }
 
+#rumbleCaseStudyHeader {
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: start;
+  margin-left: 10px;
+}
+
 
 #rumbleSlideShow {
   grid-column: 3;
@@ -414,8 +421,8 @@ DESIGN TRAINING SECTION
   grid-column: 3;
   width: 668px;
   height: 438px;
-  background-image: url('./images/rumblegram2.jpg');
-  background-size: cover;
+  background-image: url('./images/laptop.png');
+  /* background-size: cover; */
   background-position: center center;
   background-repeat: no-repeat;
   animation: fading 0.6s;
@@ -476,7 +483,7 @@ SMALL BUSINESS SECTION
   grid-row: 1;
   height: 542.4px;
   width: 980.49px;
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 #lrgROI {

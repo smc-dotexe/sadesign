@@ -1,4 +1,4 @@
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 600px)
  {
     body {
         overflow-y: scroll;
@@ -9,20 +9,20 @@
 
 
     .intro {
-    position: relative;
-    background-image: url('../images/placeDoubleExposure_Mobile.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: white;
-    display: grid;
-    grid-template-columns: 20% 1fr 1fr 35%;
-    grid-template-rows: 1fr 40vmin 1fr 1fr;
-    grid-template-areas:
-        "lNav header header rNav"
-        "lNav quote quote rNav"
-        "lNav quote quote rNav"
-        "lNav goal goal rNav";
+        position: relative;
+        background-image: url('../images/placeDoubleExposure_Mobile.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: white;
+        display: grid;
+        grid-template-columns: 20% 1fr 1fr 35%;
+        grid-template-rows: 1fr 40vmin 1fr 1fr;
+        grid-template-areas:
+            "lNav header header rNav"
+            "lNav quote quote rNav"
+            "lNav quote quote rNav"
+            "lNav goal goal rNav";
     }
 
     .rightNav {

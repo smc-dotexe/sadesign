@@ -8,23 +8,18 @@ class Intro extends React.Component {
         super(props)
         this.state = { 
             displayMenu: false,
-            windowHeight: window.innerHeight,
-            windowWidth: window.innerWidth,
         }
     }
 
     sandwichMenu = () => {
         this.setState(prevState => ({displayMenu: !prevState.displayMenu}))
-        console.log('clicked')  
     }
 
     handleResize = () => {
         let resizeWindowHeight = window.innerHeight
         let resizeWindowWidth = window.innerWidth
-        if (resizeWindowHeight !== this.state.windowHeight || resizeWindowWidth !== this.state.windowWidth) {
-            this.setState({ windowHeight: resizeWindowHeight, windowWidth: resizeWindowWidth})
-            console.log('called handle resize', 'resizeWindowHeight', resizeWindowHeight)
-            console.log('resizeWindowWidth', resizeWindowWidth)
+        if (resizeWindowHeight !== this.props.passWindowHeight || resizeWindowWidth !== this.props.passWindowWidth) {
+            this.props.passSetWindowDimensions();
         }
     }
 
@@ -33,7 +28,6 @@ class Intro extends React.Component {
     }
 
     render() {
-        console.log('window height', window.innerHeight)
         let sandwichBtnAnimation;
         if (this.state.displayMenu) {
             sandwichBtnAnimation = 'sandwichButtonContainer close'
@@ -45,8 +39,8 @@ class Intro extends React.Component {
                 className='slide intro' 
                 style={{
                     backgroundColor: 'blue',
-                    width: `${this.state.windowWidth}px`,
-                    height: `${this.state.windowHeight}px`
+                    width: `${this.props.passWindowWidth}px`,
+                    height: `${this.props.passWindowHeight}px`
                 }}
             >
                 <div className='leftNav'>
