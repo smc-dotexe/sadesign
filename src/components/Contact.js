@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/contactQuery.css'
 
 class Contact extends React.Component {
     render() {
@@ -13,15 +14,14 @@ class Contact extends React.Component {
                         Canada, T2R 0P9
                     </p>
                     <p id='contactPhone'>
-                        +1403.827.7279<br/>
-                        SARAH ALONSO
+                        SARAH ALONSO<br/>
+                        <span id='phone'>+1403.827.7279</span>
                     </p>
                     <p id='collaborate'>
                         Collaborate
                     </p>
                     <p id='socialMedia'>
                         Facebook<br/>
-                        Twitter<br/>
                         Instagram<br/>
                         LinkedIn<br/>
                     </p>

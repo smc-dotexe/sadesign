@@ -1,0 +1,52 @@
+@media only screen and (max-width: 600px) {
+    .contact {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 0;
+        grid-gap: 0;
+        grid-column-gap: 10px;
+    }
+
+    #contactInfo {
+        /* display: grid; */
+        grid-template-columns: 40%;
+    }
+
+    #collaborate {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #contactPhone {
+        grid-column: 2;
+        grid-row: 2;
+        align-self: center;
+        margin-bottom: 5px;
+        width: 100%;
+        display: inline;
+    }
+
+    #phone {
+        font-size: 15px;
+    }
+
+    #contactAddress {
+        grid-column:2 ;
+        grid-row: 3;
+    }
+
+    #privacyPolicy {
+        grid-column: 1;
+        grid-row: 4;
+        align-self: center;
+    }
+
+    #copyright {
+        grid-column: 2;
+        grid-row: 4;
+        justify-self: start;
+        align-self: center;
+        margin-left: 10px;
+    }
+
+}
