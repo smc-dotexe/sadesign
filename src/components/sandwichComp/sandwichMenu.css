@@ -3,6 +3,8 @@
 }
 
 .sandwichComp {
+    max-width: 185px;
+    min-width: 164px;
     background-color: black;
     grid-area: rNav;
     height: 100%;
@@ -60,7 +62,8 @@
 
 #sandwichLinks {
     padding: 0;
-    margin-top: -300px;
+    margin-top: -200px;
+    margin-left: -50px;
     text-align: left;
     list-style-type: none;
     grid-column: 1/ span 2;
@@ -79,8 +82,13 @@
     grid-column: 1;
 }
 
+
 @media only screen and (max-width: 600px) {
     .sandwichComp h4 {
         margin-left: 20px;
+    }
+
+    #sandwichLinks {
+        margin-left: 5px;
     }
 }

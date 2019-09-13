@@ -35,18 +35,9 @@ class Intro extends React.Component {
             sandwichBtnAnimation = 'sandwichButtonContainer'
         }
         return (
-            <div 
-                className='slide intro' 
-                style={{
-                    backgroundColor: 'blue',
-                    width: `${this.props.passWindowWidth}px`,
-                    height: `${this.props.passWindowHeight}px`
-                }}
-            >
-                <div className='leftNav'>
-                    <img id='saLogo' src={saLogo} alt='logo' />
-                    <p id='hours'>M-M <br/> 00:00-00:00</p>
-                </div>
+            <div className='slide intro'>
+
+                {/* <div className='intro'> */}
                 <header>
                     <h1 id='sarah'>SARAH</h1>
                     <h1 id='alonso'>ALONSO</h1>
@@ -78,11 +69,13 @@ class Intro extends React.Component {
                         <div className='sandwich'></div>
                         <div className='sandwich'></div>
                     </div>
-                </div>    
+                </div>
+                    
                     <SandwichMenu 
                         passSandwichMenu={this.sandwichMenu}
                         passDisplayMenu={this.state.displayMenu}
                     />
+                {/* </div> */}
             </div>
         )
     }

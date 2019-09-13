@@ -1,14 +1,92 @@
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1233px) {
+    #goodDesignTitle {
+        font-size: 100px;
+    }
+
+    #daBG h1 {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 1154px) {
+    #goodDesignTitle {
+        font-size: 90px;
+    }
+    #daBG h1 {
+        font-size: 90px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    #goodDesignTitle {
+        font-size: 80px;
+    }
+    #daBG h1 {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 964px) {
+    #goodDesignTitle {
+        font-size: 70px;
+    }
+
+    #daTitle {
+        margin-top: 0;
+    }
+    #daTitleDescription {
+        margin-top: 0;
+        font-size: 19px;
+    }
+    #daBG h1 {
+        font-size: 70px;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    #goodDesignTitle {
+        font-size: 60px;
+    }
+    #daBG h1 {
+        font-size: 60px;
+    }
+}
+
+@media only screen and (max-width: 722px) {
+    #goodDesignTitle {
+        font-size: 50px;
+    }
+    #daBG h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 653px) {
+    #goodDesignTitle {
+        font-size: 47px;
+    }
+}
+
+@media only screen and (max-width: 627px) {
+    #goodDesignTitle {
+        font-size: 45px;
+    }
+}
+
+
+/***************************
+***IPHONE PLUS SCREEN SIZE**
+****************************/
+
+@media only screen and (max-width: 414px) {
     .slide {
         height: 100%;
     }
     .designersArt {
         display: grid;
-        grid-template-columns: 20% 1fr;
+        grid-template-columns: 72px 1fr;
    }
 
-    #border {
-    }
     #goodDesignTitle {
         font-size: 45px;
         font-family: Chap Light;
@@ -25,12 +103,12 @@
     }
 
     #daTitle {
-        font-size: 1.85rem;
+        font-size: 34px;
         margin-left: 10px;
         text-align: left;
         grid-column: 2 /span 3;
         grid-row: 2;
-        width: 75%;
+        /* width: 75%; */
         height: 50%;
 
     }
@@ -49,7 +127,7 @@
         margin-right: 5px;
         grid-row: 3;
         grid-column: 3;
-        align-self: center;
+        align-self: start;
         justify-self: center;
     }
 
@@ -65,6 +143,7 @@
 
     #daBG h1 {
         font-size: 38pt;
+        /* font-size: 3.167em; */
         line-height: 1;
         grid-column: 2 / span 4;
         grid-row: 1 / span 2;

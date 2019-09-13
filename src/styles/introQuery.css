@@ -1,4 +1,92 @@
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 1253px) {
+    /* #goal {
+        font-size: 100px;
+    } */
+}
+
+@media only screen and (max-width: 1181px) {
+    /* #goal {
+        font-size: 90px;
+    } */
+}
+
+@media only screen and (max-width: 1110px) {
+    /* .intro {
+          grid-template-columns: 9.9% 1fr 1fr 18%;
+    } */
+
+    #goal {
+        /* font-size: 80px; */
+        /* font-size: 8.008008008008009VW; */
+    }
+
+    #focusQuote {
+        font-size: 20px;
+    }
+
+    #authorQuote {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    /* #goal {
+        font-size: 70px;
+    } */
+        #focusQuote {
+        font-size: 17px;
+    }
+
+    #authorQuote {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 875px) {
+    /* #goal {
+        font-size: 60px;
+    } */
+        #focusQuote {
+        font-size: 16px;
+    }
+
+    #authorQuote {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 773px) {
+    /* .intro {
+          grid-template-columns: 9.9% 1fr 1fr 20%;
+    } */
+    /* #goal {
+        font-size: 50px;
+    } */
+}
+
+@media only screen and (max-width: 653px) {
+    /* .intro {
+          grid-template-columns: 9.9% 1fr 1fr 25%;
+    } */
+
+    /* #goal {
+        font-size: 47px;
+    } */
+}
+
+/* @media only screen and (max-width: 640px) {
+    #goal {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #goal {
+        font-size: 40px;
+    }
+} */
+
+@media only screen and (max-width: 414px)
  {
     body {
         overflow-y: scroll;
@@ -10,13 +98,13 @@
 
     .intro {
         position: relative;
-        background-image: url('../images/placeDoubleExposure_Mobile.png');
+        /* background-image: url('../images/placeDoubleExposure_Mobile.png'); */
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         color: white;
         display: grid;
-        grid-template-columns: 20% 1fr 1fr 35%;
+        grid-template-columns: 72px 1fr 1fr 35%;
         grid-template-rows: 1fr 40vmin 1fr 1fr;
         grid-template-areas:
             "lNav header header rNav"
@@ -30,6 +118,7 @@
     }
 
     header{
+        min-width: 220px; 
         margin-top: -20px;
         grid-area: header;
         display: grid;
@@ -46,6 +135,7 @@
 
     header h1 {
         font-size: 49px;
+        font-size: 8.166666666666666VW;
     }
 
     header #sarah {

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 414px) {
     .designTraining {
         grid-template-columns: 20% 2fr 1fr;
         /* grid-template-rows: 1fr 1fr; */
@@ -38,6 +38,7 @@
         align-self: start;
         justify-self: center;
         margin-top: 45px;
+        margin-left: 10px;
         padding-bottom: 100px;
     }
 

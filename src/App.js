@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './animations.css';
 import './styles/introQuery.css'
+import saLogo from './images/sa.png'
 import Intro from './components/Intro'
 import DesignersArt from './components/DesignersArt'
 import DesignTraining from './components/DesignTraining'
@@ -29,7 +30,14 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className="App">
+      <div className='pageContainer'>
+        <div className='border'>
+            {/* <div className='leftNav'> */}
+                <img id='saLogo' src={saLogo} alt='logo' />
+                <p id='hours'>M-M <br/> 00:00-00:00</p>
+            {/* </div> */}
+        
+        </div>
         <Intro 
           passWindowWidth={this.state.windowWidth}
           passWindowHeight={this.state.windowHeight}

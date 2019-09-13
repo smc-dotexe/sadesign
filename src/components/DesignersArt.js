@@ -1,12 +1,12 @@
 import React from 'react'
 import redArrow from '../images/redarrowright.png'
-import '../styles/designersArtQuery.css'
+// import '../styles/designersArtQuery.css'
 
 class DesignersArt extends React.Component {
     render() {
         return (
             <div className='slide designersArt'>
-                <div id='border'></div>
+                <div className='border'></div>
                 <h1 id='goodDesignTitle'>Good Design</h1>
                 <h1 id='daTitle'>THE DESIGNER'S ART</h1>
                     <p id='daTitleDescription'>

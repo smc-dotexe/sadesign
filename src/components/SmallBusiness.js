@@ -2,7 +2,9 @@ import React from 'react'
 import '../styles/smallBusinessQuery.css'
 import pdb from '.././images/pdb.png'
 import pdbMenuMobile from '.././images/pdbMenu_Mobile.png'
-import pdbGlitch from '.././images/saDualGlitch_Web.svg'
+// import pdbGlitch from '.././images/saDualGlitch_Web.svg'
+import pdbGlitch from '.././images/pdbDualGlitch.png'
+
 import pdbGlitchMobile from '.././images/saDualGlitch_Mobile.png'
 import greyArrow from '../images/greyarrowright.png'
 
@@ -24,7 +26,7 @@ class SmallBusiness extends React.Component {
 
         return (
             <div className='slide smallBusiness'>
-                <div id='pdbBorder'></div>
+                <div className='border'></div>
                 <h1 id='smlHeading'>SML BUSINESS</h1>
                 <img id='pdb' src={menuImageSwitch} alt='pdbClient' />
                 <img id='pdbGlitch' src={glitchImageSwitch} alt='pdbGlitch' />

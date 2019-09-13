@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/designTrainingQuery.css'
+// import '../styles/designTrainingQuery.css'
 // import rumbleGram1 from '.././images/rumble-gram1.png'
 // import rumbleGram2 from '.././images/rumblegram2.jpg'
 import redBoxArrowRight from '.././images/redboxarrowright.png'
@@ -21,7 +21,7 @@ class DesignTraining extends React.Component {
     render() {
         return (
             <div className='slide designTraining'>
-                <div id='dtBorder'></div>
+                <div className='border'></div>
                 <div id='dtDescriptorDiv'>
                     <h3 id='designTrainingTitle'>Design Training</h3><br />
                     <p id='dtDescription'>Training like a champion requires 

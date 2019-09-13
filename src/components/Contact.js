@@ -1,11 +1,11 @@
 import React from 'react'
-import '../styles/contactQuery.css'
+// import '../styles/contactQuery.css'
 
 class Contact extends React.Component {
     render() {
         return (
-            <div className='contact'>
-                <div id='contactBorder'></div>
+            <div className='slide contact'>
+                <div className='border'></div>
                 <div id='contactInfo'>
                     <h5 id='contactMe'>Contact Me</h5>
                     <p id='contactAddress'>
