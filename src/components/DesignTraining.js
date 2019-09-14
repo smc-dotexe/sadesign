@@ -48,7 +48,7 @@ class DesignTraining extends React.Component {
                         :
                         <div id="rumbleGram2"></div>                   
                     }
-                    <div>
+                    <div id='slideShowCircles'>
                     {this.state.slideshow ? 
                         <span className='dot'></span> :
                         <span className='dotClear'></span>

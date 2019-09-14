@@ -5,7 +5,10 @@ html {overflow-x: hidden; overflow-y: auto;}
 .App {text-align: center;}
 
 .containerBorder {
+  display: inline-block;
   width: 10%;
+  max-width: 185px;
+  min-width: 88px;
   border-right: 1px solid white;  
   height: 100%;
   position: fixed;
@@ -13,7 +16,7 @@ html {overflow-x: hidden; overflow-y: auto;}
 }
 
 #saLogo {
-  transform: translateX(60%);
+  transform: translateX(50%);
 }
 
 #hours {
@@ -181,7 +184,7 @@ DESIGNERS ART SECTION
   background-color: black;
   display: grid;
   min-height: 170vmin;
-  grid-template-columns: minmax(min-content, 11.8%) 1fr 1fr 20%;
+  grid-template-columns: minmax(min-content, 10%) 1fr 1fr 20%;
   grid-template-rows: minmax(30vmin, auto) 40vmin minmax(60vmin, auto) minmax(15vmin, auto);
 }
 
@@ -199,7 +202,7 @@ DESIGNERS ART SECTION
   color: white;
   font-family: Chap Light;
   margin-top: 0;
-  margin-left: 50px;
+  margin-left: 10px;
   display: block;
   grid-row: 1;
   grid-column: 2 / span 3;
@@ -229,7 +232,6 @@ DESIGNERS ART SECTION
   padding-right: 10px;
   align-self: start;
   text-align: left;
-  /* grid-area: daDescription; */
   color: white;
   font-family: Arimo;
   font-size: 23px;
@@ -312,7 +314,7 @@ DESIGN TRAINING SECTION
 .designTraining {
   background-color: black;
   display: grid;
-  grid-template-columns: minmax(min-content, 11.8%) 1fr 1fr;
+  grid-template-columns: minmax(min-content, 10%) 1fr 1fr;
 
 }
 
@@ -355,7 +357,7 @@ DESIGN TRAINING SECTION
   font-family: Chap Light;
   font-size: 36px;
   font-weight: normal;
-  grid-row: 3;
+  /* grid-row: 3; */
   grid-column: 2;
   justify-self: center;
 }
@@ -379,6 +381,12 @@ DESIGN TRAINING SECTION
   grid-column: 3;
   align-self: center;
   cursor: pointer;
+}
+
+#slideShowCircles {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
 }
 
 .dot {
@@ -421,7 +429,6 @@ DESIGN TRAINING SECTION
   width: 668px;
   height: 438px;
   background-image: url('./images/laptop.png');
-  /* background-size: cover; */
   background-position: center center;
   background-repeat: no-repeat;
   animation: fading 0.6s;
@@ -550,8 +557,8 @@ CONTACT SECTION
   min-height: 60vmin;
   background-color: black;
   display: grid;
-  grid-template-columns: minmax(min-content, 11.8%) 1fr;
-  grid-template-rows: 10vmin 1fr;
+  grid-template-columns: minmax(min-content, 10%) 1fr;
+  /* grid-template-rows: 10vmin 1fr; */
   grid-gap: 10vmin;
 }
 
@@ -562,11 +569,13 @@ CONTACT SECTION
 }
 
 #contactInfo {
+  height: 100%;
   grid-column: 2;
   grid-row: 2;
   border-top: 1px solid #D9D9D9;
   display: grid;
   grid-template-columns: 75%;
+  grid-template-rows: 100px 50px 100px 50px;
 }
 
 #contactMe {
@@ -577,8 +586,8 @@ CONTACT SECTION
   font-weight: normal;
   grid-column: 1;
   grid-row: 1;
-  align-self: start;
-  justify-self: start;
+  /* align-self: start;
+  justify-self: start; */
 }
 
 #contactAddress {
@@ -611,6 +620,7 @@ CONTACT SECTION
   grid-row: 2;
   justify-self: start;
   align-self: center;
+  height: 10px;
 }
 
 #socialMedia {
@@ -630,6 +640,7 @@ CONTACT SECTION
   color: #D9D9D9;
   grid-column: 1;
   grid-row: 4;
+  justify-self: center;
 }
 
 #copyright {
@@ -637,9 +648,9 @@ CONTACT SECTION
   font-size: 11px;
   color: #D9D9D9;
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 4;
   justify-self: end;
-  align-self: end;
+  align-self: start;
   opacity: 0.3;
-  margin-right: -100px;
+  margin-right: -70px;
 }

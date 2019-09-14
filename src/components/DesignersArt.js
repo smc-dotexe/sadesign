@@ -6,7 +6,6 @@ class DesignersArt extends React.Component {
     render() {
         return (
             <div className='slide designersArt'>
-                {/* <div className='border'></div> */}
                 <h1 id='goodDesignTitle'>Good Design</h1>
                 <h1 id='daTitle'>THE DESIGNER'S ART</h1>
                     <p id='daTitleDescription'>

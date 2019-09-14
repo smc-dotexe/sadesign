@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  .intro {
+    color: blue;
+  }
+
+  #year {
+    grid-column: 4;
+    justify-self: start;
+  }
+
+  #quote {
+    font-size: 17px;
+    justify-self: end;
+    margin-right: 50px;
+  }
+
+  #authorQuote {
+    font-size: 13px;
+  }
+
+  #arrow {
+    grid-column: 5;
+    align-self: end;
+  }
+
+  #goal {
+    font-size: 55px;
+    display: block;
+    padding-left: 10px;
+  }
+  
+}

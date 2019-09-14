@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import '../styles/responsiveStyles.css'
 import saLogo from '../images/sa.png'
 import redArrowDown from '../images/redarrowdown2.png'
 import SandwichMenu from './sandwichComp/SandwichMenu'
