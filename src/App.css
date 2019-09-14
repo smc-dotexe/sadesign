@@ -54,7 +54,7 @@ INTRO PAGE SECTION
   position: relative;
   color: white;
   display: grid;
-  grid-template-columns: 10% 1fr 1fr 170px 200px;
+  grid-template-columns: minmax(88px, 10%) 1fr 1fr 170px minmax(150px,14%);
 }
 
 .sandwichButtonContainer {
@@ -161,7 +161,7 @@ font-size: 23px;
 }
 
 #goalDiv {
-  grid-column: 2 / span 3;
+  grid-column: 2 / -1;
   grid-row: 2;
   justify-self: start;
   position: absolute;
@@ -188,13 +188,13 @@ DESIGNERS ART SECTION
   grid-template-rows: minmax(30vmin, auto) 40vmin minmax(60vmin, auto) minmax(15vmin, auto);
 }
 
-#border {
+/* #border {
   max-width: 125px;
   min-width: 72px;
   grid-column: 1;
   grid-row: 1 / 8;
   border-right: 1px solid white;
-}
+} */
 
 #goodDesignTitle {
   font-size: 107px;

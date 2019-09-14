@@ -4,15 +4,22 @@
     color: blue;
   }
 
+  #sarah, #alonso, #design {
+    line-height: 55px;
+  }
+
   #year {
     grid-column: 4;
     justify-self: start;
   }
 
   #quote {
-    font-size: 17px;
     justify-self: end;
     margin-right: 50px;
+  }
+
+  #focusQuote {
+    font-size: 17px;
   }
 
   #authorQuote {
@@ -21,13 +28,60 @@
 
   #arrow {
     grid-column: 5;
-    align-self: end;
+    align-self: center;
   }
 
   #goal {
-    font-size: 55px;
-    display: block;
     padding-left: 10px;
+  }
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .intro {
+    color: red;
+  }
+
+  #sarah, #alonso, #design {
+    line-height: 45px;
+  }
+
+  #year {
+    grid-column: 4;
+    
+  }
+
+  #quote {
+    justify-self: end;
+    margin-right: 20px;
+  }
+
+  #focusQuote {
+    font-size: 17px;
+  }
+
+  #authorQuote {
+    justify-self: end;
+    font-size: 12px;
+  }
+
+  #arrow {
+    grid-column: 5;
+    padding-top: 25px;
+  }
+  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .intro {
+    color: green;
   }
   
 }
