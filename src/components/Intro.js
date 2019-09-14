@@ -28,6 +28,8 @@ class Intro extends React.Component {
     }
 
     render() {
+        console.log('WINDOW HEIGHT = ', this.props.passWindowHeight)
+        console.log('WINDOW WIDTH = ', this.props.passWindowWidth)
         let sandwichBtnAnimation;
         if (this.state.displayMenu) {
             sandwichBtnAnimation = 'sandwichButtonContainer close'
@@ -37,16 +39,16 @@ class Intro extends React.Component {
         return (
             <div className='slide intro'>
 
-                {/* <div className='intro'> */}
                 <header>
                     <h1 id='sarah'>SARAH</h1>
                     <h1 id='alonso'>ALONSO</h1>
                     <h1 id='design'>DESIGN</h1>
-                    <h1 id='year'>2019</h1>
+                    
                 </header>
+                    <h1 id='year'>2019</h1>
                 <div id='quote'>
                     <p id='focusQuote'>"The people that matter realize
-                        that all that you should focus on
+                        all that you should focus on
                         is the work"<br />
                         <span id='authorQuote'>&#8212;Jerrod Carmichael, Comedian on the <br/>Tim Ferris Podcast, Ep. 222.
                         </span>
@@ -61,7 +63,7 @@ class Intro extends React.Component {
                     </h1>
                 </div>
                 
-                <div className='rightNav'>
+                
                     <div className={sandwichBtnAnimation} 
                          onClick={this.sandwichMenu}                       
                     >
@@ -69,7 +71,7 @@ class Intro extends React.Component {
                         <div className='sandwich'></div>
                         <div className='sandwich'></div>
                     </div>
-                </div>
+                
                     
                     <SandwichMenu 
                         passSandwichMenu={this.sandwichMenu}

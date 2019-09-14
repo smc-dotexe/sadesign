@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import './animations.css';
-import './styles/introQuery.css'
+// import './styles/introQuery.css'
 import saLogo from './images/sa.png'
 import Intro from './components/Intro'
 import DesignersArt from './components/DesignersArt'

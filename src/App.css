@@ -51,37 +51,18 @@ INTRO PAGE SECTION
   position: relative;
   color: white;
   display: grid;
-  /* grid-template-columns: minmax(min-content, 11.8%) 1fr 1fr 164px; */
-  grid-template-rows: 1fr 40vmin 1fr 1fr;
-  grid-template-areas:
-    "lNav header header rNav"
-    "lNav . quote rNav"
-    "lNav . arrow rNav"
-    "lNav goal goal rNav";
-}
-
-.leftNav {
-  max-width: 125px;
-  min-width: 72px;
-  grid-area: lNav;
-  display: flex;
-  border-right: 1px solid white;
-}
-
-
-
-
-.rightNav {
-  grid-area: rNav;
-  justify-self: center;
-  margin-top: 40px;
-  z-index: 1;
+  grid-template-columns: 10% 1fr 1fr 170px 200px;
 }
 
 .sandwichButtonContainer {
   cursor: pointer;
   padding: 10px;
   margin: 5px;
+  grid-column: 5;
+  grid-row: 1;
+  align-self: start;
+  justify-self: center;
+  width: 35px;
   z-index: 2;
   opacity: 1;
   transition: opacity 1.1s linear;
@@ -98,22 +79,17 @@ INTRO PAGE SECTION
   background-color: white;
   margin: 6px 0;
   opacity: 0.7;
-  z-index: -1;
 }
 
 
 header {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 50px 15vmin 15vmin 1fr; */
-  grid-template-rows: 50px 70px 70px 70px;
-  grid-template-areas:
-    ". ." 
-    "sarah ."
-    "alonso alonso"
-    "design year";
-  grid-gap: 0 10px;
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  margin-left: 50px;
+  justify-self: start;
+  align-self: center;
+  line-height: 70px;
+  width: 55%;
 }
 
 header h1 {
@@ -126,36 +102,38 @@ header h1 {
 }
 
 header #sarah {
-  grid-area: sarah;
-  align-self: start;
-  justify-self: start;
-  margin-left: 5vmin;
+  float: left;
 }
 
 header #alonso {
-  grid-area: alonso;
-  justify-self: start;
-  margin-left: 30vmin;
-  align-self: start;
+  float: right;
 }
 
 header #design {
-  grid-area: design;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  justify-self: start;
-  margin-left: 5vmin; 
+  float: left;
 }
-header #year {
-  grid-area: year;
-  justify-self: middle;
+
+#year {
+  font-family: Chap, Light;
+  font-size: 87px;
+  font-size: 6.359649122807018VW;
+  font-weight: normal;
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+  margin-top: 125px;
+  justify-self: end;
 }
 
 #quote {
-  grid-area: quote;
-  align-self: center;
-  height: 10vmin;
+  width: 63%;
+  align-self: start;
+  justify-self: center;
+  grid-column: 3 / span 4;
+  grid-row: 2;
 }
 
 #focusQuote {
@@ -164,35 +142,34 @@ font-size: 23px;
 }
 
 #authorQuote {
-  margin-left: 20px;
   font-family: Arimo;
   font-size: 19px;
-  text-align: center;
+  text-align: right;
+  float: right;
+  transform: translateX(-25%);
+  padding-top: 10px;
 }
 
 #arrow {
-  grid-area: arrow;
-  justify-self: end;
-  margin-top: -40px;
-  margin-right: 50px;
+  grid-column: 4;
+  grid-row: 2;
+  align-self: center;
+  justify-self: start;
 }
 
-#redArrowDown {
-  color: red;
-}
 #goalDiv {
-  grid-area: goal;
-  grid-column: 2 / span 4;
+  grid-column: 2 / span 3;
+  grid-row: 2;
+  justify-self: start;
   position: absolute;
   bottom: -10px;
-  /* line-height: 20px; */
 }
+
 #goal {
   font-family: Chap Light;
   font-weight: normal;
   font-size: 107px;
   font-size: 7.833089311859444VW;
-  /* font-size:  6.688rem; */
   color: white;
   padding-left: 5px;
 }

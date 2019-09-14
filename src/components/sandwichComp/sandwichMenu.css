@@ -1,9 +1,11 @@
 .sandwichContainer {
-    grid-area: rNav;
+    grid-column: 5;
+    height: 100vmin;
+    grid-row: 1 / span 2;
 }
 
 .sandwichComp {
-    max-width: 185px;
+    max-width: 200px;
     min-width: 164px;
     background-color: black;
     grid-area: rNav;
