@@ -30,8 +30,9 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className='pageContainer'>
-        <div className='border'>
+      <React.Fragment>
+      {/*<div className='pageContainer'> */}
+        <div className='containerBorder'>
             {/* <div className='leftNav'> */}
                 <img id='saLogo' src={saLogo} alt='logo' />
                 <p id='hours'>M-M <br/> 00:00-00:00</p>
@@ -50,7 +51,8 @@ class App extends React.Component {
           passWindowHeight={this.state.windowHeight}
         />
         <Contact />
-      </div>
+      {/*</div> */}
+      </React.Fragment>
     );
   }
 
