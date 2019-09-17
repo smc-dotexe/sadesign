@@ -1,0 +1,205 @@
+@media (max-width: 1100px) {
+    #daAuthor {
+        grid-column: 2 / span 3;
+    }
+
+    #daBG h1{
+        line-height: 90px;
+    }
+
+    #daAuthor {
+        margin-top: -40px;
+        align-self: start;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  #daTitle {
+      grid-row: 1;
+      grid-column: 2 / span 3;
+      align-self: end;
+      margin-bottom: -50px;
+  }
+
+  #daTitleDescription {
+      grid-column: 2 / span 3;
+      margin-left: 10px;
+  }
+
+  #arr1 {
+      grid-column: 3;
+      justify-self: center;
+      align-self: center;
+  }
+
+  #daBG {
+    line-height: 30px;
+    height: 50%;
+  }
+
+  #daBG h1 {
+      line-height: 50px;
+  }
+
+  #daAuthor {
+      margin-left: 20px;
+      grid-row: 3;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 599px) {
+    #daTitle {
+        grid-row: 1;
+        grid-column: 2 / span 3;
+        align-self: end;
+        margin-bottom: -50px;
+    }
+
+    #daTitleDescription {
+        grid-column: 2 / span 3;
+        margin-left: 10px;
+    }
+
+    #arr1 {
+        grid-column: 3;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #daBG {
+        line-height: 30px;
+        height: 60%;
+    }
+
+    #daBG h1 {
+        margin-right: 50px;
+        line-height: 50px;
+        grid-column: 2 / span 4;
+    }
+
+    #daAuthor {
+        margin-left: 20px;
+        grid-row: 3;
+    }
+  
+    #myBrand {
+        align-self: end;
+        margin-bottom: 19px;
+    }
+
+    #arr2 {
+        align-self: end;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 480px) {
+    
+    #daTitle {
+        grid-row: 1;
+        grid-column: 2 / span 4;
+        font-size: 30px;
+        font-size: 6.6815144766147VW;
+        align-self: end;
+        margin-bottom: -30px;
+    }
+
+    #daTitleDescription {
+        grid-column: 2 / span 2;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    #arr1 {
+        grid-column: 3;
+        justify-self: end;
+        align-self: end;
+    }
+
+    #daBG {
+        line-height: 30px;
+        height: 60%;
+    }
+
+    #daBG h1 {
+        margin-right: 50px;
+        line-height: 50px;
+        grid-column: 2 / span 4;
+    }
+
+    #daAuthor {
+        margin-left: 20px;
+        grid-row: 2;
+        align-self: end;
+        font-size: 16px;
+    }
+  
+    #myBrand {
+        align-self: center;
+        font-size: 20px;
+        margin-bottom: 19px;
+    }
+
+    #arr2 {
+        align-self: center;
+    }
+}
+
+@media (max-width: 349px) {
+    #goodDesignTitle {
+        grid-column: 1 / span 2;
+    }
+
+    #daTitle {
+        grid-column: 1 / span 3;
+        font-size: 20px;
+        align-self: start;
+        margin-top: 0;
+    }
+
+    #daTitleDescription {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+        align-self: center;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+
+    #arr1 {
+        grid-column: 3;
+        align-self: end;
+    }
+
+    #daBG {
+        line-height: 30px;
+        height: 60%;
+    }
+
+    #daBG h1 {
+        margin-right: 50px;
+        line-height: 40px;
+        grid-column: 1 / span 4;
+    }
+
+    #daAuthor {
+        margin-left: 20px;
+        grid-column: 1/span 3;
+        grid-row: 2;
+        align-self: end;
+        font-size: 16px;
+    }
+  
+    #myBrand {
+        align-self: center;
+        font-size: 20px;
+        margin-bottom: 19px;
+        grid-column: 1 / span 2;
+    }
+
+    #arr2 {
+        align-self: center;
+        grid-column: 3;
+    }
+    
+}

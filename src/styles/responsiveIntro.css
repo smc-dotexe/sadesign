@@ -33,11 +33,6 @@
   
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-  
-}
-
 @media (min-width: 481px) and (max-width: 767px) {
   
   header {
@@ -113,10 +108,11 @@
   
   #goalDiv {
     grid-column: 2;
+    margin-bottom: 5px;
   }
 }
 
-@media (min-width: 330px) and (max-width: 449px) {
+@media (min-width: 350px) and (max-width: 449px) {
 
   #saLogo {
     transform: translateX(0%);
@@ -166,9 +162,17 @@
 
 }
 
-@media (max-width: 329px) {
+@media (max-width: 349px) {
   .containerBorder {
     border: none;
+  }
+
+  #saLogo {
+    transform: translateX(0%);
+  }
+
+  #hours {
+    display: none;
   }
 
   .sandwichButtonContainer {
@@ -207,7 +211,4 @@
     margin-bottom: 8px;
   }
 
-  #goal {
-    font-size: 30px;
-  }
 }

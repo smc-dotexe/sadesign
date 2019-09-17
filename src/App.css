@@ -185,7 +185,7 @@ DESIGNERS ART SECTION
   background-color: black;
   display: grid;
   min-height: 170vmin;
-  grid-template-columns: minmax(min-content, 10%) 1fr 1fr 20%;
+  grid-template-columns: minmax(88px, 10%) 1fr 1fr 20%;
   grid-template-rows: minmax(30vmin, auto) 40vmin minmax(60vmin, auto) minmax(15vmin, auto);
 }
 
@@ -204,7 +204,7 @@ DESIGNERS ART SECTION
   font-family: Chap Light;
   margin-top: 0;
   margin-left: 10px;
-  display: block;
+  /* display: block; */
   grid-row: 1;
   grid-column: 2 / span 3;
   line-height: 1;
@@ -256,7 +256,7 @@ DESIGNERS ART SECTION
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr;
+  grid-template-columns: minmax(88px,10%) 1fr 2fr 1fr;
   grid-template-rows: 3fr 100px 80px;
 }
 
@@ -267,6 +267,7 @@ DESIGNERS ART SECTION
   font-family: Chap Light;
   font-weight: normal;
   font-size: 110px;
+  font-size: 8.052708638360176VW;
   height: 90%;
   width: 80%;
   grid-column: 1 / span 4;
@@ -280,7 +281,7 @@ DESIGNERS ART SECTION
   font-size: 24px;
   font-family: Arimo;
   color: #D9D9D9;
-  grid-column: 1 / span 3;
+  grid-column: 2 / span 3;
   grid-row: 2;
   justify-self: center;
 } 

@@ -1,5 +1,6 @@
 import React from 'react'
 import redArrow from '../images/redarrowright.png'
+import '../styles/responsiveDesignersArt.css'
 // import '../styles/designersArtQuery.css'
 
 class DesignersArt extends React.Component {
@@ -15,7 +16,7 @@ class DesignersArt extends React.Component {
                     </p>
                     <img id='arr1' src={redArrow} alt='red arrow' />
                     <div id='daBG'>
-                        <h1>"If you want
+                        <h1 id='daBGQuote'>"If you want
                             momentum, you'll 
                             have to create it yourself, right now."
                         </h1>
