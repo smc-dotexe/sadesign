@@ -1,15 +1,18 @@
-@media (max-width: 1100px) {
-    #daAuthor {
-        grid-column: 2 / span 3;
+@media (min-width: 768px) and (max-width: 1100px) {
+
+    #daBG {
+        height: 90%;
     }
 
     #daBG h1{
+        color: green;
         line-height: 90px;
     }
 
     #daAuthor {
-        margin-top: -40px;
-        align-self: start;
+        grid-row: 2;
+        margin-top: -50px;
+        grid-column: 2 / span 3;
     }
 }
 
@@ -38,12 +41,14 @@
   }
 
   #daBG h1 {
+      color: blue;
       line-height: 50px;
   }
 
   #daAuthor {
       margin-left: 20px;
-      grid-row: 3;
+      grid-row: 2;
+      align-self: end;
   }
   
 }
@@ -80,7 +85,8 @@
 
     #daAuthor {
         margin-left: 20px;
-        grid-row: 3;
+        grid-row: 2;
+        align-self: end;
     }
   
     #myBrand {
