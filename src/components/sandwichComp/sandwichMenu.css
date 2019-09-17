@@ -102,19 +102,32 @@
 @media (min-width: 450px) and (max-width: 480px){
 
     .sandwichContainer {
-        grid-column: 3 / span 10;
+        grid-column: 1 / span 10;
+        width: 100%;
     }
 
-    #sandwichSarah, #sandwichAlonso,
+    #sandwichSarah {
+        justify-self: center;
+        margin: 0;
+    }
+    
+    #sandwichAlonso {
+        grid-column: 1;
+        justify-self: end;
+        margin-right: 100px;
+    }
+
     #sandwichDesign {
-        /* display: none; */
-    }    
+        margin-left: 0;
+    }
 
     #sandwichLinks {
-        justify-self: start;
+        justify-self: center;
         align-self: start;
+        grid-column: 1;
         margin-top: 10%;
-    }
+        margin-left: 10px;
+    } 
 }
 
 @media (min-width: 330px) and (max-width: 449px) {
