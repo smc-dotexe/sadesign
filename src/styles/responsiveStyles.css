@@ -1,9 +1,5 @@
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   
-  .intro {
-    color: blue;
-  }
-
   #sarah, #alonso, #design {
     line-height: 55px;
   }
@@ -44,8 +40,8 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   
-  .intro {
-    color: red;
+  header {
+    width: 65%;
   }
 
   #sarah, #alonso, #design {
@@ -78,10 +74,140 @@
   
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  .intro {
-    color: green;
+@media (min-width: 450px) and (max-width: 480px) {
+
+  .sandwichButtonContainer {
+    grid-column: 4;
+    justify-self: start;
+  }
+
+  header {
+    grid-column: 2;
+    align-self: start;
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 100%;
+  }
+
+  #sarah, #alonso, #design {
+    line-height: 39px;
+    font-size: 49px;
+  }
+
+  #year {
+    margin: 0;
+    font-size: 35px;
+    grid-column: 3;
+    justify-self: start;
+    align-self: center;
+  }
+
+  #quote {
+    display: none;
+  }
+
+  #arrow {
+    grid-column: 4;
+    justify-self: start;
   }
   
+  #goalDiv {
+    grid-column: 2;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 449px) {
+
+  #saLogo {
+    transform: translateX(0%);
+  }
+
+  #hours {
+    display: none;
+  }
+
+  header {
+    grid-column: 4 / span 5;
+    justify-self: start;
+    align-self: start;
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  #sarah, #alonso, #design {
+    line-height: 45px;
+    font-size: 49px;
+    font-size: 12.827225130890053VW;
+  }
+
+  #year {
+    grid-column: 5;
+    justify-self: start;
+    font-size: 35px;
+  }  
+
+  #quote {
+    display: none;
+  }
+
+  #arrow {
+    grid-column: 5;
+  }
+
+  .sandwichButtonContainer {
+    grid-column: 5;
+    justify-self: start;
+    margin-left: 10px;
+  }
+
+  #goalDiv {
+    margin-bottom: 7px;
+  }
+
+}
+
+@media (max-width: 329px) {
+  .containerBorder {
+    border: none;
+  }
+
+  .sandwichButtonContainer {
+    grid-column: 4 / span 5;
+  }
+
+  header {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    align-self: start;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  #sarah, #alonso, #design {
+    line-height: 40px;
+    font-size: 49px;
+  }
+
+  #year {
+    font-size: 40px;
+    grid-column: 4;
+    align-self: end;
+  }
+
+  #quote {
+    display: none;
+  }
+
+  #arrow {
+    grid-column: 5;
+  }
+
+  #goalDiv {
+    grid-column: 1;
+    margin-bottom: 8px;
+  }
+
+  #goal {
+    font-size: 30px;
+  }
 }
