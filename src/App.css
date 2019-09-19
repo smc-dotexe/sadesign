@@ -5,7 +5,7 @@ html {overflow-x: hidden; overflow-y: auto;}
 .App {text-align: center;}
 
 .containerBorder {
-  display: inline-block;
+  display: block;
   width: 10%;
   max-width: 185px;
   min-width: 88px;
@@ -35,7 +35,10 @@ html {overflow-x: hidden; overflow-y: auto;}
 
 .slide {
   height: 100vmin;
+  /* min-height: 300px; */
+  min-height: 100%;
   width: 100vw;
+  min-width: 300px;
   background-color: purple;
 }
 
@@ -154,12 +157,12 @@ font-size: 23px;
   padding-top: 10px;
 }
 
-#arrow {
-  grid-column: 4;
+/* #arrow {
+  grid-column: 5;
   grid-row: 2;
-  align-self: center;
+  align-self: end;
   justify-self: start;
-}
+} */
 
 #goalDiv {
   grid-column: 2 / -1;
@@ -185,8 +188,8 @@ DESIGNERS ART SECTION
   background-color: black;
   display: grid;
   min-height: 170vmin;
-  grid-template-columns: minmax(88px, 10%) 1fr 1fr 20%;
-  grid-template-rows: minmax(30vmin, auto) 40vmin minmax(60vmin, auto) minmax(15vmin, auto);
+  grid-template-columns: minmax(88px, 10%) minmax(min-content,auto) minmax(min-content,auto) minmax(min-content,20%);
+  grid-template-rows: minmax(min-content, auto) 40vmin minmax(min-content, auto) minmax(min-content, auto);
 }
 
 /* #border {
@@ -214,16 +217,18 @@ DESIGNERS ART SECTION
 }
 
 #daTitle {
+  display: block;
   margin-left: 10px;
   margin-top: 40px;
   grid-column: 2;
   grid-row: 2;
   height: 15vmin;
-  align-self: start;
+  align-self: center;
   color: #D9D9D9;
   font-family: Arimo;
   font-weight: normal;
-  font-size: 35px;
+  font-size: 30px;
+  /* font-size: 3.054989816700611VW; */
 }
 
 .designersArt p {
@@ -231,15 +236,17 @@ DESIGNERS ART SECTION
   grid-row: 2;
   margin-top: 1rem;
   padding-right: 10px;
-  align-self: start;
+  align-self: center;
   text-align: left;
   color: white;
   font-family: Arimo;
-  font-size: 23px;
+  font-size: 18px;
+  /* font-size: 2VW; */
 }
 
 #arr1 {
-  align-self: start;
+  align-self: center;
+  margin-left: 50px;
   margin-top: 50px;
   grid-column: 4;
   grid-row: 2;

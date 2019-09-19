@@ -55,9 +55,9 @@ class Intro extends React.Component {
                         </span>
                     </p>
                 </div>
-                <div id='arrow'>
+                {/* <div id='arrow'>
                     <img id='redArrowDown' src={redArrowDown} alt='red arrow'/>
-                </div>
+                </div> */}
                 <div id='goalDiv'>
                     <h1 id='goal'>My goal is simple
                         &#8212;

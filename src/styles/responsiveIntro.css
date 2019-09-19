@@ -65,6 +65,7 @@
   #arrow {
     grid-column: 5;
     padding-top: 25px;
+    
   }
   
 }
@@ -73,11 +74,13 @@
 
   .sandwichButtonContainer {
     grid-column: 4;
+    grid-row: 1;
     justify-self: start;
   }
 
   header {
     grid-column: 2;
+    grid-row: 1;
     align-self: start;
     margin-top: 30px;
     margin-left: 25px;
@@ -90,29 +93,31 @@
   }
 
   #year {
-    margin: 0;
     font-size: 35px;
     grid-column: 3;
+    grid-row: 1;
     justify-self: start;
-    align-self: center;
+    align-self: end;
+    margin-bottom: 150px;
   }
 
   #quote {
     display: none;
   }
 
-  #arrow {
+  /* #arrow {
     grid-column: 4;
     justify-self: start;
-  }
+  } */
   
   #goalDiv {
     grid-column: 2;
+    grid-row: 2;
     margin-bottom: 5px;
   }
 }
 
-@media (min-width: 350px) and (max-width: 449px) {
+@media (min-width: 410px) and (max-width: 449px) {
 
   #saLogo {
     transform: translateX(0%);
@@ -138,21 +143,26 @@
 
   #year {
     grid-column: 5;
-    justify-self: start;
+    grid-row: 1;
+    justify-self: end;
+    align-self: end;
     font-size: 35px;
+    margin-bottom: -50px;
+    
   }  
 
   #quote {
     display: none;
   }
 
-  #arrow {
+  /* #arrow {
     grid-column: 5;
-  }
+    align-self: start;
+  } */
 
   .sandwichButtonContainer {
     grid-column: 5;
-    justify-self: start;
+    justify-self: end;
     margin-left: 10px;
   }
 
@@ -162,7 +172,7 @@
 
 }
 
-@media (max-width: 349px) {
+@media (max-width: 409px) {
   .containerBorder {
     border: none;
   }
@@ -195,7 +205,10 @@
   #year {
     font-size: 40px;
     grid-column: 4;
-    align-self: end;
+    grid-row: 2;
+    justify-self: end;
+    align-self: start;
+    margin-top: 0;
   }
 
   #quote {
@@ -211,4 +224,23 @@
     margin-bottom: 8px;
   }
 
+}
+
+/***************
+HEIGHT PROPERTIES
+*****************/
+
+
+@media (max-height: 500px) {
+  #quote {
+    display: none;
+  }
+
+  #hours {
+    display: none;
+  }
+  
+  #arrow {
+    justify-self: end;
+  }
 }

@@ -194,3 +194,25 @@
         
     }     
 }
+
+/*****************
+HEIGHT PROPERTIES
+*****************/
+
+@media (max-height: 500px) {
+    #sandwichLinks {
+        margin-top: 50px;
+    }
+}
+
+@media (max-height: 300px) {
+    #sandwichLinks {
+        grid-row: 3;
+        align-self: start;
+        margin-top: 0;
+    }
+    .sandwichComp h4 {
+        display: none;
+    }
+}
+
