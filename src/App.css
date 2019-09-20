@@ -187,7 +187,9 @@ DESIGNERS ART SECTION
 .designersArt {
   background-color: black;
   display: grid;
-  min-height: 170vmin;
+  height: 100%;
+  max-height: 170vmin;
+  min-height: 100vmin;
   grid-template-columns: minmax(88px, 10%) minmax(min-content,auto) minmax(min-content,auto) minmax(min-content,20%);
   grid-template-rows: minmax(min-content, auto) 40vmin minmax(min-content, auto) minmax(min-content, auto);
 }
@@ -290,7 +292,7 @@ DESIGNERS ART SECTION
   color: #D9D9D9;
   grid-column: 2 / span 3;
   grid-row: 2;
-  margin-top: -50px;
+  /* margin-top: -50px; */
   justify-self: center;
 } 
 
@@ -324,7 +326,7 @@ DESIGN TRAINING SECTION
 .designTraining {
   background-color: black;
   display: grid;
-  grid-template-columns: minmax(min-content, 10%) 1fr 1fr;
+  grid-template-columns: minmax(88px, 10%) 1fr 1fr;
 
 }
 
@@ -356,6 +358,7 @@ DESIGN TRAINING SECTION
 #dtDescription {
   font-family: Arimo;
   font-size: 23px;
+  font-size: 1.6837481698389458VW;
   text-align: left;
   grid-row: 2;
   grid-column: 1 / span 2;
@@ -391,6 +394,13 @@ DESIGN TRAINING SECTION
   grid-column: 3;
   align-self: center;
   cursor: pointer;
+  width: 609px;
+  height: 456px;
+  width: 44.58272327964861VW;
+  height: 33.38213762811127VW;
+  min-width: 432px;
+  min-height: 305px;
+  /* border: 1px solid yellow; */
 }
 
 #slideShowCircles {
@@ -422,26 +432,39 @@ DESIGN TRAINING SECTION
 }
 
 #rumbleGram1 {
-  width: 668px;
-  height: 438px;
+  width: 100%;
+  height: 90%;
+  /* width: 48.90190336749634VW; */
+  /* height: 32.06442166910688VW; */
+  min-width: 340px;
+  min-height: 273px;
   background-image:url('./images/rumblegram1.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   animation: fading 0.6s;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 #rumbleGram1None {
   display: none;
 }
 
 #rumbleGram2 {
   grid-column: 3;
-  width: 668px;
-  height: 438px;
+  width: 100%;
+  height: 90%;
+  /* width: 48.90190336749634VW;
+  height: 32.06442166910688VW; */
+  min-width: 340px;
+  min-height: 273px;
   background-image: url('./images/laptop.png');
   background-position: center center;
   background-repeat: no-repeat;
   animation: fading 0.6s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #rumbleGram2None {

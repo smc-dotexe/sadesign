@@ -1,0 +1,66 @@
+@media (max-width: 1065px) {
+    .designTraining {
+        display: grid;
+        grid-template-columns: minmax(88px, 10%) 1fr;
+        grid-template-rows: minmax(354px, max-content) minmax(min-content, max-content);
+        /* background-color: maroon; */
+    }
+
+    #rumbleSlideShow {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #rumbleGram, #rumbleGram2 {
+        object-fit: fill;
+    }
+
+    #dtDescriptorDiv {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+        align-self: start;
+    }
+
+    #designTrainingTitle {
+        display: none;
+    }
+
+    #dtDescription { 
+        width: 80%;
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 410px) and (max-width: 514px) {
+
+    #rumbleSlideShow {
+        grid-column: 1 / span 2;
+    }
+    #dtDescriptorDiv {
+        margin: 0;
+    }
+    #dtDescription {
+        padding-left: 5px;
+        justify-self: start;
+        font-size: 14px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 409px) {
+    #rumbleSlideShow {
+        grid-column: 1 / span 2;
+    }
+
+    #dtDescriptorDiv {
+        grid-column: 1 / span 2;
+    }
+
+    #dtDescription {
+        font-size: 16px;
+    }
+}
