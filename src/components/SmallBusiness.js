@@ -26,15 +26,17 @@ class SmallBusiness extends React.Component {
 
         return (
             <div className='slide smallBusiness'>
-                <h1 id='smlHeading'>SML BUSINESS</h1>
-                <img id='pdb' src={menuImageSwitch} alt='pdbClient' />
-                <img id='pdbGlitch' src={glitchImageSwitch} alt='pdbGlitch' />
-                <h1 id='lrgROI'>
-                    LRG ROIs
-                </h1>
-                <h1 id='onethousand'>
-                 1000
-                </h1>
+                <div id="smlContainer">
+                    <h1 id='smlHeading'>SML BUSINESS</h1>
+                    <img id='pdb' src={menuImageSwitch} alt='pdbClient' />
+                    <img id='pdbGlitch' src={glitchImageSwitch} alt='pdbGlitch' />
+                    <h1 id='lrgROI'>
+                        LRG ROIs
+                    </h1>
+                    <h1 id='onethousand'>
+                    1000
+                    </h1>
+                </div>
                 <p id='pdbQuote'>
                     "Success need not be complicated. Just start with making 1,000
                     people extremely, extremely happy...True fans are not only the

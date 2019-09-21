@@ -191,7 +191,7 @@ DESIGNERS ART SECTION
   background-color: black;
   display: grid;
   height: 100%;
-  max-height: 170vmin;
+  /* max-height: 170vmin; */
   min-height: 100vmin;
   grid-template-columns: minmax(88px, 10%) minmax(min-content,auto) minmax(min-content,auto) minmax(min-content,20%);
   grid-template-rows: minmax(min-content, auto) 40vmin minmax(min-content, auto) minmax(min-content, auto);
@@ -486,16 +486,22 @@ SMALL BUSINESS SECTION
   margin-top: 40px;
   background-color: black;
   display: grid;
-  grid-template-columns: minmax(88px, 10%) 1fr 1fr;
-  grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
+  grid-template-columns: minmax(88px, 10%) auto 1fr;
+  grid-template-rows: minmax(min-content, max-content) minmax(min-content, auto) minmax(min-content, max-content);
   grid-gap: 10px;
 }
 
-#pdbBorder {
+#smlContainer {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  display: grid;
+}
+
+/* #pdbBorder {
   grid-column: 1;
   grid-row: 1 / span 2;
   border-right: 1px solid white;
-}
+} */
 
 #smlHeading {
   grid-column: 2;
@@ -514,7 +520,6 @@ SMALL BUSINESS SECTION
 }
 
 #pdb {
-  border: 1px solid yellow;
   background-color: rgba(0, 0, 0, 0.3);
   grid-column: 2 / span 3;
   grid-row: 1;
