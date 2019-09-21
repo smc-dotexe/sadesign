@@ -1,0 +1,38 @@
+@media (max-width: 654px) {
+    #contactInfo {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contactPhone {
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: start;
+    }
+
+    #contactAddress {
+        grid-column: 2;
+        grid-row: 3;
+        justify-self: start;
+    }
+
+    #socialMedia {
+        align-self: start;
+    }
+
+    #privacyPolicy {
+        justify-self: start;
+    }
+
+    #copyright {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+}
+
+@media (max-width: 409px) {
+    #contactInfo {
+        grid-column: 1 / span 2;
+        padding-left: 10px;
+    }
+}

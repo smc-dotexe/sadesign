@@ -1,5 +1,5 @@
 import React from 'react'
-// import '../styles/contactQuery.css'
+import '../styles/responsiveContact.css'
 
 class Contact extends React.Component {
     render() {
