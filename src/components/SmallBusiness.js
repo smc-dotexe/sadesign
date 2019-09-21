@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/smallBusinessQuery.css'
+import '../styles/responsiveSmallBusiness.css'
 import pdb from '.././images/pdb.png'
 import pdbMenuMobile from '.././images/pdbMenu_Mobile.png'
 // import pdbGlitch from '.././images/saDualGlitch_Web.svg'
@@ -26,7 +26,6 @@ class SmallBusiness extends React.Component {
 
         return (
             <div className='slide smallBusiness'>
-                <div className='border'></div>
                 <h1 id='smlHeading'>SML BUSINESS</h1>
                 <img id='pdb' src={menuImageSwitch} alt='pdbClient' />
                 <img id='pdbGlitch' src={glitchImageSwitch} alt='pdbGlitch' />

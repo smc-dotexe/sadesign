@@ -1,6 +1,10 @@
 * {margin: 0;}
 
-html {overflow-x: hidden; overflow-y: auto;}
+html {
+  overflow-x: hidden; 
+  overflow-y: auto;
+  background-color: black;
+}
 
 .App {text-align: center;}
 
@@ -34,12 +38,11 @@ html {overflow-x: hidden; overflow-y: auto;}
 }
 
 .slide {
-  height: 100vmin;
+  /* height: 100vmin; */
   /* min-height: 300px; */
   min-height: 100%;
   width: 100vw;
   min-width: 300px;
-  background-color: purple;
 }
 
 
@@ -480,10 +483,12 @@ DESIGN TRAINING SECTION
 SMALL BUSINESS SECTION
 ***********************/
 .smallBusiness {
+  margin-top: 40px;
   background-color: black;
   display: grid;
-  grid-template-columns: minmax(min-content, 11.8%) 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: minmax(88px, 10%) 1fr 1fr;
+  grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) minmax(min-content, max-content);
+  grid-gap: 10px;
 }
 
 #pdbBorder {
@@ -496,17 +501,21 @@ SMALL BUSINESS SECTION
   grid-column: 2;
   grid-row: 1;
   justify-self: start;
+  align-self: start;
   margin-left: 40px;
+  margin-left: 2.9282576866764276VW;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   font-family: Chap Light;
   font-size: 82px;
+  font-size: 6.002928257686676VW;
   font-weight: normal;
 }
 
 #pdb {
-  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid yellow;
+  background-color: rgba(0, 0, 0, 0.3);
   grid-column: 2 / span 3;
   grid-row: 1;
   align-self: center;
@@ -514,6 +523,8 @@ SMALL BUSINESS SECTION
   margin-left: 40px;
   height: 358.66px;
   width: 956.42px;
+  height: 26.251830161054173VW;
+  width: 70.01610541727672VW;
   object-fit: none;
 }
 
@@ -522,6 +533,8 @@ SMALL BUSINESS SECTION
   grid-row: 1;
   height: 542.4px;
   width: 980.49px;
+  height: 39.70717423133235VW;
+  width: 71.77818448023426VW;
   opacity: 0.5;
 }
 
@@ -529,6 +542,7 @@ SMALL BUSINESS SECTION
   color: white;
   font-family: Chap Light;
   font-size: 82px;
+  font-size: 6.002928257686676VW;
   font-weight: normal;
   grid-column: 2;
   grid-row: 1;
@@ -536,6 +550,8 @@ SMALL BUSINESS SECTION
   justify-self: start;
   margin-left: 40px;
   margin-bottom: 47px;
+  margin-left: 2.9282576866764276VW;
+  margin-bottom: 3.4407027818448026VW;
 
 }
 
@@ -545,6 +561,7 @@ SMALL BUSINESS SECTION
   -webkit-text-stroke-color: white;
   font-family: Chap Light;
   font-size: 82px;
+  font-size: 6.002928257686676VW;
   font-weight: normal;
   grid-column: 2;
   grid-row: 1;
@@ -552,15 +569,19 @@ SMALL BUSINESS SECTION
   align-self: end;
   margin-bottom: 60px;
   margin-right: 115px;
+  margin-bottom: 4.392386530014641VW;
+  margin-right: 8.41874084919473VW;
 }
 
 #pdbQuote {
   font-family: Arimo;
   color: white;
   font-size: 24px;
+  font-size: 1.7569546120058566VW;
   grid-column: 2;
   grid-row: 2;
   justify-self: start;
+  align-self: center;
   margin-left: 30px;
   width: 70%;
 }
@@ -569,10 +590,15 @@ SMALL BUSINESS SECTION
   font-family: Chap Light;
   color: white;
   font-size: 36px;
+  font-size: 2.635431918008785VW;
   grid-row: 2;
   grid-column: 2;
   justify-self: end;
   align-self: center;
+  display: block;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 30px;
 }
 
 #pdbArrow {
