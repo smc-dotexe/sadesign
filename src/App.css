@@ -16,6 +16,8 @@ html {
     overflow-x: hidden;
 }
 
+@font-face { font-family: ChapLight; src: url('./fonts/ChapLight.otf')}
+
 .App {
   text-align: center;
 }
@@ -44,7 +46,7 @@ html {
 }
 
 #hours {
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-size: 18px;
   position: fixed;
   bottom:0;
@@ -126,7 +128,7 @@ header {
 header h1 {
   margin: 0;
   padding: 0;
-  font-family: Chap, Light;
+  font-family: ChapLight;
   font-size: 87px;
   font-size: 6.359649122807018VW;
   font-weight: normal;
@@ -148,7 +150,7 @@ header #design {
 }
 
 #year {
-  font-family: Chap, Light;
+  font-family: ChapLight;
   font-size: 87px;
   font-size: 6.359649122807018VW;
   font-weight: normal;
@@ -197,7 +199,7 @@ font-size: 23px;
 }
 
 #goal {
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-weight: normal;
   font-size: 107px;
   font-size: 7.833089311859444VW;
@@ -230,7 +232,7 @@ DESIGNERS ART SECTION
   font-size: 107px;
   font-size: 7.833089311859444VW;;
   color: white;
-  font-family: Chap Light;
+  font-family: ChapLight;
   margin-top: 0;
   margin-left: 10px;
   /* display: block; */
@@ -297,7 +299,7 @@ DESIGNERS ART SECTION
   color: white;
   padding: 0;
   text-align: left;
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-weight: normal;
   font-size: 110px;
   font-size: 8.052708638360176VW;
@@ -391,7 +393,7 @@ DESIGN TRAINING SECTION
 
 #rumbleCaseStudyHeader {
   color: #D9D9D9;
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-size: 36px;
   font-weight: normal;
   /* grid-row: 3; */
@@ -534,7 +536,7 @@ SMALL BUSINESS SECTION
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-size: 82px;
   font-size: 6.002928257686676VW;
   font-weight: normal;
@@ -566,7 +568,7 @@ SMALL BUSINESS SECTION
 
 #lrgROI {
   color: white;
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-size: 82px;
   font-size: 6.002928257686676VW;
   font-weight: normal;
@@ -585,7 +587,7 @@ SMALL BUSINESS SECTION
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-size: 82px;
   font-size: 6.002928257686676VW;
   font-weight: normal;
@@ -613,7 +615,7 @@ SMALL BUSINESS SECTION
 }
 
 #phoDauBoLink {
-  font-family: Chap Light;
+  font-family: ChapLight;
   color: white;
   font-size: 36px;
   font-size: 2.635431918008785VW;
@@ -677,7 +679,7 @@ CONTACT SECTION
 
 #contactAddress {
   margin-top: 11px;
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-size: 16px;
   color: #D9D9D9;
   grid-column: 1;
@@ -688,7 +690,7 @@ CONTACT SECTION
 
 #contactPhone {
   margin-top: 11px;
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-size: 11px;
   color: #D9D9D9;
   grid-column: 1;
@@ -729,7 +731,7 @@ CONTACT SECTION
 }
 
 #copyright {
-  font-family: Chap Light;
+  font-family: ChapLight;
   font-size: 11px;
   color: #D9D9D9;
   grid-column: 1;

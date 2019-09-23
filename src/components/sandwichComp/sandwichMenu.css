@@ -27,7 +27,7 @@
 }
 
 .sandwichComp h4 {
-    font-family: Chap Light;
+    font-family: ChapLight;
     font-weight: normal;
     font-size: 24px;
 }
@@ -73,7 +73,7 @@
     grid-column: 1/ span 2;
     grid-row: 5;
     line-height: 25px;
-    font-family: Chap Light;
+    font-family: ChapLight;
     font-size: 16px;
     align-self: center;
     justify-self: center;
