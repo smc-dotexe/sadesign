@@ -1,5 +1,6 @@
 @media (max-width: 1065px) {
     .designTraining {
+        height: 85vmin;
         display: grid;
         grid-template-columns: minmax(88px, 10%) 1fr;
         grid-template-rows: minmax(354px, max-content) minmax(min-content, max-content);
@@ -37,6 +38,10 @@
 
 @media (min-width: 410px) and (max-width: 514px) {
 
+    .designTraining {
+        height: 145vmin;
+    }
+
     #rumbleSlideShow {
         grid-column: 1 / span 2;
     }
@@ -53,6 +58,9 @@
 }
 
 @media (max-width: 409px) {
+    .designTraining {
+        height: 165vmin;
+    }
     #rumbleSlideShow {
         grid-column: 1 / span 2;
     }

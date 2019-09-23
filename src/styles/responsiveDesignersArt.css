@@ -17,15 +17,15 @@
 
 @media (min-width: 600px) and (max-width: 767px) {
   #daTitle {
-      grid-row: 2;
+      grid-row: 1;
       grid-column: 2 / span 3;
-      align-self: start;
-      margin-top: 50px;
+      align-self: center;
+      /* margin-top: 50px; */
       /* margin-bottom: -50px; */
   }
 
   #daTitleDescription {
-      align-self: center;
+      align-self: start;
       grid-column: 2 / span 3;
       margin-left: 10px;
   }
@@ -262,12 +262,12 @@ HEIGHT PROPERTIES
 
 
 @media (max-width: 767px) and (min-height: 300px) {
-    #daTitle {
+    /* #daTitle {
         display: none;
-    }
+    } */
 
     #arr1 {
-        justify-self: end;
+        justify-self: center;
     }
 }
 

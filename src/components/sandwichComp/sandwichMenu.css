@@ -23,6 +23,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20px 30px 20px 20px 1fr;
     transform: translateX(0);
+    overflow-y: hidden;
 }
 
 .sandwichComp h4 {
