@@ -1,9 +1,19 @@
-* {margin: 0;}
+* {
+  margin: 0;
+  /* background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important; */
+}
 
 html {
-  overflow-x: hidden; 
+  /* overflow-x: hidden;  */
   overflow-y: auto;
   background-color: black;
+      width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 .App {
@@ -13,6 +23,9 @@ html {
 .pageContainer {
   overflow-y: hidden;
   overflow-x: auto;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 .containerBorder {
@@ -48,7 +61,7 @@ html {
   /* height: 100vmin; */
   /* min-height: 300px; */
   min-height: 100%;
-  width: 100vw;
+  width: 100%;
   min-width: 300px;
 }
 
@@ -533,7 +546,7 @@ SMALL BUSINESS SECTION
   grid-row: 1;
   align-self: center;
   justify-self: center;
-  margin-left: 40px;
+  margin-left: 20px;
   height: 358.66px;
   width: 956.42px;
   height: 26.251830161054173VW;
@@ -725,4 +738,18 @@ CONTACT SECTION
   align-self: start;
   opacity: 0.3;
   margin-right: -70px;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
 }
