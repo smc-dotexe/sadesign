@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/responsiveSmallBusiness.css'
-import pdb from '.././images/pdb.png'
+import pdb from '.././images/pdbImage.png'
 import pdbMenuMobile from '.././images/pdbMenu_Mobile.png'
 // import pdbGlitch from '.././images/saDualGlitch_Web.svg'
 import pdbGlitch from '.././images/pdbDualGlitch.png'
@@ -17,7 +17,7 @@ class SmallBusiness extends React.Component {
         //Switch web and mobile images depending on window size
         let menuImageSwitch, glitchImageSwitch
         if (this.props.passWindowWidth < 600) {
-            menuImageSwitch = pdbMenuMobile
+            menuImageSwitch = pdb
             glitchImageSwitch = pdbGlitchMobile
         } else {
             menuImageSwitch = pdb

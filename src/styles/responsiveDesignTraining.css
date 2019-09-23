@@ -63,5 +63,14 @@
 
     #dtDescription {
         font-size: 16px;
+        justify-self: start;
+    }
+
+    #redBoxArrowRight {
+        justify-self: start;
+    }
+
+    #rumbleCaseStudyHeader {
+        margin-left:-50px;
     }
 }

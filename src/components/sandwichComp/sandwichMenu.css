@@ -6,9 +6,9 @@
 
 .sandwichComp {
     /* max-width: 200px; */
-    min-width: 164px;
+    width: 200px;
     background-color: black;
-    grid-area: rNav;
+    position: fixed;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -85,46 +85,76 @@
 }
 
 
-@media only screen and (max-width: 600px) {
-    .sandwichComp h4 {
-        margin-left: 20px;
-    }
-
-    #sandwichLinks {
-        margin-left: 5px;
-    }
-
+@media (min-width: 800px) and (max-width: 1200px) {
     #sandwichAlonso {
-        margin:0;
+        margin-right: 50px;
     }
 }
 
-@media (min-width: 450px) and (max-width: 480px){
-
-    .sandwichContainer {
-        grid-column: 1 / span 10;
-        width: 100%;
+@media (min-width: 600px) and (max-width: 799px) {
+    .sandwichComp h4 {
+        margin-left: 2px;
     }
 
     #sandwichSarah {
+        justify-self: start;
+    }
+
+    #sandwichAlonso {
+        margin-right: 50px;
+    }
+
+    #sandwichDesign {
+        justify-self: start;
+    }
+
+    .sandwichComp {
+        color: blue;
+    }
+    #sandwichLinks {
+        margin-left: -85px;
+    }
+
+    /* #sandwichAlonso {
+        margin:0;
+    } */
+}
+
+
+@media (min-width: 450px) and (max-width: 599px){
+
+    .sandwichContainer {
+        grid-column: 1 / span 3;
+    }
+
+    .sandwichComp {
+        width: 100%;    
+    }
+
+    #sandwichMenuExit {
+        grid-column: 2;
         justify-self: center;
+    }
+    #sandwichSarah {
+        justify-self: center;
+        grid-column: 1 / span 2;
         margin: 0;
     }
     
     #sandwichAlonso {
-        grid-column: 1;
-        justify-self: end;
-        margin-right: 100px;
+        grid-column: 2;
+        justify-self: start;
     }
 
     #sandwichDesign {
-        margin-left: 0;
+        grid-column: 1 / span 2;
+        justify-self: center;
     }
 
     #sandwichLinks {
         justify-self: center;
         align-self: start;
-        grid-column: 1;
+        grid-column: 1 / span 2;
         margin-top: 10%;
         margin-left: 10px;
     } 
@@ -132,67 +162,78 @@
 
 @media (min-width: 330px) and (max-width: 449px) {
     .sandwichContainer {
-        grid-column: 1 / span 10;
-        width: 100%;
+        grid-column: 1 / span 3;
+    }
+
+    .sandwichComp {
+        width: 100%;    
     }
 
     #sandwichMenuExit {
+        grid-column: 2;
         justify-self: center;
     }
-
     #sandwichSarah {
-        justify-self: end;
+        justify-self: center;
+        grid-column: 1 / span 2;
+        margin: 0;
     }
-
+    
     #sandwichAlonso {
         grid-column: 2;
         justify-self: start;
     }
 
     #sandwichDesign {
-        justify-self: end;
+        grid-column: 1 / span 2;
+        justify-self: center;
     }
 
     #sandwichLinks {
         justify-self: center;
         align-self: start;
+        grid-column: 1 / span 2;
         margin-top: 10%;
-        
-    }  
+        margin-left: 10px;
+    }   
 }
 
 @media (max-width: 329px) {
     .sandwichContainer {
-        grid-column: 1 / -1;
-        width: 100%;
+        grid-column: 1 / span 3;
+    }
+
+    .sandwichComp {
+        width: 100%;    
     }
 
     #sandwichMenuExit {
-        justify-self: start;
-        grid-row: 2;
         grid-column: 2;
-        margin-left: 60px;
+        justify-self: center;
     }
-
     #sandwichSarah {
-        justify-self: end;
+        justify-self: center;
+        grid-column: 1 / span 2;
+        margin: 0;
     }
-
+    
     #sandwichAlonso {
         grid-column: 2;
         justify-self: start;
     }
 
     #sandwichDesign {
-        justify-self: end;
+        grid-column: 1 / span 2;
+        justify-self: center;
     }
 
     #sandwichLinks {
         justify-self: center;
         align-self: start;
+        grid-column: 1 / span 2;
         margin-top: 10%;
-        
-    }     
+        margin-left: 10px;
+    }      
 }
 
 /*****************

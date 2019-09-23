@@ -6,7 +6,14 @@ html {
   background-color: black;
 }
 
-.App {text-align: center;}
+.App {
+  text-align: center;
+}
+
+.pageContainer {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
 
 .containerBorder {
   display: block;
@@ -224,7 +231,7 @@ DESIGNERS ART SECTION
 #daTitle {
   display: block;
   margin-left: 10px;
-  margin-top: 40px;
+  margin-top: 79px;
   grid-column: 2;
   grid-row: 2;
   height: 15vmin;
@@ -530,7 +537,7 @@ SMALL BUSINESS SECTION
   width: 956.42px;
   height: 26.251830161054173VW;
   width: 70.01610541727672VW;
-  object-fit: none;
+  /* object-fit: none; */
 }
 
 #pdbGlitch {

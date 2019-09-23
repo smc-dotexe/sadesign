@@ -37,4 +37,15 @@
     #pdbQuote {
         grid-column: 1 / span 3;
     }
+
+    #phoDauBoLink {
+        grid-column: 1 / span 3;
+        justify-self: start;
+    }
+
+    #pdbArrow {
+        grid-column: 2 / span 3;
+        justify-self: center;
+        margin-left: 50px;
+    }
 }
