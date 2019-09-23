@@ -68,6 +68,7 @@ INTRO PAGE SECTION
   color: white;
   display: grid;
   grid-template-columns: minmax(88px, 10%) 1fr 1fr 170px minmax(150px,14%);
+  width: 100%;
 }
 
 .sandwichButtonContainer {

@@ -261,11 +261,17 @@ HEIGHT PROPERTIES
 
 
 
-@media (max-width: 767px) and (max-height: 300px) {
+@media (max-width: 767px) and (min-height: 300px) {
     #daTitle {
         display: none;
     }
+
+    #arr1 {
+        justify-self: end;
+    }
 }
+
+
 /* 
 @media (min-height:401px) and (max-height: 500px) {
 
