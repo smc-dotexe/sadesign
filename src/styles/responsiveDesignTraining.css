@@ -82,3 +82,9 @@
         margin-left:-50px;
     }
 }
+
+@media (max-height: 370px) {
+    .designTraining {
+        height: 165vmin;
+    }
+}
