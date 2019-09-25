@@ -145,7 +145,7 @@
     grid-column: 5;
     grid-row: 1;
     justify-self: end;
-    align-self: end;
+    align-self: start;
     font-size: 35px;
     margin-bottom: -50px;
     
@@ -204,10 +204,10 @@
 
   #year {
     font-size: 40px;
-    grid-column: 4;
-    grid-row: 2;
-    justify-self: end;
-    align-self: start;
+    grid-column: 4 / span 5;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
     margin-top: 0;
   }
 
@@ -224,6 +224,12 @@
     margin-bottom: 8px;
   }
 
+}
+
+@media (max-width: 360px) {
+  #year {
+    align-self: end;
+  }
 }
 
 /***************

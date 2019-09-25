@@ -1,6 +1,27 @@
 @media (min-width: 768px) and (max-width: 1100px) {
+    .designersArt {
+        grid-template-rows: repeat(5, min-content);
+    }
+
+    #daTitle {
+        margin-top: 50px;
+        height: 0;
+        grid-row: 2;
+    }
+
+    #daTitleDescription {
+        grid-row: 3;
+        grid-column: 2 / span 3;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    #arr1 {
+        grid-row: 4;
+    }
 
     #daBG {
+        grid-row: 5;
         height: 90%;
     }
 
@@ -13,31 +34,47 @@
         margin-top: -50px;
         grid-column: 2 / span 3;
     }
+
+    #arr2 {
+        align-self: center;
+        margin-top: 20px;
+    }
+
 }
 
 @media (min-width: 600px) and (max-width: 767px) {
+    .designersArt {
+        grid-template-rows: repeat(5, min-content);
+    }
   #daTitle {
-      grid-row: 1;
+      grid-row: 2;
       grid-column: 2 / span 3;
       align-self: center;
+      margin-top: 50px;
+      height: 20px;
       /* margin-top: 50px; */
       /* margin-bottom: -50px; */
   }
 
   #daTitleDescription {
+      grid-row: 3;
       align-self: start;
       grid-column: 2 / span 3;
       margin-left: 10px;
   }
 
   #arr1 {
-      grid-column: 3;
+      grid-column: 4;
+      grid-row: 4;
       justify-self: center;
       align-self: end;
       margin-bottom: 30px;
+      margin-left: 0;
+      margin-top: 0;
   }
 
   #daBG {
+    grid-row: 5;
     line-height: 30px;
     height: 50%;
   }
@@ -55,30 +92,38 @@
 }
 
 @media (min-width: 481px) and (max-width: 599px) {
+    .designersArt {
+        grid-template-rows: repeat(5,min-content);
+    }
     #daTitle {
         grid-row: 2;
         grid-column: 2 / span 3;
         align-self: start;
         margin-top: 20px;
         font-size: 25px;
+        height: 20px;
     }
 
     #daTitleDescription {
         grid-column: 2 / span 3;
+        grid-row: 3;
         margin-left: 10px;
         font-size: 19px;
     }
 
     #arr1 {
         grid-column: 3;
+        grid-row: 4;
         justify-self: center;
         align-self: end;
         margin-bottom: 10px;
+        margin-top: 10px;
     }
 
     #daBG {
         line-height: 30px;
         height: 60%;
+        grid-row: 5;
     }
 
     #daBG h1 {
