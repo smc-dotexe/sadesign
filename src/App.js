@@ -29,13 +29,21 @@ class App extends React.Component {
       console.log('windowidth = ', this.state.windowWidth)
       console.log('windowheight = ', this.state.windowHeight)
   }
+
+  scrollToTop = () => {
+    window.scrollTo({
+      top:0,
+      left:0,
+      behavior: 'smooth'
+    });
+  }
   render() {
     return (
       <React.Fragment>
       {/*<div className='pageContainer'> */}
         <div className='containerBorder'>
             {/* <div className='leftNav'> */}
-                <img id='saLogo' src={saLogo} alt='logo' />
+                <img id='saLogo' src={saLogo} alt='logo' onClick={this.scrollToTop}/>
                 <p id='hours'>M-M <br/> 00:00-00:00</p>
             {/* </div> */}
         
