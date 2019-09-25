@@ -1,28 +1,25 @@
 .sandwichContainer {
-    grid-column: 5;
-    height: 100vmin;
-    grid-row: 1 / span 2;
+    position: absolute;
+    right: 0;
+    top:0;   
 }
 
 .sandwichComp {
-    /* max-width: 200px; */
     width: 250px;
     background-color: black;
     position: fixed;
-    height: 100%;
+    height: 110vmin;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20px 30px 20px 20px 1fr;
-    transform: translateX(120%);
+    transform: translateX(-100%);
     transition: transform 0.6s ease-out;
-    z-index: 100;
+    z-index: 10;
 }
 
 .sandwichComp.slider {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px 30px 20px 20px 1fr;
-    transform: translateX(0);
+    transform: translateX(100%);
     overflow-y: hidden;
 }
 
@@ -30,12 +27,14 @@
     font-family: ChapLight;
     font-weight: normal;
     font-size: 24px;
+    color: white;
 }
 
 #sandwichMenuExit {
     cursor: pointer;
     grid-column: 2;
     grid-row: 1;
+    color: white;
 }
 
 
@@ -75,8 +74,13 @@
     line-height: 25px;
     font-family: ChapLight;
     font-size: 16px;
+    color: white;
     align-self: center;
     justify-self: center;
+}
+
+#sandwichLinks a {
+    text-decoration: none;
 }
 
 #sandwichLinks li {
@@ -113,10 +117,6 @@
     #sandwichLinks {
         margin-left: -85px;
     }
-
-    /* #sandwichAlonso {
-        margin:0;
-    } */
 }
 
 

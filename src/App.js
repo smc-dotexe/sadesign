@@ -1,33 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import './App.css';
+import './components/sandwichComp/sandwichMenu.css'
 import './animations.css';
-// import './styles/introQuery.css'
-// import './styles/responsiveStyles.css'
 import saLogo from './images/sa.png'
-import Intro from './components/Intro'
-import DesignersArt from './components/DesignersArt'
-import DesignTraining from './components/DesignTraining'
-import SmallBusiness from './components/SmallBusiness'
-import Contact from './components/Contact'
+import SandwichMenu from './components/sandwichComp/SandwichMenu.js'
+import Home from './components/Home'
+import AboutPage from './components/aboutPage/About.js'
+
 
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
-      windowWidth: window.innerWidth,
-      windowHeight: window.innerHeight,
+      displayMenu: true,
     }
-  }
-
-  setWindowDimensions = () => {
-      this.setState({
-        windowWidth: window.innerWidth,
-        windowHeight: window.innerHeight,
-      })
-
-      console.log('windowidth = ', this.state.windowWidth)
-      console.log('windowheight = ', this.state.windowHeight)
   }
 
   scrollToTop = () => {
@@ -37,31 +25,62 @@ class App extends React.Component {
       behavior: 'smooth'
     });
   }
+
+  sandwichMenu = () => {
+      this.setState(prevState => ({displayMenu: !prevState.displayMenu}))
+  }
+
+
   render() {
+    let sandwichBtnAnimation;
+    if (this.state.displayMenu===false) {
+        sandwichBtnAnimation = 'sandwichButtonContainer close'
+    } else {
+        sandwichBtnAnimation = 'sandwichButtonContainer'
+    }
+
+    let menuClass;
+    if (this.state.displayMenu) {
+        menuClass = 'sandwichComp slider'
+    } else {
+        menuClass ='sandwichComp'
+    }
+
+
     return (
-      <React.Fragment>
-      {/*<div className='pageContainer'> */}
+      <Router>
+      <div className='App'>
         <div className='containerBorder'>
-            {/* <div className='leftNav'> */}
                 <img id='saLogo' src={saLogo} alt='logo' onClick={this.scrollToTop}/>
-                <p id='hours'>M-M <br/> 00:00-00:00</p>
-            {/* </div> */}
-        
+                <p id='hours'>M-M <br/> 00:00-00:00</p>        
         </div>
-        <Intro 
-          passWindowWidth={this.state.windowWidth}
-          passWindowHeight={this.state.windowHeight}
-          passSetWindowDimensions={this.setWindowDimensions}
-        />
-        <DesignersArt />
-        <DesignTraining />
-        <SmallBusiness 
-          passWindowWidth={this.state.windowWidth}
-          passWindowHeight={this.state.windowHeight}
-        />
-        <Contact />
-      {/*</div> */}
-      </React.Fragment>
+
+        <div className={sandwichBtnAnimation} onClick={this.sandwichMenu}>
+            <div className='sandwich'></div>
+            <div className='sandwich'></div>
+            <div className='sandwich'></div>
+        </div>
+        <div className='sandwichContainer'>
+          <div className={menuClass}>
+              <p id='sandwichMenuExit' onClick={this.sandwichMenu}>x</p>
+              <h4 id='sandwichSarah'>Sarah</h4><br/>
+              <h4 id='sandwichAlonso'>Alonso</h4>
+              <h4 id='sandwichDesign'>Design</h4>
+              <ul id='sandwichLinks'>
+                  <li><Link to='/'>Home</Link></li>
+                  <li><Link to='/about'>About</Link></li>
+                  <li>Work</li>
+                  <li>Case Study</li>
+                  <li>Contact</li>
+              </ul>
+          </div>         
+        </div>
+        <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/about' component={AboutPage} />
+        </Switch>   
+      </div>
+      </Router>
     );
   }
 
