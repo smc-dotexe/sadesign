@@ -86,7 +86,7 @@ html {
   /* min-height: 300px; */
   /* min-height: 100%; */
   width: 100%;
-  min-height:500px;
+  min-height:600px;
 
 }
 
@@ -487,6 +487,7 @@ SMALL BUSINESS SECTION
   grid-column: 2 / 4;
   grid-row: 1;
   display: grid;
+  position: relative;
 }
 
 #smlHeading {
@@ -503,6 +504,9 @@ SMALL BUSINESS SECTION
   font-size: 82px;
   font-size: 6.002928257686676VW;
   font-weight: normal;
+  z-index: 1;
+  position: absolute;
+  top: 8vmin;
 }
 
 #pdb {
@@ -516,6 +520,7 @@ SMALL BUSINESS SECTION
   width: 956.42px;
   height: 26.251830161054173VW;
   width: 70.01610541727672VW;
+  position: relative;
 }
 
 #pdbGlitch {
@@ -542,7 +547,10 @@ SMALL BUSINESS SECTION
   margin-bottom: 47px;
   margin-left: 2.9282576866764276VW;
   margin-bottom: 3.4407027818448026VW;
-
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 #onethousand {
@@ -561,6 +569,10 @@ SMALL BUSINESS SECTION
   margin-right: 115px;
   margin-bottom: 4.392386530014641VW;
   margin-right: 8.41874084919473VW;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 #pdbQuote {

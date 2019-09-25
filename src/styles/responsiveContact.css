@@ -31,6 +31,9 @@
 }
 
 @media (max-width: 409px) {
+    .contact {
+        margin-top: -50px;
+    }
     #contactInfo {
         grid-column: 1 / span 2;
         padding-left: 10px;

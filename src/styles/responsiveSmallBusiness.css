@@ -2,7 +2,19 @@
 
     .smallBusiness {
         grid-template-columns: minmax(88px, 10%) auto auto;
-        height: 100vh;
+        grid-template-rows: min-content min-content min-content;
+    }
+
+    #smlHeading {
+        top: 0;
+    }
+
+    #lrgROI {
+        bottom: 0;
+    }
+
+    #onethousand {
+        bottom: 0;
     }
 
     #pdbQuote {
@@ -33,10 +45,25 @@
 }
 
 @media (max-width: 409px) {
+    .smallBusiness {
+        grid-template-rows: min-content min-content min-content;
+    }
+
     #smlContainer {
         grid-column: 1 / span 3;
     }
 
+    #smlHeading {
+        top: 0;
+    }
+
+    #lrgROI {
+        bottom: 0;
+    }
+
+    #onethousand {
+        bottom: 0;
+    }
     #pdbQuote {
         grid-column: 1 / span 3;
     }
