@@ -32,6 +32,7 @@ class App extends React.Component {
 
 
   render() {
+    console.log('WINDOW WIDTH', window.innerWidth)
     let sandwichBtnAnimation;
     if (this.state.displayMenu===false) {
         sandwichBtnAnimation = 'sandwichButtonContainer close'

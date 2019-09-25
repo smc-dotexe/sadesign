@@ -1,9 +1,8 @@
 @media (max-width: 1065px) {
     .designTraining {
-        height: 85vmin;
         display: grid;
         grid-template-columns: minmax(88px, 10%) 1fr;
-        grid-template-rows: minmax(354px, max-content) minmax(min-content, max-content);
+        /* grid-template-rows: minmax(354px, max-content) 1000px; */
         /* background-color: maroon; */
     }
 
@@ -36,18 +35,21 @@
 
 }
 
+@media (min-width: 515px) and (max-width: 620px) {
+    .designTraining {
+    }
+}
+
 @media (min-width: 410px) and (max-width: 514px) {
 
     .designTraining {
-        height: 145vmin;
     }
 
     #rumbleSlideShow {
         grid-column: 1 / span 2;
     }
     #dtDescriptorDiv {
-        /* margin: 0; */
-        
+        margin-left: 0;
     }
     #dtDescription {
         padding-left: 5px;
@@ -59,7 +61,7 @@
 
 @media (max-width: 409px) {
     .designTraining {
-        height: 165vmin;
+        min-height: 100vmin;
     }
     #rumbleSlideShow {
         grid-column: 1 / span 2;
