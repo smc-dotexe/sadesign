@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch, NavLink } from 'react-router-dom'
 import './App.css';
 import './components/sandwichComp/sandwichMenu.css'
 import './animations.css';
@@ -47,6 +47,16 @@ class App extends React.Component {
         menuClass ='sandwichComp'
     }
 
+    console.log('window.location.href = ', window.location.href)
+    // let activeStyle
+    // let aboutClass = 'about'
+    // if (window.location.href === 'http://localhost:3000/about' || window.location.href === 'http://sadesign.netlify.com/about') {
+    //   activeStyle='active'
+    // } else if(window.location.href === 'http://localhost:3000/' || window.location.href === 'http://sadesign.netlify.com/') {
+    //   activeStyle='active'
+    // } else {
+    //   activeStyle=''
+    // }
 
     return (
       <Router>
@@ -68,8 +78,28 @@ class App extends React.Component {
               <h4 id='sandwichAlonso'>Alonso</h4>
               <h4 id='sandwichDesign'>Design</h4>
               <ul id='sandwichLinks'>
-                  <li><Link to='/'>Home</Link></li>
-                  <li><Link to='/about'>About</Link></li>
+                  <li onClick={this.sandwichMenu}>
+                    <NavLink 
+                      exact
+                      activeStyle={{
+                        textDecoration: 'underline',
+                        color: "red"
+                      }} 
+                      to='/'
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                  <li onClick={this.sandwichMenu}>
+                    <NavLink 
+                      activeStyle={{
+                        textDecoration: 'underline',
+                        color: "red"
+                      }}
+                      to='/about'>
+                      About
+                    </NavLink>
+                  </li>
                   <li>Work</li>
                   <li>Case Study</li>
                   <li>Contact</li>
@@ -77,8 +107,8 @@ class App extends React.Component {
           </div>         
         </div>
         <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/about' component={AboutPage} />
+          <Route path='/' exact component={Home} />
+          <Route path='/about' component={AboutPage} />
         </Switch>   
       </div>
       </Router>

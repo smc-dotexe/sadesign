@@ -1,3 +1,4 @@
+
 .aboutDiv {
     display: grid;
     grid-template-columns: minmax(88px, 10%) 1fr;

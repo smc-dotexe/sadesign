@@ -15,7 +15,10 @@ html {
 
 @font-face { font-family: ChapLight; src: url('./fonts/ChapLight.otf')}
 
-
+.active {
+  text-decoration: underline;
+  color: yellow;
+}
 
 /* .pageContainer {
   overflow-y: hidden;
@@ -260,6 +263,7 @@ DESIGNERS ART SECTION
   margin-top: 50px;
   grid-column: 4;
   grid-row: 2;
+  cursor: pointer;
 }
 
 #daBG {

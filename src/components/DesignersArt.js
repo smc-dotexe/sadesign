@@ -1,9 +1,15 @@
 import React from 'react'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 import redArrow from '../images/redarrowright.png'
 import '../styles/responsiveDesignersArt.css'
 // import '../styles/designersArtQuery.css'
 
 class DesignersArt extends React.Component {
+
+    aboutPageLink = () => {
+        window.location.href='/about'
+    }
+
     render() {
         return (
             <div className='slide designersArt'>
@@ -14,7 +20,7 @@ class DesignersArt extends React.Component {
                         centred design. I approach projects with empathy and 
                         intuition.
                     </p>
-                    <img id='arr1' src={redArrow} alt='red arrow' />
+                    <img id='arr1' src={redArrow} alt='red arrow' onClick={this.aboutPageLink}/>
                     <div id='daBG'>
                         <h1 id='daBGQuote'>"If you want
                             momentum, you'll 
