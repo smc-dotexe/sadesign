@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
-import AboutPage from './aboutPage/About'
+import AboutPage from './aboutPage/About.js'
 import redArrow from '../images/redarrowright.png'
 import '../styles/responsiveDesignersArt.css'
 // import '../styles/designersArtQuery.css'
@@ -35,7 +35,7 @@ class DesignersArt extends React.Component {
                         <p id='myBrand'>My Brand</p>
                         <img id='arr2' src={redArrow} alt='redarrow' />
                     </div>
-                <Route path='/about' component={AboutPage} />
+                {/* <Route path='/about' component={AboutPage} /> */}
             </div>
         </Router>
         )
