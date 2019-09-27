@@ -1,5 +1,6 @@
 import React from 'react'
 import './headerstyles.css'
+import './responsiveHeaderStyles.css'
 
 function HeaderComp(props) {
 

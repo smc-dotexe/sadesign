@@ -20,23 +20,27 @@
 } */
 
 header h1 {
-  margin: 0;
-  padding: 0;
-  font-family: ChapLight;
-  font-size: 87px;
-  font-size: 6.359649122807018VW;
-  font-weight: normal;
+    /* margin: 0; */
+    padding: 0;
+    font-family: ChapLight;
+    font-size: 87px;
+    font-size: 6.359649122807018VW;
+    font-weight: normal;
 }
 
 header .sarah {
   float: left;
+  width: 100%;
 }
 
 header .alonso {
   float: right;
+  width: 75%;
+
 }
 
 header .design {
+  width: 100%;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;

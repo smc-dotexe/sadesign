@@ -1,0 +1,32 @@
+@media(max-width: 1024px) {
+    .aboutDesignersArt {
+        font-size: 35px;
+        font-family: Arimo;
+        width: 100%;
+        line-height: 40px;
+        color: #D9D9D9;
+    }
+
+    .aboutDescription {
+        font-size: 18px;
+        width: 80%;
+        margin-left: 30px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutDesignersArt {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 409px) {
+    .aboutDesignersArt {
+        grid-column: 1 / span 2;
+    }
+
+    .aboutDescription {
+        grid-column: 1 / span 2;
+    }
+}

@@ -1,0 +1,20 @@
+@media (max-width: 1024px) {
+    .sarah, .alonso, .design {
+        line-height: 55px;
+        font-size: 49px
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .headerDiv {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 409px) {
+    .headerDiv {
+        grid-column: 1 / span 2;
+        width: 75%;
+    }
+}

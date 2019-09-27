@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.css'
+import './responsiveAboutStyles.css'
 import HeaderComp from '../headerComp/HeaderComp'
 import test from '../../images/pdb.png'
 
@@ -9,7 +10,7 @@ class About extends React.Component {
         <div className='slide aboutDiv'>
             <HeaderComp passBgImage={test}/>
             <h1 className='aboutDesignersArt'>
-                The Designers Art
+                The Designer's <br/>Art
             </h1>
             <p className='aboutDescription'>
             I aim to improve the world around me through human centred design.
