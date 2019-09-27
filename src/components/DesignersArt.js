@@ -7,7 +7,7 @@ import '../styles/responsiveDesignersArt.css'
 class DesignersArt extends React.Component {
 
     aboutPageLink = () => {
-        window.location.href='/about'
+        window.location.href='sadesign.netlify.com/about'
     }
 
     render() {
