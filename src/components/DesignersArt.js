@@ -1,5 +1,6 @@
 import React from 'react'
-import { BrowserRouter as Router, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
+import AboutPage from './aboutPage/About'
 import redArrow from '../images/redarrowright.png'
 import '../styles/responsiveDesignersArt.css'
 // import '../styles/designersArtQuery.css'
@@ -12,6 +13,7 @@ class DesignersArt extends React.Component {
 
     render() {
         return (
+        <Router>
             <div className='slide designersArt'>
                 <h1 id='goodDesignTitle'>Good Design</h1>
                 <h1 id='daTitle'>THE DESIGNER'S ART</h1>
@@ -20,7 +22,9 @@ class DesignersArt extends React.Component {
                         centred design. I approach projects with empathy and 
                         intuition.
                     </p>
-                    <img id='arr1' src={redArrow} alt='red arrow' onClick={this.aboutPageLink}/>
+                    <Link to='/about' className='arrowLink'>
+                        <img id='arr1' src={redArrow} alt='red arrow' onClick={this.aboutPageLink}/>
+                    </Link>
                     <div id='daBG'>
                         <h1 id='daBGQuote'>"If you want
                             momentum, you'll 
@@ -31,7 +35,9 @@ class DesignersArt extends React.Component {
                         <p id='myBrand'>My Brand</p>
                         <img id='arr2' src={redArrow} alt='redarrow' />
                     </div>
+                <Route path='/about' component={AboutPage} />
             </div>
+        </Router>
         )
     }
 }
