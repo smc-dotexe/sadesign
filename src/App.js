@@ -7,6 +7,7 @@ import saLogo from './images/sa.png'
 import SandwichMenu from './components/sandwichComp/SandwichMenu.js'
 import Home from './components/Home'
 import AboutPage from './components/aboutPage/About.js'
+import WorkPage from './components/workPage/WorkList'
 
 
 
@@ -100,7 +101,16 @@ class App extends React.Component {
                       About
                     </NavLink>
                   </li>
-                  <li>Work</li>
+                  <li onClick={this.sandwichMenu}>
+                    <NavLink
+                      activeStyle={{
+                        textDecoration: 'underline',
+                        color: 'red'
+                      }}
+                      to='/work'>
+                      Work
+                    </NavLink>
+                  </li>
                   <li>Case Study</li>
                   <li>Contact</li>
               </ul>
@@ -109,6 +119,7 @@ class App extends React.Component {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/about' component={AboutPage} />
+          <Route path='/work' component={WorkPage} />
         </Switch>   
       </div>
       </Router>

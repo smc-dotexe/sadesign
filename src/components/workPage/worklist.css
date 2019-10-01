@@ -1,0 +1,27 @@
+.workDiv {
+    display: grid;
+    grid-template-columns: minmax(88px, 10%) 1fr minmax(88px, 10%);    
+}
+
+.workPageHeading {
+    color: white;
+    grid-column: 2;
+    font-family: ChapLight;
+    font-size: 110px;
+    font-weight: normal;
+    width: 500px;
+    height: 200px;
+    line-height: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.workList {
+    grid-column: 2;
+    margin-top: 100px;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}

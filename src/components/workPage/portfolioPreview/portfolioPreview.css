@@ -1,0 +1,50 @@
+* {
+    color: white;
+    font-weight: normal;
+}
+
+.dateHeading {
+    display: table;
+    margin: 0 auto 20px auto;
+    font-family: arimo;
+    font-size: 24px;
+}
+
+.previewBody {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+}
+
+.previewHeading {
+    font-size: 62px;
+    font-family: ChapLight;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.previewImage {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    align-self: center;
+}
+
+.previewDescription {
+    grid-column: 2;
+    grid-row: 2;
+    font-family: Arimo;
+    font-size: 16px;
+    width: 362px;
+    align-self: center;
+    justify-self: center;
+}
+
+.previewLink {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: end;
+    font-family: Arimo;
+    font-size: 24px;
+}
