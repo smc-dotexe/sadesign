@@ -1,4 +1,20 @@
+@media (max-width: 675px) {
+    .workPageHeading {
+        margin-left: 10px;
+        font-size: 12.296296296296298VW;
+        line-height: 70px;
+        width: 90%;
+        height: min-content;
+    }
+
+}
+
 @media (max-width: 409px) {
+    .workPageHeading {
+        line-height: 50px;
+        font-size: 43px;
+        height: min-content;
+    }
     .workList {
         grid-column: 1 / span 2;
     }

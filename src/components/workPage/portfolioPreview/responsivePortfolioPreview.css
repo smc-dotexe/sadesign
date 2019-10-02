@@ -1,8 +1,4 @@
 @media (max-width: 1200px) {
-    .previewHeading {
-        color: blue;
-        /* font-size: 24px; */
-    }
 
     .previewBody {
         padding-top: 15px;
@@ -42,9 +38,6 @@
         grid-template-columns: min-content 1fr;
         grid-template-rows: min-content;
     }
-    .previewHeading {
-        color: red;
-    }
 
     .previewDescription {
         font-size: 14px;
@@ -61,7 +54,18 @@
 }
 
 @media (max-width: 600px) {
+
+
+    .dateHeading {
+        margin-right: auto;
+        display: block;
+        border-top: 1px solid grey;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
     .previewBody {
+        border-top: none;
         grid-template-columns: min-content min-content;
         grid-template-rows: max-content max-content max-content;
         grid-gap: 5px;
@@ -74,7 +78,6 @@
     }
 
     .previewHeading {
-        color: green;
         grid-column: 2;
         justify-self: start;
         margin-top: 0;
