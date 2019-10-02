@@ -1,5 +1,6 @@
 import React from 'react'
 import './portfolioPreview.css'
+import './responsivePortfolioPreview.css'
 
 class PortfolioPreview extends React.Component {
     constructor(props) {

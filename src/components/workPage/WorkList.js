@@ -1,5 +1,6 @@
 import React from 'react'
 import './worklist.css'
+import './responsiveWorkList.css'
 import PortfolioPreview from './portfolioPreview/portfolioPreview'
 import workForMySelfImage from '../../images/workForMyselfImage.png'
 

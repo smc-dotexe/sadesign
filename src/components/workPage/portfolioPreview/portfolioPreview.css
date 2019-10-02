@@ -24,12 +24,14 @@
 
 .previewHeading {
     font-size: 62px;
+    font-size: 4.538799414348463VW;
     font-family: ChapLight;
     grid-column: 1 / span 2;
     justify-self: end;
     align-self: start;
     grid-row: 1;
-    margin-top: -20px;
+    margin-top: -17px;
+    width: max-content;
     
 }
 
@@ -39,6 +41,8 @@
     grid-row: 1 / span 3;
     align-self: center;
     justify-self: start;
+    width: 80%;
+    min-width: 164px;
 }
 
 .previewDescription {
