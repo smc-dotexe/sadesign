@@ -14,6 +14,7 @@ html {
 }
 
 @font-face { font-family: ChapLight; src: url('./fonts/ChapLight.otf')}
+@font-face { font-family: Cerabasic; src: url('./fonts/CerabasicRegular.ttf')}
 
 .active {
   text-decoration: underline;
@@ -172,12 +173,12 @@ header #design {
 }
 
 #focusQuote {
-font-family: Arimo;
+font-family: Cerabasic;
 font-size: 23px;
 }
 
 #authorQuote {
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-size: 19px;
   text-align: right;
   float: right;
@@ -240,7 +241,7 @@ DESIGNERS ART SECTION
   height: 15vmin;
   align-self: center;
   color: #D9D9D9;
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-weight: normal;
   font-size: 30px;
 }
@@ -253,7 +254,7 @@ DESIGNERS ART SECTION
   align-self: center;
   text-align: left;
   color: white;
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-size: 18px;
 }
 
@@ -300,7 +301,7 @@ DESIGNERS ART SECTION
 
 #daAuthor {
   font-size: 24px;
-  font-family: Arimo;
+  font-family: Cerabasic;
   color: #D9D9D9;
   grid-column: 2 / span 3;
   grid-row: 2;
@@ -310,7 +311,7 @@ DESIGNERS ART SECTION
 #myBrand {
   grid-row: 3;
   grid-column: 3;
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-size: 34px;
   color: #D9D9D9;
   justify-self: end;
@@ -355,7 +356,7 @@ DESIGN TRAINING SECTION
 
 #designTrainingTitle {
   color: #D9D9D9;
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-size: 34px;
   font-weight: normal;
   grid-row: 1;
@@ -364,7 +365,7 @@ DESIGN TRAINING SECTION
 
 
 #dtDescription {
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-size: 23px;
   font-size: 1.6837481698389458VW;
   text-align: left;
@@ -585,7 +586,7 @@ SMALL BUSINESS SECTION
 }
 
 #pdbQuote {
-  font-family: Arimo;
+  font-family: Cerabasic;
   color: white;
   font-size: 24px;
   font-size: 1.7569546120058566VW;
@@ -652,7 +653,7 @@ CONTACT SECTION
 
 #contactMe {
   margin-top: 11px;
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-size: 18px;
   color: #D9D9D9;
   font-weight: normal;
@@ -683,7 +684,7 @@ CONTACT SECTION
 }
 
 #collaborate {
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-size: 12px;
   color: white;
   grid-column: 1;
@@ -694,7 +695,7 @@ CONTACT SECTION
 }
 
 #socialMedia {
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-size: 11px;
   color: #D9D9D9;
   text-align: left;
@@ -705,7 +706,7 @@ CONTACT SECTION
 }
 
 #privacyPolicy {
-  font-family: Arimo;
+  font-family: Cerabasic;
   font-size: 10px;
   color: #D9D9D9;
   grid-column: 1;
