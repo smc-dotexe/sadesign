@@ -24,7 +24,9 @@
     grid-template-rows: 2fr 2fr 1fr;
 }
 
-
+.previewBody:hover {
+    cursor: pointer;
+}
 
 .previewHeading {
     font-size: 62px;
