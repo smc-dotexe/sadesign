@@ -3,6 +3,10 @@
     font-weight: normal;
 }
 
+.portPreviewDiv {
+    margin-top: 15px;
+}
+
 .dateHeading {
     display: table;
     margin: 0 auto 20px auto;
