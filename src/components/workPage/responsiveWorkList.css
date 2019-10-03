@@ -9,6 +9,13 @@
 
 }
 
+@media (max-width: 600px) {
+    .workDiv {
+        display: grid;
+        grid-template-columns: minmax(88px, 10%) 1fr;    
+    }
+}
+
 @media (max-width: 409px) {
     .workPageHeading {
         line-height: 50px;

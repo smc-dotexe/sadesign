@@ -67,6 +67,7 @@
 
     .previewBody {
         border-top: none;
+        border-bottom: none;
         grid-template-columns: min-content min-content;
         grid-template-rows: max-content max-content max-content;
         grid-gap: 5px;
