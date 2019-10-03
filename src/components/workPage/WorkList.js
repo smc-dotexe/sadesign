@@ -4,6 +4,12 @@ import './responsiveWorkList.css'
 import PortfolioPreview from './portfolioPreview/portfolioPreview'
 import workForMySelfImage from '../../images/workForMyselfImage.png'
 import renuImage from '../../images/renuPreview.png'
+import visualCultureImage from '../../images/visualCulturePreview.png'
+import pdbImage from '../../images/pdbPreview.png'
+import rebelImage from '../../images/rebelPreview.png'
+import crossingImage from '../../images/crossingPreview.png'
+import irvingCreaImage from '../../images/irvingCreaPreview.png'
+import rumbleImage from '../../images/rumblePreview.png'
 
 
 class WorkPage extends React.Component {
@@ -11,7 +17,19 @@ class WorkPage extends React.Component {
         let workForMyselfDescription = 
             'As a Designer sometimes we fail to design for ourselves. We work oftentimes to build platforms for others to stand out. I thought... "What about me?"'
         let renuDescription = 
-            'The Branding for Renu - Health and Wellness sought to create an icon that represented the yin and the yang of the body moving amongst Lymph.'
+            'The Branding for Renu - Health and Wellness sought to create an icon that represented the yin and the yang of the body moving amongst Lymph'
+        let visualCultureDescription = 
+            'Visual Culture Creative agency brought together different creatives from all walks of life. Photographers, designers, SEO, Web...'
+        let pdbDescription = 
+            'Pho Dau Bo was my first shot at creating a comprehensive branding system for my client. By far this project continues to be the most rewarding experiences of my career...'
+        let rebelDescription =
+            'Upon beginning my full-time work with Rumble Boxing the owner expressed her vision to create her own marketing agency. I did preliminary research, UI/UX and Strategy. I am the right rebel for the job...'
+        let crossingDescription = 
+            'Crossing Dance had been formed out of a Christian Dance academy. Seeking to rebrand but maintain elements of faith I was tasked to create a logo that reflected their... '
+        let irvingCreaDescription = 
+            `Having been a fine-arts student I brushed off old skills and incorporated them into new skills. Working from hand-drawn to digital, Irving's dog, Dingo came to be immortalized...`
+        let rumbleDescription =
+            `Being an in-house designer at Rumble boxing has allowed me the opportunity to design a wide gambit of digital, print, strategy.`
         return (
             <div className='workDiv'>
                 <h1 className='workPageHeading'>
@@ -32,6 +50,54 @@ class WorkPage extends React.Component {
                             passPreviewHeading='RENU YOUR HEALTH'
                             passPreviewImage={renuImage}
                             passPreviewDescription={renuDescription}
+                        />
+                    </li>
+                    <li>
+                        <PortfolioPreview 
+                            passDateHeading='01.19'
+                            passPreviewHeading='VISUAL CULTURE'
+                            passPreviewImage={visualCultureImage}
+                            passPreviewDescription={visualCultureDescription}
+                        />
+                    </li>
+                    <li>
+                        <PortfolioPreview 
+                            passDateHeading='12.18'
+                            passPreviewHeading='PHO DAU BO'
+                            passPreviewImage={pdbImage}
+                            passPreviewDescription={pdbDescription}
+                        />
+                    </li>
+                    <li>
+                        <PortfolioPreview 
+                            passDateHeading='03.19'
+                            passPreviewHeading='THE REBEL IN ME'
+                            passPreviewImage={rebelImage}
+                            passPreviewDescription={rebelDescription}
+                        />
+                    </li>
+                    <li>
+                        <PortfolioPreview 
+                            passDateHeading='07.18'
+                            passPreviewHeading='CROSSING'
+                            passPreviewImage={crossingImage}
+                            passPreviewDescription={crossingDescription}
+                        />
+                    </li>
+                    <li>
+                        <PortfolioPreview 
+                            passDateHeading='05.19'
+                            passPreviewHeading='IRVING CREA'
+                            passPreviewImage={irvingCreaImage}
+                            passPreviewDescription={irvingCreaDescription}
+                        />
+                    </li>
+                    <li>
+                        <PortfolioPreview 
+                            passDateHeading='12.18'
+                            passPreviewHeading='RUMBLE GET READY'
+                            passPreviewImage={rumbleImage}
+                            passPreviewDescription={rumbleDescription}
                         />
                     </li>
                 </ul>
