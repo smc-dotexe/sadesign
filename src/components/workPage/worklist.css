@@ -1,6 +1,6 @@
 .workDiv {
     display: grid;
-    grid-template-columns: minmax(88px, 10%) 1fr minmax(88px, 10%);    
+    grid-template-columns: minmax(88px, 10%) 1fr minmax(50px, 5%);    
 }
 
 .workPageHeading {
