@@ -8,6 +8,7 @@ import SandwichMenu from './components/sandwichComp/SandwichMenu.js'
 import Home from './components/Home'
 import AboutPage from './components/aboutPage/About.js'
 import WorkPage from './components/workPage/WorkList'
+import Test from './components/workPage/portfolioPages/test'
 
 
 
@@ -120,6 +121,7 @@ class App extends React.Component {
           <Route path='/' exact component={Home} />
           <Route path='/about' component={AboutPage} />
           <Route path='/work' component={WorkPage} />
+          <Route path='/work/workingformyself' component={Test} />
         </Switch>   
       </div>
       </Router>

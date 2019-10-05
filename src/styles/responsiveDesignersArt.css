@@ -5,24 +5,24 @@
 
     #daTitle {
         margin-top: 50px;
-        height: 0;
         grid-row: 2;
     }
 
     #daTitleDescription {
         grid-row: 3;
         grid-column: 2 / span 3;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         margin-left: 10px;
     }
 
-    #arr1 {
+    .arrowLink {
         grid-row: 4;
+        margin-top: 0;
+        /* padding-bottom: 50px; */
     }
 
     #daBG {
         grid-row: 5;
-        height: 90%;
     }
 
     #daBG h1{
@@ -31,13 +31,16 @@
 
     #daAuthor {
         grid-row: 2;
-        margin-top: -50px;
         grid-column: 2 / span 3;
+    }
+
+    #myBrand {
+
     }
 
     #arr2 {
         align-self: center;
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
 
 }
@@ -63,7 +66,7 @@
       margin-left: 10px;
   }
 
-  #arr1 {
+  .arrowLink {
       grid-column: 4;
       grid-row: 4;
       justify-self: center;
@@ -111,7 +114,7 @@
         font-size: 19px;
     }
 
-    #arr1 {
+    .arrowLink {
         grid-column: 3;
         grid-row: 4;
         justify-self: center;
@@ -149,29 +152,37 @@
 }
 
 @media (min-width: 410px) and (max-width: 480px) {
+
+    .designersArt {
+        grid-template-rows: repeat(5, min-content);
+    }
     
     #daTitle {
         grid-row: 2;
         grid-column: 2 / span 4;
         font-size: 25px;
         /* font-size: 6.6815144766147VW;  */
-        align-self: start;
-        margin-top: 15px;
+        align-self: end;
+        /* margin-top: 15px; */
     }
 
     #daTitleDescription {
         grid-column: 2 / span 2;
+        grid-row: 3;
         margin-left: 10px;
         font-size: 16px;
     }
 
-    #arr1 {
+    .arrowLink {
         grid-column: 3;
+        grid-row: 4;
         justify-self: end;
-        align-self: end;
+        margin: 0;
+        padding-bottom: 20px;
     }
 
     #daBG {
+        grid-row: 5;
         line-height: 30px;
         height: 60%;
     }
@@ -187,12 +198,13 @@
         grid-row: 2;
         align-self: end;
         font-size: 16px;
+        line-height: 20px;
     }
   
     #myBrand {
         align-self: center;
         font-size: 20px;
-        margin-bottom: 19px;
+        /* margin-bottom: 19px; */
     }
 
     #arr2 {
@@ -201,34 +213,44 @@
 }
 
 @media (max-width: 409px) {
+    .designersArt {
+        grid-template-rows: repeat(5, min-content);
+    }
     #goodDesignTitle {
         grid-column: 1 / span 4;
+        grid-row: 1;
+        padding-bottom: 50px;
     }
 
     #daTitle {
         grid-column: 1 / span 3;
+        grid-row: 2;
         font-size: 20px;
         align-self: start;
-        margin-top: 15px;
+        /* margin-top: 15px; */
     }
 
     #daTitleDescription {
         grid-column: 1 / span 3;
-        grid-row: 2;
+        grid-row: 3;
         align-self: center;
         font-size: 13px;
-        margin-left: 10px;
-        margin-top: -10px;
+        margin-left: 20px;
+        /* margin-top: -10px; */
     }
 
-    #arr1 {
+    .arrowLink {
         grid-column: 3 / span 4;
+        grid-row: 4;
         align-self: center;
         justify-self: center;
-        margin-bottom: 25px;
+        margin: 5px;
+        padding-bottom: 20px;
+        /* margin-bottom: 25px; */
     }
 
     #daBG {
+        grid-row: 5;
         background-image: url('../images/glitchSAWebStroke_Mobile.png');
         background-size: cover; 
         background-position: center center;
@@ -248,12 +270,13 @@
         grid-row: 2;
         align-self: center;
         font-size: 16px;
+        line-height: 20px;
     }
   
     #myBrand {
         align-self: center;
         font-size: 20px;
-        margin-bottom: 19px;
+        /* margin-bottom: 19px; */
         grid-column: 1 / span 2;
     }
 
@@ -266,17 +289,33 @@
 
 @media (max-width: 357px) {
 
+
     #daTitle {
         grid-column: 1 / span 4;
         align-self: center;
+        margin-top: 50px;
         /* margin-top: -50px; */
     }
+    
     #daTitleDescription {
-        align-self: end;
+        grid-row: 3;
+        margin-top: 0;
+        /* align-self: end; */
+        /* margin-bottom: 0;
+        margin-top: 0; */
+        /* height: min-content;
+        padding: 0; */
     }
 
-    #arr1 {
-        align-self: end;
+    .arrowLink {
+        align-self: center;
+        grid-row: 4;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    #daBG {
+        grid-row: 5;
     }
 }
 
@@ -311,7 +350,7 @@ HEIGHT PROPERTIES
         display: none;
     } */
 
-    #arr1 {
+    .arrowLink {
         justify-self: center;
     }
 }

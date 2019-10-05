@@ -24,9 +24,15 @@
     grid-template-rows: 2fr 2fr 1fr;
 }
 
-.previewBody:hover {
+.previewImage, .previewHeading, .previewLink:hover {
     cursor: pointer;
 }
+
+/* .overlay:active {
+    background-color: #dedede;
+    opacity: 0.8;
+} */
+
 
 .previewHeading {
     font-size: 62px;

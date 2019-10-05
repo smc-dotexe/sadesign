@@ -212,9 +212,8 @@ DESIGNERS ART SECTION
   height: 100%;
   min-height: 100vmin;
   grid-template-columns: minmax(88px, 10%) minmax(min-content,auto) minmax(min-content,auto) minmax(min-content,20%);
-  grid-template-rows: minmax(min-content, auto) 40vmin minmax(min-content, auto) minmax(min-content, auto);
+  /* grid-template-rows: minmax(min-content, auto) 40vmin minmax(min-content, auto) minmax(min-content, auto); */
 }
-
 
 
 #goodDesignTitle {
@@ -230,15 +229,16 @@ DESIGNERS ART SECTION
   justify-self: start;
   align-self: start;
   font-weight: normal;
+  padding-bottom: 100px;
 }
 
 #daTitle {
   display: block;
   margin-left: 10px;
-  margin-top: 79px;
+  /* margin-top: 79px; */
   grid-column: 2;
   grid-row: 2;
-  height: 15vmin;
+  /* height: 15vmin; */
   align-self: center;
   color: #D9D9D9;
   font-family: Cerabasic;
@@ -268,6 +268,7 @@ DESIGNERS ART SECTION
 }
 
 #daBG {
+  margin-top: 20vh;
   background-image: url('./images/webstrokebg.png');
   background-size: cover; 
   background-position: center center;
@@ -279,7 +280,7 @@ DESIGNERS ART SECTION
   width: 100%;
   display: grid;
   grid-template-columns: minmax(88px,10%) 1fr 2fr 1fr;
-  grid-template-rows: 3fr 100px 80px;
+  grid-template-rows: repeat(3, min-content);
 }
 
 #daBG h1{
@@ -290,13 +291,14 @@ DESIGNERS ART SECTION
   font-weight: normal;
   font-size: 110px;
   font-size: 8.052708638360176VW;
-  height: 90%;
+  height: 100%;
   width: 80%;
   grid-column: 1 / span 4;
   grid-row: 1;
   margin-left: 10%;
   justify-self: center;
-  align-self: center;
+  line-height: 110px;
+  /* align-self: center; */
 }
 
 #daAuthor {
@@ -304,6 +306,7 @@ DESIGNERS ART SECTION
   font-family: Cerabasic;
   color: #D9D9D9;
   grid-column: 2 / span 3;
+  line-height: 45px;
   grid-row: 2;
   justify-self: center;
 } 
@@ -315,8 +318,10 @@ DESIGNERS ART SECTION
   font-size: 34px;
   color: #D9D9D9;
   justify-self: end;
-  align-self: start;
-  line-height: 0;
+  align-self: end;
+  margin: 0;
+  /* height: 50px; */
+  /* line-height: 0; */
 }
 
 
@@ -324,7 +329,7 @@ DESIGNERS ART SECTION
   grid-column:4;
   grid-row: 3;
   justify-self: start;
-  align-self: start;
+  align-self: center;
   margin-left: 10px;
   margin-top: 3px;
 }
