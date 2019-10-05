@@ -33,7 +33,9 @@ class DesignersArt extends React.Component {
                     
                         <p id='daAuthor'> &#8212; Ryan Holiday, Author of The Obstacle Is The Way, 2014.</p>
                         <p id='myBrand'>My Brand</p>
+                    <Link to='/work' className='brandLink'>
                         <img id='arr2' src={redArrow} alt='redarrow' />
+                    </Link>
                     </div>
                 {/* <Route path='/about' component={AboutPage} /> */}
             </div>

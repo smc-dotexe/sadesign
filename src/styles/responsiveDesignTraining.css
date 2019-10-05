@@ -1,13 +1,14 @@
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
     .designTraining {
         height: 150vh;
     }
-}
+} */
 
 @media (max-width: 1065px) {
     .designTraining {
         display: grid;
         grid-template-columns: minmax(88px, 10%) 1fr;
+        grid-template-rows: repeat(2, min-content);
         /* grid-template-rows: minmax(354px, max-content) 1000px; */
         /* background-color: maroon; */
     }

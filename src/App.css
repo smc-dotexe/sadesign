@@ -261,7 +261,7 @@ DESIGNERS ART SECTION
 .arrowLink {
   align-self: center;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 10px;
   grid-column: 4;
   grid-row: 2;
   cursor: pointer;
@@ -325,19 +325,27 @@ DESIGNERS ART SECTION
 }
 
 
-#arr2 {
-  grid-column:4;
+.brandLink {
+  grid-column: 4;
   grid-row: 3;
-  justify-self: start;
-  align-self: center;
-  margin-left: 10px;
-  margin-top: 3px;
+  /* display: inline-block; */
+  /* width: 50px;
+  height: 50px; */
+  position: relative;
+  height: 100%;
+}
+
+#arr2 {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
 }
 /************************
 DESIGN TRAINING SECTION
 ************************/
 
 .designTraining {
+  margin-top: 25vh;
   background-color: black;
   display: grid;
   grid-template-columns: minmax(88px, 10%) 1fr 1fr;
@@ -622,8 +630,10 @@ SMALL BUSINESS SECTION
   grid-column: 3;
   grid-row: 2;
   color: white;
+  justify-self: start;
   align-self: center;
-  margin-left: 30px;
+  /* margin-left: 30px; */
+  padding-right: 15px;
 }
 
 /******************
