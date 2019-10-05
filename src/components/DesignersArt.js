@@ -11,9 +11,12 @@ class DesignersArt extends React.Component {
         window.location.href='/about'
     }
 
+    workPageLink = () => {
+        window.location.href='/work'
+    }
+
     render() {
         return (
-        <Router>
             <div className='slide designersArt'>
                 <h1 id='goodDesignTitle'>Good Design</h1>
                 <h1 id='daTitle'>THE DESIGNER'S ART</h1>
@@ -22,9 +25,9 @@ class DesignersArt extends React.Component {
                         centred design. I approach projects with empathy and 
                         intuition.
                     </p>
-                    <Link to='/about' className='arrowLink'>
-                        <img id='arr1' src={redArrow} alt='red arrow' onClick={this.aboutPageLink}/>
-                    </Link>
+                    {/* <Link to='/about' className='arrowLink'> */}
+                        <img className='arrowLink' src={redArrow} alt='red arrow' onClick={this.aboutPageLink}/>
+                    {/* </Link> */}
                     <div id='daBG'>
                         <h1 id='daBGQuote'>"If you want
                             momentum, you'll 
@@ -33,13 +36,9 @@ class DesignersArt extends React.Component {
                     
                         <p id='daAuthor'> &#8212; Ryan Holiday, Author of The Obstacle Is The Way, 2014.</p>
                         <p id='myBrand'>My Brand</p>
-                    <Link to='/work' className='brandLink'>
-                        <img id='arr2' src={redArrow} alt='redarrow' />
-                    </Link>
+                        <img id='arr2' src={redArrow} alt='redarrow' onClick={this.workPageLink} />
                     </div>
-                {/* <Route path='/about' component={AboutPage} /> */}
             </div>
-        </Router>
         )
     }
 }

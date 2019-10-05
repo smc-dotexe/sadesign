@@ -326,19 +326,23 @@ DESIGNERS ART SECTION
 
 
 .brandLink {
-  grid-column: 4;
-  grid-row: 3;
+  /* grid-column: 4;
+  grid-row: 3; */
   /* display: inline-block; */
   /* width: 50px;
   height: 50px; */
-  position: relative;
-  height: 100%;
+  /* position: relative;
+  height: 100%; */
 }
 
 #arr2 {
-  position: absolute;
+  grid-column: 4;
+  grid-row: 3;
+  align-self: center;
+  cursor: pointer;
+  /* position: absolute;
   top: 50%;
-  margin-top: -15px;
+  margin-top: -15px; */
 }
 /************************
 DESIGN TRAINING SECTION
