@@ -1,18 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
-import AboutPage from './aboutPage/About.js'
 import redArrow from '../images/redarrowright.png'
 import '../styles/responsiveDesignersArt.css'
-// import '../styles/designersArtQuery.css'
 
 class DesignersArt extends React.Component {
-
-    aboutPageLink = () => {
-        window.location.href='/about'
-    }
-
-    workPageLink = () => {
-        window.location.href='/work'
+    constructor(props) {
+        super(props)
     }
 
     render() {
@@ -25,9 +17,11 @@ class DesignersArt extends React.Component {
                         centred design. I approach projects with empathy and 
                         intuition.
                     </p>
-                    {/* <Link to='/about' className='arrowLink'> */}
-                        <img className='arrowLink' src={redArrow} alt='red arrow' onClick={this.aboutPageLink}/>
-                    {/* </Link> */}
+                        <img 
+                            className='arrowLink' 
+                            src={redArrow} alt='red arrow' 
+                            onClick={()=> this.props.passProp.history.push('/about')}
+                        />
                     <div id='daBG'>
                         <h1 id='daBGQuote'>"If you want
                             momentum, you'll 
@@ -35,8 +29,18 @@ class DesignersArt extends React.Component {
                         </h1>
                     
                         <p id='daAuthor'> &#8212; Ryan Holiday, Author of The Obstacle Is The Way, 2014.</p>
-                        <p id='myBrand'>My Brand</p>
-                        <img id='arr2' src={redArrow} alt='redarrow' onClick={this.workPageLink} />
+                        <p 
+                            id='myBrand'
+                            onClick={()=> this.props.passProp.history.push('/work')}
+                        >
+                                My Brand
+                        </p>
+                        <img 
+                            id='arr2' 
+                            src={redArrow} 
+                            alt='redarrow' 
+                            onClick={()=> this.props.passProp.history.push('/work')}
+                        />
                     </div>
             </div>
         )

@@ -320,6 +320,7 @@ DESIGNERS ART SECTION
   justify-self: end;
   align-self: end;
   margin: 0;
+  cursor: pointer;
   /* height: 50px; */
   /* line-height: 0; */
 }
@@ -533,7 +534,7 @@ SMALL BUSINESS SECTION
   font-weight: normal;
   z-index: 1;
   position: absolute;
-  top: 8vmin;
+  top: 5vmin;
 }
 
 #pdb {
