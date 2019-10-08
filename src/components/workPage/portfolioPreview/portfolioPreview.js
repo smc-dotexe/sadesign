@@ -1,37 +1,42 @@
 import React from 'react'
 import './portfolioPreview.css'
 import './responsivePortfolioPreview.css'
-import { BrowserRouter as Router, Route, Link, Switch, NavLink } from 'react-router-dom'
-import Test from '../portfolioPages/test'
+import { Link } from 'react-router-dom'
 
-class PortfolioPreview extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+function PortfolioPreview (props) {
+    
+        const { 
+            passDateHeading, passPreviewHeading, passPreviewImage, passPreviewDescription 
+        } = props
 
-    // portfolioLink = e => {
-    //     console.log('clicked on', this.props.pageId)
-    //     this.props.passPageSelected(this.props.pageId)
-    // }
-
-    render() {
-        // console.log('THIS.PROPS.PASSPROPS = ',this.props.passProps)
-        const date = this.props.passDateHeading
-        const previewHeading = this.props.passPreviewHeading
-        const previewImage = this.props.passPreviewImage
-        const previewDescription = this.props.passPreviewDescription
         return (
                 <div className='portPreviewDiv'>
                     <h3 className='dateHeading'>
-                        {date}
+                        {passDateHeading}
                     </h3>
                     <div className='overlay'>
-                    <div id={this.props.pageId} className='previewBody'>
-                        <img className='previewImage' src={previewImage} alt='portfolio preview' onClick={this.portfolioLink}/>
-                        <h1 className='previewHeading' onClick={this.portfolioLink}>{previewHeading}</h1>
-                        <p className='previewDescription'>{previewDescription}</p>
+                    <div id={props.pageId} className='previewBody'>
+                        <img 
+                            className='previewImage' 
+                            src={passPreviewImage} 
+                            alt='portfolio preview' 
+                            onClick={
+                                ()=>props.passProps.history
+                                    .push(`${props.passProps.match.url}/${props.pageId}`)
+                                }
+                        />
+                        <h1 
+                            className='previewHeading' 
+                            onClick={
+                                ()=>props.passProps.history
+                                    .push(`${props.passProps.match.url}/${props.pageId}`)
+                                }
+                        >
+                            {passPreviewHeading}
+                        </h1>
+                        <p className='previewDescription'>{passPreviewDescription}</p>
                         <Link 
-                            to={`${this.props.passProps.match.url}/${this.props.pageId}`} 
+                            to={`${props.passProps.match.url}/${props.pageId}`} 
                             className='previewLink' 
                         >
                             More
@@ -39,9 +44,8 @@ class PortfolioPreview extends React.Component {
                     </div>
                     </div>
                 </div>
-
         )
     }
-}
+
 
 export default PortfolioPreview

@@ -8,6 +8,7 @@ import SandwichMenu from './components/sandwichComp/SandwichMenu.js'
 import Home from './components/Home'
 import AboutPage from './components/aboutPage/About.js'
 import WorkPage from './components/workPage/WorkList'
+import WorkingForMyself from './components/workPage/portfolioPages/workingForMyself/WorkingForMyself'
 import Test from './components/workPage/portfolioPages/test'
 
 
@@ -32,7 +33,6 @@ class App extends React.Component {
       this.setState(prevState => ({displayMenu: !prevState.displayMenu}))
   }
 
-
   render() {
     console.log('WINDOW WIDTH', window.innerWidth)
     let sandwichBtnAnimation;
@@ -48,17 +48,6 @@ class App extends React.Component {
     } else {
         menuClass ='sandwichComp'
     }
-
-    console.log('window.location.href = ', window.location.href)
-    // let activeStyle
-    // let aboutClass = 'about'
-    // if (window.location.href === 'http://localhost:3000/about' || window.location.href === 'http://sadesign.netlify.com/about') {
-    //   activeStyle='active'
-    // } else if(window.location.href === 'http://localhost:3000/' || window.location.href === 'http://sadesign.netlify.com/') {
-    //   activeStyle='active'
-    // } else {
-    //   activeStyle=''
-    // }
 
     return (
       <Router>
@@ -112,7 +101,6 @@ class App extends React.Component {
                       Work
                     </NavLink>
                   </li>
-                  <li>Case Study</li>
                   <li>Contact</li>
               </ul>
           </div>         
@@ -121,7 +109,7 @@ class App extends React.Component {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={AboutPage} />
           <Route exact path='/work' component={WorkPage} />
-          <Route path='/work/:workId' component={Test} />
+          <Route path='/work/workingformyself' component={WorkingForMyself} />
         </Switch>   
       </div>
       </Router>

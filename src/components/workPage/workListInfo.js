@@ -70,7 +70,7 @@ export const workInfo = [
     {
         num:6,
         passDateHeading:'07.18',
-        passPreviewHeading:'CROSSINGF',
+        passPreviewHeading:'CROSSING',
         passPreviewImage:crossingImage,
         passPreviewDescription: crossingDescription,
         pageId:'crossing',      

@@ -1,0 +1,38 @@
+@media (max-width: 974px) {
+    .mtom {
+        font-size: 67px;
+        line-height: 50px;
+        margin-top: -20px;
+    }
+
+    .wfmHours {
+        font-size: 54px;
+    }
+
+    .wfmDescription {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 623px) {
+    .mtom {
+        font-size: 67px;
+    }
+    .wfmThanks {
+        width: 100%;
+    }
+}
+
+@media (max-width: 409px) {
+    .mtom {
+        grid-column: 1 / span 2;
+    }
+
+    .wfmDescription {
+        grid-column: 1 / span 2;
+    }
+
+    .wfmImageContainer {
+        grid-column: 1 / span 2;
+    }
+}
