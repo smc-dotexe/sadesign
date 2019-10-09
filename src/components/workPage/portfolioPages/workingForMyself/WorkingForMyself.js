@@ -70,7 +70,7 @@ class WorkingForMyself extends React.Component {
                         <img className='wfmImageDisplayNone' alt='none' />
                     }
                     <p className='wfmThanks'>
-                    - Special thanks to Iriving Crea for helping me<br/> 
+                    - Special thanks to Iriving Crea for helping me 
                     capture the vision I have for myself and my brand.
                 </p>
                 <div className='dotContainer'>

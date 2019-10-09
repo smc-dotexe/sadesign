@@ -14,7 +14,6 @@
     }
 
     .wfmImageContainer {
-        border: 2px solid blue;
         height: 270px;
         width: 60vw;
     }
@@ -30,7 +29,6 @@
 
     .wfmImageContainer {
         height: 200px;
-        border: 2px solid yellow;
     }
 }
 
@@ -46,7 +44,6 @@
     .wfmImageContainer {
         grid-column: 1 / span 2;
         height: 200px;
-        border: 2px solid green;
         /* width: max-content; */
     }
 
