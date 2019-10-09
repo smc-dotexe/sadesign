@@ -49,8 +49,15 @@
   }
 
   #quote {
-    justify-self: end;
+    display: none;
+    grid-row: 1;
+    align-self: center;
+    grid-column: 2 / span 5;
+    justify-self: center;
     margin-right: 20px;
+    margin-top: 7 0px;
+    width: 50%;
+    /* background-color: black; */
   }
 
   #focusQuote {
@@ -172,7 +179,7 @@
 
 }
 
-@media (max-width: 409px) {
+@media (max-width: 500px) {
   .containerBorder {
     border: none;
   }

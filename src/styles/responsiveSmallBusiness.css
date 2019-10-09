@@ -44,9 +44,9 @@
     }
 }
 
-@media (max-width: 409px) {
+@media (max-width: 500px) {
     .smallBusiness {
-        grid-template-rows: min-content min-content min-content;
+        grid-template-rows: repeat(4, min-content);
     }
 
     #smlContainer {
@@ -69,13 +69,15 @@
     }
 
     #phoDauBoLink {
-        grid-column: 1 / span 3;
-        justify-self: start;
+        grid-column: 1 / span 2;
+        width: max-content;
+        justify-self: end;
     }
 
     #pdbArrow {
-        grid-column: 2 / span 3;
-        justify-self: center;
-        margin-left: 50px;
+        grid-column: 3;
+        grid-row: 3;
+        justify-self: start;
+        /* margin-left: 50px; */
     }
 }

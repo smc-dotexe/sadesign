@@ -3,6 +3,7 @@ import '../styles/responsiveIntro.css'
 import saLogo from '../images/sa.png'
 import redArrowDown from '../images/redarrowdown2.png'
 import SandwichMenu from './sandwichComp/SandwichMenu'
+import HeaderComp from './headerComp/HeaderComp'
 import { Spring, Transition, animated } from 'react-spring/renderprops'
 class Intro extends React.Component {
     constructor(props) {
@@ -12,13 +13,14 @@ class Intro extends React.Component {
     render() {
         return (
             <div className='slide intro'>
-                <header>
+                <HeaderComp />
+                {/* <header>
                     <h1 id='sarah'>SARAH</h1>
                     <h1 id='alonso'>ALONSO</h1>
                     <h1 id='design'>DESIGN</h1>
                     
-                </header>
-                    <h1 id='year'>2019</h1>
+                </header> */}
+                    {/* <h1 id='year'>2019</h1> */}
                 <div id='quote'>
                     <p id='focusQuote'>"The people that matter realize
                         all that you should focus on

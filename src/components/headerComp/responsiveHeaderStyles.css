@@ -7,12 +7,12 @@
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .headerDiv {
         margin-left: 10px;
     }
 }
-@media (max-width: 409px) {
+@media (max-width: 500px) {
     .headerDiv {
         grid-column: 1 / span 2;
         width: 75%;

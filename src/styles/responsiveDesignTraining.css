@@ -57,6 +57,7 @@
     }
     #dtDescriptorDiv {
         margin-left: 0;
+        grid-template-columns: min-content;
     }
     #dtDescription {
         padding-left: 5px;
@@ -76,6 +77,7 @@
 
     #dtDescriptorDiv {
         grid-column: 1 / span 2;
+        grid-template-columns: min-content;
     }
 
     #dtDescription {
@@ -88,7 +90,7 @@
     }
 
     #rumbleCaseStudyHeader {
-        margin-left:-50px;
+        /* margin-left:-50px; */
     }
 }
 
