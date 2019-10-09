@@ -46,11 +46,17 @@
     grid-row: 3;
     grid-column: 2;
     width: 70vw;
+    max-width: 693px;
+    max-height: 471px;
+    height: 80vh;
+    /* width: 693px;
+    height: 471px; */
+    /* width: 70vw;
     max-width: 70vw;
     min-width: 320px;
     height: 80vh;
     max-height: 80vh;
-    min-height: 213px;
+    min-height: 213px; */
     justify-self: center;
     position: relative;
     background-color: white;
@@ -60,7 +66,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    animation: fading 0.6s;
+    animation: fading 1.6s;
 
 }
 

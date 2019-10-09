@@ -12,6 +12,12 @@
     .wfmDescription {
         font-size: 16px;
     }
+
+    .wfmImageContainer {
+        border: 2px solid blue;
+        height: 270px;
+        width: 60vw;
+    }
 }
 
 @media (max-width: 623px) {
@@ -21,9 +27,14 @@
     .wfmThanks {
         width: 100%;
     }
+
+    .wfmImageContainer {
+        height: 200px;
+        border: 2px solid yellow;
+    }
 }
 
-@media (max-width: 409px) {
+@media (max-width: 500px) {
     .mtom {
         grid-column: 1 / span 2;
     }
@@ -34,5 +45,12 @@
 
     .wfmImageContainer {
         grid-column: 1 / span 2;
+        height: 200px;
+        border: 2px solid green;
+        /* width: max-content; */
+    }
+
+    .wfmImage {
+        object-fit: cover;
     }
 }
