@@ -5,6 +5,9 @@ import HeaderComp from '../../../headerComp/HeaderComp'
 import '../../../headerComp/headerstyles.css'
 import wfmImage1 from '../../../../images/wfmImage1.png'
 import wfmImage2 from '../../../../images/wfmImage2.png'
+import wfmImage3 from '../../../../images/wfmImage3.png'
+import wfmImage4 from '../../../../images/wfmImage4.png'
+import wfmImage5 from '../../../../images/wfmImage5.png'
 
 
 class WorkingForMyself extends React.Component {
@@ -16,7 +19,7 @@ class WorkingForMyself extends React.Component {
     }
 
     imageChange = () => {
-        if(this.state.counter >= 3) {
+        if(this.state.counter >= 4) {
             this.setState({counter: 0}, ()=> {console.log('if counter=', this.state.counter)})
         } else {
             this.setState({counter: this.state.counter + 1}, ()=> {console.log('else counter', this.state.counter)})
@@ -54,6 +57,18 @@ class WorkingForMyself extends React.Component {
                         <img className='wfmImage' id='wfmImage2' src={wfmImage2} alt="cards on mirror" /> :
                         <img className='wfmImageDisplayNone' alt='none' />
                     }
+                    {imageNo===2 ? 
+                        <img className='wfmImage' id='wfmImage3' src={wfmImage3} alt="cards on mirror" /> :
+                        <img className='wfmImageDisplayNone' alt='none' />
+                    }
+                    {imageNo===3 ? 
+                        <img className='wfmImage' id='wfmImage4' src={wfmImage4} alt="cards on mirror" /> :
+                        <img className='wfmImageDisplayNone' alt='none' />
+                    }
+                    {imageNo===4 ? 
+                        <img className='wfmImage' id='wfmImage5' src={wfmImage5} alt="cards on mirror" /> :
+                        <img className='wfmImageDisplayNone' alt='none' />
+                    }
                     <p className='wfmThanks'>
                     - Special thanks to Iriving Crea for helping me<br/> 
                     capture the vision I have for myself and my brand.
@@ -72,6 +87,10 @@ class WorkingForMyself extends React.Component {
                         <span className='dotClear'></span>
                     }
                     {imageNo===3 ?
+                        <span className='dot'></span>:
+                        <span className='dotClear'></span>
+                    }
+                    {imageNo===4 ?
                         <span className='dot'></span>:
                         <span className='dotClear'></span>
                     }
