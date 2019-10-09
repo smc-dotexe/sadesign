@@ -41,7 +41,7 @@ class SmallBusiness extends React.Component {
                     "Success need not be complicated. Just start with making 1,000
                     people extremely, extremely happy...True fans are not only the
                     direct source of your income, but also your chief marketing force
-                    for the ordinary fans.<i>"&#8212;Kevin Kelly, Author of 1,000 True Fans.</i>
+                    for the ordinary fans. <i>" &#8212;Kevin Kelly, Author of 1,000 True Fans.</i>
                 </p>
                 <p id='phoDauBoLink'>PHO DAU BAO</p>
                 <img id='pdbArrow' src={greyArrow} alt='grey arrow'/>
