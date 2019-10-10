@@ -9,7 +9,7 @@ import Home from './components/Home'
 import AboutPage from './components/aboutPage/About.js'
 import WorkPage from './components/workPage/WorkList'
 import WorkingForMyself from './components/workPage/portfolioPages/workingForMyself/WorkingForMyself'
-import Test from './components/workPage/portfolioPages/test'
+import ScrollToTop from 'react-router-scroll-top'
 
 
 
@@ -51,6 +51,7 @@ class App extends React.Component {
 
     return (
       <Router>
+      <ScrollToTop>
       <div className='App'>
         <div className='containerBorder'>
                 <img id='saLogo' src={saLogo} alt='logo' onClick={this.scrollToTop}/>
@@ -112,6 +113,7 @@ class App extends React.Component {
           <Route path='/work/workingformyself' component={WorkingForMyself} />
         </Switch>   
       </div>
+      </ScrollToTop>
       </Router>
     );
   }

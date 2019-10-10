@@ -11,7 +11,7 @@ class DesignersArt extends React.Component {
         return (
             <div className='slide designersArt'>
                 <h1 id='goodDesignTitle'>Good Design</h1>
-                <h1 id='daTitle'>THE DESIGNER'S ART</h1>
+                {/* <h1 id='daTitle'>THE DESIGNER'S ART</h1>
                     <p id='daTitleDescription'>
                         I aim to improve the world around me through human 
                         centred design. I approach projects with empathy and 
@@ -21,7 +21,7 @@ class DesignersArt extends React.Component {
                             className='arrowLink' 
                             src={redArrow} alt='red arrow' 
                             onClick={()=> this.props.passProp.history.push('/about')}
-                        />
+                        /> */}
                     <div id='daBG'>
                         <h1 id='daBGQuote'>"If you want
                             momentum, you'll 
@@ -33,7 +33,7 @@ class DesignersArt extends React.Component {
                             id='myBrand'
                             onClick={()=> this.props.passProp.history.push('/work')}
                         >
-                                My Brand
+                            The Work
                         </p>
                         <img 
                             id='arr2' 

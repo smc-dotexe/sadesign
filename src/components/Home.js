@@ -22,8 +22,8 @@ class Home extends React.Component {
             <div className='homepage'>
                 <Intro />
                 <DesignersArt passProp={this.props}/>
-                <DesignTraining />
-                <SmallBusiness />
+                {/* <DesignTraining /> */}
+                {/* <SmallBusiness /> */}
                 <Contact />
             </div>
             </Router>
