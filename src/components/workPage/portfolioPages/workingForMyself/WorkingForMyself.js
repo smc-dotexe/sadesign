@@ -34,10 +34,11 @@ class WorkingForMyself extends React.Component {
 
         return(
             <div className='wfmContainer'>
+
             <div className='slide workingForMyselfDiv'>
                 <HeaderComp />
-
             </div>
+
             <div className='wfmDetails'>
                 <h1 className='mtom'>
                     M - M<br />
@@ -53,12 +54,14 @@ class WorkingForMyself extends React.Component {
                     of a skilled technician.
                 </p>
                 <div className='wfmImageContainer' onClick={this.imageChange}>
-
+                
                     <img 
                         className='wfmImage' 
                         id={`wfmImage${imageNo}`} 
                         src={imageList[imageNo]} 
-                        alt='working for myself image' />
+                        alt='working for myself image' 
+                    />
+
                     <p className='wfmThanks'>
                     - Special thanks to Iriving Crea for helping me 
                     capture the vision I have for myself and my brand.
