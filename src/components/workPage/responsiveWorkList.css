@@ -16,11 +16,12 @@
     }
 }
 
-@media (max-width: 409px) {
+@media (max-width: 500px) {
     .workPageHeading {
         line-height: 50px;
         font-size: 43px;
         height: min-content;
+        grid-column: 1 / span 2;
     }
     .workList {
         grid-column: 1 / span 2;

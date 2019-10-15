@@ -187,6 +187,7 @@
     }
 
     #daBG {
+        margin-top: 0;
         grid-row: 5;
         line-height: 30px;
         height: 60%;
@@ -209,11 +210,17 @@
     #myBrand {
         align-self: center;
         font-size: 20px;
+        grid-column: 1 / span 4;
+        justify-self: center;
+        margin-top: 20px;
         /* margin-bottom: 19px; */
     }
 
     #arr2 {
-        align-self: center;
+        align-self: end;
+        justify-self: end;
+        grid-column: 3;
+        margin: 0;
     }
 }
 
@@ -255,6 +262,8 @@
     }
 
     #daBG {
+        margin-top: 0;
+        margin-bottom: 50px;
         grid-row: 5;
         background-image: url('../images/glitchSAWebStroke_Mobile.png');
         background-size: cover; 
@@ -279,17 +288,18 @@
     }
   
     #myBrand {
+        padding: 20px;
         align-self: center;
         font-size: 20px;
         /* margin-bottom: 19px; */
-        grid-column:3;
+        grid-column:2;
         justify-self: center;
         width: max-content;
     }
 
     #arr2 {
         align-self: center;
-        grid-column: 4;
+        grid-column: 3;
     }
     
 }
@@ -317,17 +327,14 @@
     #arr2 {
         align-self: center;
         grid-row: 3;
-        grid-column: 4;
+        grid-column: 3;
         /* padding-bottom: 20px; */
     }
 
     #daBG {
         grid-row: 5;
     }
-    
-    #myBrand {
-        grid-column: 3;
-    }
+
 
 }
 

@@ -30,9 +30,9 @@
 
 }
 
-@media (max-width: 409px) {
+@media (max-width: 500px) {
     .contact {
-        margin-top: -50px;
+        /* margin-top: -50px; */
     }
     #contactInfo {
         grid-column: 1 / span 2;

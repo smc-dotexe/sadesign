@@ -108,3 +108,16 @@
     }
 }
 
+@media (max-width: 500px) {
+    .previewLink {
+        grid-column: 3;
+    }
+
+}
+
+@media (max-width: 395px) {
+    .previewLink {
+        grid-column: 2;
+    }
+}
+
