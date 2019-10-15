@@ -9,6 +9,7 @@ import Home from './components/Home'
 import AboutPage from './components/aboutPage/About.js'
 import WorkPage from './components/workPage/WorkList'
 import WorkingForMyself from './components/workPage/portfolioPages/workingForMyself/WorkingForMyself'
+import Renu from './components/workPage/portfolioPages/renuPage/Renu'
 import ScrollToTop from 'react-router-scroll-top'
 
 
@@ -111,6 +112,7 @@ class App extends React.Component {
           <Route path='/about' component={AboutPage} />
           <Route exact path='/work' component={WorkPage} />
           <Route path='/work/workingformyself' component={WorkingForMyself} />
+          <Route path='/work/renu' component={Renu} />
         </Switch>   
       </div>
       </ScrollToTop>

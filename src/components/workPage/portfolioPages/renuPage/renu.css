@@ -1,0 +1,93 @@
+.renuDiv {
+    display: grid;
+    width: 100%;
+    background-image: url('../../../../images/renuBG.png');
+    grid-template-columns: minmax(88px, 10%) 1fr 1fr;
+    /* background-size: cover; */
+    /* background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.renuDefinition {
+    grid-row: 2;
+    grid-column: 3;
+    align-self: center;
+    justify-self: end;
+    margin-right: 100px;
+    color: black;
+    font-size: 36px;
+    font-family: ChapLight;
+    letter-spacing: -2px;
+}
+
+.renu_o {
+    color: black;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.renu_e {
+    color: black;
+    font-size: 38px;
+}
+
+.arrowBlackDown {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: center;
+}
+
+.renuDetails {
+    display: grid;
+    grid-template-columns: minmax(88px, 10%) 1fr;
+    grid-template-rows: repeat(3, min-content);
+    min-height: 100vh;
+}
+
+.renuHeading {
+    padding-top: 7%;
+    margin-left: 7%;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 110px;
+    font-family: ChapLight;
+}
+
+.renuDescription {
+    font-size: 23px;
+    font-family: Cerabasic;
+    grid-column: 2;
+    grid-row: 2;
+    width: 65%;
+    align-self: start;
+    justify-self: center;
+    padding-top: 20px;
+    padding-bottom: 80px; 
+}
+
+.renuImageContainer {
+    grid-column: 2;
+    grid-row: 3;
+    width: 70vw;
+    max-width: 693px;
+    max-height: 471px;
+    height: 80vh;
+    justify-self: center;
+    padding-top: 50px;
+}
+
+.renuImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    animation: fading 1.6s;
+}
+
+.renuThanks {
+    font-size: 12px;
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: center;
+    width: 75%;
+    margin-bottom: 100px;
+}
