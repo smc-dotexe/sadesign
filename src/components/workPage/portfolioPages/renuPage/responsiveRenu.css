@@ -37,6 +37,20 @@
     .arrowBlackDown {
         align-self: center;
     }
+
+    .renuHeading {
+        font-size: 67px;
+    }
+
+    .renuDescription {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 623px) {
+    .renuImageContainer {
+        height: 200px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -48,6 +62,20 @@
     .renuDefinition {
         grid-column: 1 / span 3;
         margin-left: 10px;
+    }
+
+    .renuHeading {
+        grid-column: 1 / span 2;
+    }
+
+    .renuDescription {
+        grid-column: 1 /span 2;
+        width: 80%;
+    }
+
+    .renuImageContainer {
+        grid-column: 1 / span 2;
+        height: 200px;
     }
 }
 
