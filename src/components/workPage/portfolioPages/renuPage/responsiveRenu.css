@@ -1,0 +1,64 @@
+@media (max-width: 1000px) {
+    .renuDiv {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .renuDefinition {
+        grid-column: 2 / span 3;
+    }
+}
+
+@media (max-width: 800px) {
+    .renuDiv {
+        background-image: url('../../../../images/renuBG2.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .renuDefinition {
+        grid-column: 2 / span 3;
+        grid-row: 3;
+        justify-self: center;
+        align-self: center;
+        font-size: 25px;
+    }
+
+    .renu_e {
+        font-size: 27px;
+    }
+
+    .renu_o {
+        font-size: 27px;
+    }
+
+    .arrowBlackDown {
+        align-self: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .headerDiv {
+        margin-top: -2px;
+        margin-left: 10px;
+    }
+
+    .renuDefinition {
+        grid-column: 1 / span 3;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .renuDefinition {
+        align-self: start;
+        margin: 0;
+    }
+
+    .arrowBlackDown {
+        align-self: end;
+        height: min-content;
+    }
+}

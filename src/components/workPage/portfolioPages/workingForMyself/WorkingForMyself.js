@@ -67,21 +67,21 @@ class WorkingForMyself extends React.Component {
                     capture the vision I have for myself and my brand.
                     </p>
 
-                <div className='dotContainer'>
-                    {imageList.map(imageDot => {
-                        imageIndex=imageList.indexOf(imageDot)
-                        if(imageIndex === imageNo) {
-                            return (
-                                <span key={imageNo} className='dot'></span>
-                            )
-                        }
-                            return (
-                                <span key={imageIndex} className='dotClear'></span>
-                            )
-                    })}
+                    <div className='dotContainer'>
+                        {imageList.map(imageDot => {
+                            imageIndex=imageList.indexOf(imageDot)
+                            if(imageIndex === imageNo) {
+                                return (
+                                    <span key={imageNo} className='dot'></span>
+                                )
+                            }
+                                return (
+                                    <span key={imageIndex} className='dotClear'></span>
+                                )
+                        })}
 
-                
-                </div>
+                    
+                    </div>
                 </div>
 
             </div>

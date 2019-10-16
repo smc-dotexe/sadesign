@@ -3,9 +3,9 @@
     width: 100%;
     background-image: url('../../../../images/renuBG.png');
     grid-template-columns: minmax(88px, 10%) 1fr 1fr;
-    /* background-size: cover; */
-    /* background-position: center;
-    background-repeat: no-repeat; */
+    /* background-size: cover;
+    background-position: left top; */
+
 }
 
 .renuDefinition {
@@ -74,6 +74,7 @@
     height: 80vh;
     justify-self: center;
     padding-top: 50px;
+    position: relative;
 }
 
 .renuImage {
@@ -90,4 +91,21 @@
     justify-self: center;
     width: 75%;
     margin-bottom: 100px;
+}
+
+.dotContainer {
+    width: max-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.dot {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.dotClear {
+    background-color: transparent;
+    border: 1px solid black;
 }
