@@ -48,6 +48,11 @@
 }
 
 @media (max-width: 623px) {
+
+    .renuDescription {
+        width: 80%;
+        padding-bottom: 30px;
+    }
     .renuImageContainer {
         height: 200px;
     }

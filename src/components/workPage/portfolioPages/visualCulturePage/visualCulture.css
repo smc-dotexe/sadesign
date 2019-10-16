@@ -1,0 +1,20 @@
+.visualCulture {
+    display: grid;
+    grid-template-columns: minmax(88px, 10%) 1fr;
+    background-image: url('../../../../images/vcBG.png');
+    background-size: cover;
+}
+
+.vcArrowDown {
+    grid-column: 2;
+    align-self: end;
+    justify-self: end;
+    margin-bottom: 30px;
+    margin-right: 200px;
+}
+
+.vcDetails {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(88px, 10%) 1fr 1fr;
+}

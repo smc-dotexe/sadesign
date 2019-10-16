@@ -10,6 +10,7 @@ import AboutPage from './components/aboutPage/About.js'
 import WorkPage from './components/workPage/WorkList'
 import WorkingForMyself from './components/workPage/portfolioPages/workingForMyself/WorkingForMyself'
 import Renu from './components/workPage/portfolioPages/renuPage/Renu'
+import VisualCulture from './components/workPage/portfolioPages/visualCulturePage/VisualCulture'
 import ScrollToTop from 'react-router-scroll-top'
 
 
@@ -113,6 +114,7 @@ class App extends React.Component {
           <Route exact path='/work' component={WorkPage} />
           <Route path='/work/workingformyself' component={WorkingForMyself} />
           <Route path='/work/renu' component={Renu} />
+          <Route path='/work/visualculture' component={VisualCulture} />
         </Switch>   
       </div>
       </ScrollToTop>
