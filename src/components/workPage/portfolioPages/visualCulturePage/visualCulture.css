@@ -36,6 +36,7 @@
     font-family: Cerabasic;
     grid-column: 3;
     grid-row: 2;
+    width: 85%;
 }
 
 .timFerrissCaption {
@@ -43,4 +44,43 @@
     font-family: Cerabasic;
     color: white;
     
+}
+
+.openingQuote, .closingQuote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.closingQuote {
+    float: right;
+}
+
+.creativeSummary {
+    grid-column: 2;
+    grid-row: 3;
+    width: 60%;
+    font-family: Cerabasic;
+    font-size: 16px;
+    justify-self: start;
+    margin-left: 20px;
+}
+
+.vcImageContainer {
+    grid-column: 2 / span 3;
+    grid-row: 4;
+    margin-top: 80px;
+    justify-self: center;
+}
+
+.vcImageContainer img {
+    margin: 10px;
+}
+
+.vcLogoDescription {
+    grid-column: 3;
+    grid-row: 5;
+    justify-self: center;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
