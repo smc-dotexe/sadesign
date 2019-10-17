@@ -10,7 +10,25 @@ import vc3 from '../../../../images/vc3.png'
 
 
 class VisualCulture extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            counter: 0,
+            imageList: [vc1, vc2, vc3],
+        }
+    }
+
+    vcImageChange = () => {
+        if (this.state.counter >= 2) {
+            this.setState({counter:0})
+        } else {
+            this.setState({counter: this.state.counter + 1})
+        }
+    }
     render() {
+        const imageNo = this.state.counter 
+        const imageList = this.state.imageList 
+        let imageIndex
         return(
             <div className='vcContainer'>
                 <div className='slide visualCulture'>
@@ -44,6 +62,26 @@ class VisualCulture extends React.Component {
                         <img src={vc1} alt='visual culture cards' />
                         <img src={vc2} alt='visual culture cards 2' />
                         <img src={vc3} alt='visual culture cards 3' />
+                    </div>
+
+                    <div className='vcDynamicImageContainer' onClick={this.vcImageChange}>
+                        <img
+                            className='vcDynamicImage'
+                            src={imageList[imageNo]}
+                            alt='visual culture cards' />
+                        <div className='dotContainer'>
+                            {imageList.map(imageDot => {
+                                imageIndex=imageList.indexOf(imageDot)
+                                if(imageIndex === imageNo) {
+                                    return (
+                                        <span key={imageNo} className='dot'></span>
+                                    )
+                                }
+                                    return (
+                                        <span key={imageIndex} className='dotClear'></span>
+                                    )
+                            })}
+                        </div>
                     </div>
                     <p className='vcLogoDescription'>
                         The Icon for the collective I designed to represent

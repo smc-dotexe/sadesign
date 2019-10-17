@@ -1,0 +1,108 @@
+@media (max-width: 1035px) {
+    .vcImageContainer {
+        display: none;
+    }
+    .vcDynamicImageContainer {
+        display: block;
+        grid-column: 2;
+        grid-row: 4;
+        margin: 70px 0 100px 20px;
+        justify-self: start;
+        position: relative;
+    }
+    .dotContainer {
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+    }
+    .vcLogoDescription {
+        grid-column: 3;
+        justify-self: start;
+        align-self: center;
+        width: 70%;        
+        grid-row: 4;
+        margin: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .vcHeading {
+        font-size: 67px;
+        line-height: 80px;
+        margin-top: -25px;
+    }
+
+    .timFerrissQuote {
+        font-size: 16px;
+    }
+
+    .openingQuote, .closingQuote {
+        font-size: 40px;
+    }
+
+    .creativeSummary {
+        grid-column: 2 / span 3;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 760px) {
+    .timFerrissQuote {
+        grid-column: 2 / span 3;
+        width: 70%;
+        justify-self: end;
+        margin-right: 30px;
+    }
+
+    .creativeSummary {
+        width: 70%;
+    }
+
+    .vcDynamicImageContainer {
+        grid-column: 2 / span 3;
+        justify-self: center;
+        margin-bottom: 30px;
+    }
+
+    .vcLogoDescription {
+        grid-row: 5;
+        grid-column: 2 / span 3;
+        justify-self: center;
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .vcHeading {
+        grid-column: 1 / span 2;
+    }
+
+    .timFerrissQuote {
+        grid-column: 1 / span 3;
+        justify-self: end;
+        margin-right: 30px;
+        width: 80%;
+    }
+
+    .creativeSummary {
+        grid-column: 1 / span 3;
+        width: 80%;
+    }
+
+    .vcDynamicImageContainer {
+        grid-column: 1 / span 3;
+        justify-self: center;
+        margin-left: 0;
+    }
+
+    .vcLogoDescription {
+        grid-column: 1 / span 3;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .vcHeading {
+        grid-column: 1 / span 3;
+    }
+}
