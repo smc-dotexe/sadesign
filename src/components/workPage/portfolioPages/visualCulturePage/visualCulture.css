@@ -17,4 +17,30 @@
     min-height: 100vh;
     display: grid;
     grid-template-columns: minmax(88px, 10%) 1fr 1fr;
+    grid-template-rows: repeat(5, min-content);
+}
+
+.vcHeading {
+    font-family: ChapLight;
+    font-size: 110px;
+    grid-column: 2;
+    grid-row: 1;
+    line-height: 110px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.timFerrissQuote {
+    color: white;
+    font-size: 23px;
+    font-family: Cerabasic;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.timFerrissCaption {
+    font-size: 16px;
+    font-family: Cerabasic;
+    color: white;
+    
 }
