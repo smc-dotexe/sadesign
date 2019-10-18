@@ -8,6 +8,7 @@ import pdbMenuFoldout from '../../../../images/pdbMenuFoldOut.png'
 import pdbMenuFoldout2 from '../../../../images/pdbMenuFoldOut2.png'
 import pdbLayout from '../../../../images/pdbLayout.png'
 import vietKitchen2 from '../../../../images/pdbVietKitchen2.svg'
+import vietKitchenMobile from '../../../../images/pdbVietKitchenMobile.svg'
 
 
 
@@ -34,6 +35,7 @@ class PhoDauBo extends React.Component {
                         since 2008. Pho Dau Bo is expanding our reach by offering Pickup and Delivery options.
                     </p>
                     <img className='vietKitchen' src={vietKitchen} alt='vietnamese kitchen label' />
+                    <img className='vietKitchenMobile' src={vietKitchenMobile} alt='vietnamese kitchen label' />
                     <h2 className='onTheMenuHeading'>ON THE MENU FOR DESIGN</h2>
                     <ul className='designMenuList1'>
                         <li>Logo Design</li>
