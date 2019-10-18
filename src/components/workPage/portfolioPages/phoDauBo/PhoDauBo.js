@@ -4,6 +4,11 @@ import './responsivePhoDauBo.css'
 import HeaderComp from '../../../headerComp/HeaderComp'
 import pdbLogo from '../../../../images/pdbLogo.svg'
 import vietKitchen from '../../../../images/vietKitchen.svg'
+import pdbMenuFoldout from '../../../../images/pdbMenuFoldOut.png'
+import pdbMenuFoldout2 from '../../../../images/pdbMenuFoldOut2.png'
+import pdbLayout from '../../../../images/pdbLayout.png'
+import vietKitchen2 from '../../../../images/pdbVietKitchen2.svg'
+
 
 
 class PhoDauBo extends React.Component {
@@ -42,6 +47,18 @@ class PhoDauBo extends React.Component {
                         <li>Business Cards</li>
                         <li>Outdoor Signage</li>
                     </ul>
+                    <img className='pdbMenu1' src={pdbMenuFoldout} alt='menu foldout' />
+                    <h1 className='pdbHeading2'>PHO DAU BO</h1>
+                    <img className='pdbMenu2' src={pdbMenuFoldout2} alt='menu foldout 2' />
+                    <p className='pdbMenuDescription'>
+                        The biggest challenge of this project was to condense
+                        an 8-page-slip-cover-flip-menu into a modern one page menu.
+                        Also taken into consideration is that the client wanted to retain both 
+                        Vietnamese spelling of the menu items alongside the English titles and
+                        descriptions.
+                    </p>
+                    <img className='vietKitchen2' src={vietKitchen2} alt='viet kitchen label' />
+                    <img className='pdbLayoutImage' src={pdbLayout} alt='layout of items' />
                 </div>
             </div>
         )

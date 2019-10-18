@@ -29,11 +29,10 @@
 }
 
 .pdbDetails {
-    border: 1px solid yellow;
     display: grid;
     min-height: 100vh;
     grid-template-columns: minmax(88px, 10%) 1fr 1fr 1fr;
-    grid-template-rows: repeat(5, min-content);
+    grid-template-rows: repeat(6, min-content);
 }
 
 .pdbHeading {
@@ -92,4 +91,53 @@
 
 .designMenuList2 li {
     margin-bottom: 20px;
+}
+
+.pdbMenu1 {
+    grid-column: 2 / 4;
+    grid-row: 4;
+    justify-self: center;
+    margin-top: 100px;
+}
+
+.pdbHeading2 {
+    grid-column: 4;
+    grid-row: 4;
+    margin-top: 75px;
+    font-family: ChapLight;
+    font-size: 110px;
+    line-height: 110px;
+    width: min-content;
+}
+
+.pdbMenu2 {
+    grid-column: 2 / 4;
+    grid-row: 5;
+    justify-self: center;
+    margin-top: 50px;
+}
+
+.pdbMenuDescription {
+    grid-column: 4;
+    grid-row: 5;
+    width: 60%;
+    font-family: Cerabasic;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.vietKitchen2 {
+    grid-column: 2 / 4;
+    grid-row: 6;
+    justify-self: center;
+    margin-top: 80px;
+    margin-bottom: 200px;
+}
+
+.pdbLayoutImage {
+    grid-column: 4;
+    grid-row: 5 / span 6;
+    align-self: center;
+    width: min-content;
+    margin-left: -30px;
 }
