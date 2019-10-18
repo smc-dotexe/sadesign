@@ -4,12 +4,37 @@ import './responsiveRebel.css'
 import HeaderComp from '../../../headerComp/HeaderComp'
 import storylineImage from '../../../../images/rebelStorylineImage.png'
 import phase1Image from '../../../../images/rebelPhase1Image.png'
+import phase1Image2 from '../../../../images/rebelPhase1Image2.png'
+import phase1Image3 from '../../../../images/rebelPhase1Image3.png'
+import phase1Image4 from '../../../../images/rebelPhase1Image4.png'
+import phase1Image5 from '../../../../images/rebelPhase1Image5.png'
 import rebelSocialMedia from '../../../../images/rebelSocialMedia.png'
 import rebelScreenShot from '../../../../images/rebelScreenShot.png'
 
 
+
 class Rebel extends React.Component {
+    constructor() {
+        super()
+        this.state={
+            counter: 0,
+            imageList: [phase1Image, phase1Image2, phase1Image3, phase1Image4, phase1Image5],
+        }
+    }
+
+    rebelImageChange = () => {
+        if (this.state.counter >=4) {
+            this.setState({counter:0})
+        } else {
+            this.setState({counter: this.state.counter + 1})
+        }
+    }
+
     render() {
+        const imageNo = this.state.counter 
+        const imageList = this.state.imageList
+        
+        let imageIndex
         return (
             <div className='rebelContainer'>
                 <div className='slide rebel'>
@@ -39,7 +64,27 @@ class Rebel extends React.Component {
                     </p>
                     <img className='storylineImage' src={storylineImage} alt='rebel storyline' />
                     <h2 className='iconHeading'>THE ICON</h2>
-                    <img className='phase1Image' src={phase1Image} alt='rebel phase 1' />
+
+                    <div className='rebelImageContainer' onClick={this.rebelImageChange}>
+                        <img 
+                            className='phase1Image' 
+                            src={imageList[imageNo]} 
+                            alt='rebel phase 1' />
+                        <div className='rebelDotContainer'>
+                            {imageList.map(imageDot => {
+                                imageIndex=imageList.indexOf(imageDot)
+                                if(imageIndex === imageNo) {
+                                    return (
+                                        <span key={imageNo} className='dot'></span>
+                                    )
+                                }
+                                    return (
+                                        <span key={imageIndex} className='dotClear'></span>
+                                    )
+                            })}
+                        </div>
+                    </div>
+
                     <p className='rebelLogoDescription'>
                         Numbers play a significant role in Rebel's branding strategy for it's clients. 
                         The Designer's objective is to create a visual identity that encompasses Rebel 

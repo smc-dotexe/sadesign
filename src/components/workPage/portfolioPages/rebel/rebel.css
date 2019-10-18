@@ -66,11 +66,20 @@
     margin-top: 100px;
 }
 
-.phase1Image {
+.rebelImageContainer {
     grid-column: 2 / span 3;
     grid-row: 4;
     justify-self: center;
+    cursor: pointer;
+    position: relative;
 }
+
+.rebelDotContainer {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
 
 .rebelLogoDescription {
     grid-column: 2 / span 3;
