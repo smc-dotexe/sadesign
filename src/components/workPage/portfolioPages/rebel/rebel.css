@@ -1,0 +1,23 @@
+.rebel {
+    display: grid;
+    grid-template-columns: minmax(88px, 10%) 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-image: url('../../../../images/rebelBG.png');
+    background-position: center;
+    /* background-size: cover; */
+}
+
+.steveJobsQuote {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    margin-left: 20px;
+    width: 30%;
+    font-family: Cerabasic;
+    font-size: 24px;
+}
+
+.steveJobsQuoteAuthor {
+    font-size: 19px;
+}
+

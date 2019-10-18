@@ -58,7 +58,6 @@
 
 @media (max-width: 936px) {
     .pdbHeading {
-        color: green;
         margin-top: 0;
     }
 
@@ -71,7 +70,6 @@
 
     .onTheMenuHeading {
         margin-top: 50px;
-        color: purple;
     }
 
     .pdbMenuDescription {
@@ -134,7 +132,6 @@
 
 @media (max-width: 705px) {
     .onTheMenuHeading {
-        color: blue;
         grid-column: 1 / span 4;
         margin-top: 50px;
         font-family: ChapLight;
@@ -184,7 +181,6 @@
     }
 
     .onTheMenuHeading {
-        color: yellow;
     }
 
     .designMenuList1 {
@@ -233,9 +229,7 @@
         grid-column: 1 / span 4;
     }
 
-    .onTheMenuHeading {
-        color: pink;
-    }
+
 }
 
 @media(max-width: 380px) {
