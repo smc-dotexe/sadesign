@@ -67,19 +67,27 @@
     display: none;
 }
 
-.onTheMenuHeading {
-    font-family: Cerabasic;
-    font-size: 35px;
+.onTheMenuDiv {
+    grid-column: 2 / span 4;
     grid-row: 3;
-    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.onTheMenuHeading {
+    font-family: ChapLight;
+    font-size: 67px;
     margin-left: 20px;
+    grid-column: 1 / span 3;
 }
 
 .designMenuList1 {
     font-family: Cerabasic;
     font-size: 23px;
-    grid-column: 3;
-    grid-row: 3;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    grid-row: 2;
+    margin-top: 30px;
 }
 
 .designMenuList1 li {
@@ -89,8 +97,10 @@
 .designMenuList2 {
     font-family: Cerabasic;
     font-size: 23px;
-    grid-column: 4;
-    grid-row: 3;
+    grid-column: 2 / span 3;
+    justify-self: center;
+    grid-row: 2;
+    margin-top: 30px;
 }
 
 .designMenuList2 li {
@@ -102,6 +112,22 @@
     grid-row: 4;
     justify-self: center;
     margin-top: 100px;
+}
+
+.pdbMenu1_Mobile {
+    display: none;
+}
+
+.pdbMenu2_Mobile {
+    display: none;
+}
+
+.pdbMenu1_Tablet {
+    display: none;
+}
+
+.pdbMenu2_Tablet {
+    display: none;
 }
 
 .pdbHeading2 {
@@ -128,6 +154,7 @@
     font-family: Cerabasic;
     font-size: 16px;
     margin-left: 20px;
+    z-index: 1;
 }
 
 .vietKitchen2 {
@@ -136,6 +163,7 @@
     justify-self: center;
     margin-top: 80px;
     margin-bottom: 200px;
+    z-index: 1;
 }
 
 .pdbLayoutImage {
