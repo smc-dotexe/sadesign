@@ -21,3 +21,89 @@
     font-size: 19px;
 }
 
+.rebelDetails {
+    display: grid;
+    grid-template-columns: minmax(88px, 10%) 1fr 1fr;
+    grid-template-rows: repeat(10, min-content);
+}
+
+.rebelHeading {
+    grid-column: 2/ span 3;
+    grid-row: 1;
+    font-size: 110px;
+    font-family: ChapLight;
+    width: min-content;
+    line-height: 110px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.rebelDescription {
+    grid-column: 2;
+    grid-row: 2;
+    font-family: Cerabasic;
+    font-size: 23px;
+    width: 254px;
+    justify-self: start;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.storylineImage {
+    margin-top: 50px;
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    /* margin-right: 150px; */
+    justify-self: center;
+}
+
+.iconHeading {
+    font-family: ChapLight;
+    font-size: 110px;
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.phase1Image {
+    grid-column: 2 / span 3;
+    grid-row: 4;
+    justify-self: center;
+}
+
+.rebelLogoDescription {
+    grid-column: 2 / span 3;
+    grid-row: 5;
+    width: 80%;
+    justify-self: center;
+    margin-top: 100px;
+    font-family: Cerabasic;
+    font-size: 23px;
+}
+
+.rebelSocialMediaHeading {
+    grid-column: 2;
+    grid-row: 6;
+    justify-self: center;
+    width: min-content;
+    font-size: 110px;
+    font-family: ChapLight;
+    line-height: 110px;
+    margin-top: 200px;
+}
+
+.rebelSocialMediaImage {
+    grid-column: 3;
+    grid-row: 6;
+    margin-top: 200px;
+}
+
+.rebelScreenShot {
+    grid-column: 2 / span 3;
+    grid-row: 7;
+    justify-self: center;
+    margin: -300px 350px 200px 0;
+
+}
+
