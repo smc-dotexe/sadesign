@@ -40,7 +40,7 @@ class VisualCulture extends React.Component {
                     <h1 className='vcHeading'>5 People Average</h1>
                     <p className='timFerrissQuote'>
                         <span className='openingQuote'>&ldquo;</span><br/>
-                        you are the average of the five people you associate
+                        You are the average of the five people you associate
                         with most. So do not underestimate the effects of your 
                         pessimistic, unambitious, or disorganized friends. If 
                         someone isn't making you stronger,<br/><span className='closingQuote'>&rdquo;</span>
