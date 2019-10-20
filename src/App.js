@@ -13,6 +13,9 @@ import Renu from './components/workPage/portfolioPages/renuPage/Renu'
 import VisualCulture from './components/workPage/portfolioPages/visualCulturePage/VisualCulture'
 import PhoDauBo from './components/workPage/portfolioPages/phoDauBo/PhoDauBo'
 import Rebel from './components/workPage/portfolioPages/rebel/Rebel'
+import Crossing from './components/workPage/portfolioPages/crossing/Crossing'
+import IrvingCrea from './components/workPage/portfolioPages/irvingCrea/IrvingCrea'
+import Rumble from './components/workPage/portfolioPages/rumble/Rumble'
 import ScrollToTop from 'react-router-scroll-top'
 
 
@@ -119,6 +122,9 @@ class App extends React.Component {
           <Route path='/work/visualculture' component={VisualCulture} />
           <Route path='/work/phodaubo' component={PhoDauBo} />
           <Route path='/work/rebel' component={Rebel} />
+          <Route path='/work/crossing' component={Crossing} />
+          <Route path='/work/irvingcrea' component={IrvingCrea} />
+          <Route path='/work/rumble' component={Rumble} />
         </Switch>   
       </div>
       </ScrollToTop>

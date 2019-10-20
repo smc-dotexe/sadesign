@@ -89,7 +89,7 @@ export const workInfo = [
         passPreviewHeading:'RUMBLE GET READY',
         passPreviewImage:rumbleImage,
         passPreviewDescription: rumbleDescription,
-        pageId:'workingformyself',      
+        pageId:'rumble',      
     },
 
 ]

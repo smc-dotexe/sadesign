@@ -1,0 +1,7 @@
+.crossingContainer {
+    display: grid;
+}
+
+.crossingTitle {
+    justify-self: center;
+}

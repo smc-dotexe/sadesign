@@ -1,0 +1,7 @@
+.irvingContainer {
+    display: grid;
+}
+
+.irvingTitle {
+    justify-self: center;
+}
