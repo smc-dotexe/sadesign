@@ -118,5 +118,55 @@
     font-size: 23px;
 }
 
+.celebrityContainer {
+    grid-column: 2 / span 4;
+    grid-row: 5;
+    justify-self: end;
+    width: 75%;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.greyBGDiv {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-color: #383838;
+    width: 100%;
+    height: 95%;
+    justify-self: center;
+    align-self: start;
+}
+
+.celebrityTitle {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: -20px;
+    color: #E5E5E5;
+    font-family: ChapLight;
+    font-size: 82px;
+    font-weight: normal;
+}
+
+.celebrityDescription {
+    font-family: Cerabasic;
+    font-size: 24px;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    width: 95%;
+    margin-left: 50px;
+    z-index: 1;
+}
+
+.celebrityImage {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    justify-self: end;
+    margin-top: -100px;
+    margin-right: -300px;
+}
+
 
 

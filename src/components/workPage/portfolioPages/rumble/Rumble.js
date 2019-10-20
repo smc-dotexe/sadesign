@@ -5,6 +5,7 @@ import HeaderComp from '../../../headerComp/HeaderComp'
 import ebPhone1 from '../../../../images/rumbleEarlyBirdPhone1.png'
 import ebPhone2 from '../../../../images/rumbleEarlyBirdPhone2.png'
 import ebPhone3 from '../../../../images/rumbleEarlyBirdPhone3.png'
+import celebrityImage from '../../../../images/rumbleRandiPoster.png'
 
 
 
@@ -59,9 +60,9 @@ class Rumble extends React.Component {
                         </ul>
                     </div>
                     <div className='earlyBirdContainer'>
-                        <img className='ebPhone' id='ebPhone1' src={ebPhone1} alt='cell phone image' />
-                        <img className='ebPhone' id='ebPhone2' src={ebPhone2} alt='cell phone image' />
-                        <img className='ebPhone' id='ebPhone3' src={ebPhone3} alt='cell phone image' />
+                        <img className='ebPhone' id='ebPhone1' src={ebPhone1} alt='cell phone' />
+                        <img className='ebPhone' id='ebPhone2' src={ebPhone2} alt='cell phone' />
+                        <img className='ebPhone' id='ebPhone3' src={ebPhone3} alt='cell phone' />
                         <h1 className='earlyBirdHeading'>
                             The Early Bird Catches the Worm
                         </h1>
@@ -77,7 +78,18 @@ class Rumble extends React.Component {
                             badass and confident. This is what you feel when you've accomplished a Rumble
                             class.
                         </p>
+                    </div>
 
+                    <div className='celebrityContainer'>
+                        <div className='greyBGDiv'></div>
+                        <h2 className='celebrityTitle'>Celebrity</h2>
+                        <p className='celebrityDescription'>
+                            The power of influence. One of the main stars of this shoot is Fitness Trainer,
+                            Influencer, and WBFF Bikini Pro winner, Randi Kennedy. Research into fitness
+                            business models such as Soul Cycle shows that is the celebrity of the trainer 
+                            that positively impacts the brand.
+                        </p>
+                        <img className='celebrityImage' src={celebrityImage} alt='Randi Kennedy Poster' />
                     </div>
                 </div>
             </div>
