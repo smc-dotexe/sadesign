@@ -139,7 +139,7 @@
     align-self: start;
 }
 
-.celebrityTitle {
+.celebrityHeading {
     grid-column: 1;
     grid-row: 1;
     margin-left: -20px;
@@ -155,6 +155,7 @@
     grid-column: 1;
     grid-row: 1 / span 2;
     align-self: center;
+    margin-top: -50px;
     width: 95%;
     margin-left: 50px;
     z-index: 1;
@@ -166,6 +167,55 @@
     justify-self: end;
     margin-top: -100px;
     margin-right: -300px;
+}
+
+.rebrandingContainer {
+    margin-top: 100px;
+    margin-left: 20px;
+    grid-column: 2 / span 4;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, min-content);
+}
+
+.rebrandingHeading {
+    font-family: ChapLight;
+    font-size: 82px;
+    line-height: 82px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.rebrandingImageContainer {
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.rumbleDotContainer {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+}
+
+#rumbleDot {
+    background-color: white;
+}
+
+#rumbleDotClear {
+    border: 1px solid white;
+}
+
+.rebrandingDescription {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 20px;
+    width: 50%;
+    font-size: 16px;
+    font-family: Cerabasic;
 }
 
 

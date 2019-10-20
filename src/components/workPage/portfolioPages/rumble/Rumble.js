@@ -6,11 +6,33 @@ import ebPhone1 from '../../../../images/rumbleEarlyBirdPhone1.png'
 import ebPhone2 from '../../../../images/rumbleEarlyBirdPhone2.png'
 import ebPhone3 from '../../../../images/rumbleEarlyBirdPhone3.png'
 import celebrityImage from '../../../../images/rumbleRandiPoster.png'
+import gutsGlory1 from '../../../../images/rebelGutsGlory1.png'
+import gutsGlory2 from '../../../../images/rebelGutsGlory2.png'
+import gutsGlory3 from '../../../../images/rebelGutsGlory3.png'
 
 
 
 class Rumble extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            counter: 0,
+            imageList: [gutsGlory1, gutsGlory2, gutsGlory3]
+        }
+    }
+
+    rumbleImageChange = () => {
+        if (this.state.counter >= 2) {
+            this.setState({counter:0})
+        } else {
+            this.setState({counter: this.state.counter + 1})
+        }
+    }
+
     render() {
+        const imageNo = this.state.counter 
+        const imageList = this.state.imageList 
+        let imageIndex
         return (
             <div className='rumbleContainer'>
                 <div className='slide rumble'>
@@ -82,14 +104,44 @@ class Rumble extends React.Component {
 
                     <div className='celebrityContainer'>
                         <div className='greyBGDiv'></div>
-                        <h2 className='celebrityTitle'>Celebrity</h2>
+                        <h2 className='celebrityHeading'>Celebrity</h2>
                         <p className='celebrityDescription'>
-                            The power of influence. One of the main stars of this shoot is Fitness Trainer,
+                            The Power of influence. One of the main stars of this shoot is Fitness Trainer,
                             Influencer, and WBFF Bikini Pro winner, Randi Kennedy. Research into fitness
                             business models such as Soul Cycle shows that is the celebrity of the trainer 
                             that positively impacts the brand.
                         </p>
                         <img className='celebrityImage' src={celebrityImage} alt='Randi Kennedy Poster' />
+                    </div>
+
+                    <div className='rebrandingContainer'>
+                        <h1 className='rebrandingHeading'>REBRANDING BOOTCAMPS</h1>
+                        <div className='rebrandingImageContainer' onClick={this.rumbleImageChange}>
+                            <img 
+                                className='rebrandingImage'
+                                src={imageList[imageNo]} 
+                                alt='guts and glory' />
+                            <div className='rumbleDotContainer'>
+                                {imageList.map(imageDot => {
+                                    imageIndex=imageList.indexOf(imageDot)
+                                    if(imageIndex === imageNo) {
+                                        return (
+                                            <span key={imageNo} className='dot' id='rumbleDot'></span>
+                                        )
+                                    }
+                                        return (
+                                            <span key={imageIndex} className='dotClear' id='rumbleDotClear'></span>
+                                        )
+                                })}
+                        </div>    
+                        </div>
+                        <p className='rebrandingDescription'>
+                            Rumble boxing is in fact more than just boxing. They offer bootcamps 
+                            and personal training. Their bootcamps needed a revamp. The objective
+                            was to create a wordmark with some edginess. I chose to incorporate 
+                            layering techniques within photoshop to achieve a moody atmosphere that 
+                            reflected the grit and the intensity of Rumble Bootcamps.
+                        </p>
                     </div>
                 </div>
             </div>
