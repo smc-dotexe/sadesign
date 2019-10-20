@@ -31,6 +31,7 @@
     grid-column: 2/ span 3;
     grid-row: 1;
     font-size: 110px;
+    /* font-size: 8.59375VW; */
     font-family: ChapLight;
     width: min-content;
     line-height: 110px;
@@ -53,8 +54,12 @@
     margin-top: 50px;
     grid-column: 2 / span 3;
     grid-row: 2;
-    /* margin-right: 150px; */
+    margin-left: 100px;
     justify-self: center;
+}
+
+.storylineImageMobile {
+    display: none;
 }
 
 .iconHeading {
@@ -102,17 +107,21 @@
     margin-top: 200px;
 }
 
+
+
 .rebelSocialMediaImage {
     grid-column: 3;
     grid-row: 6;
     margin-top: 200px;
+
 }
 
 .rebelScreenShot {
+
     grid-column: 2 / span 3;
     grid-row: 7;
     justify-self: center;
-    margin: -300px 350px 200px 0;
 
+    margin: -300px 350px 200px 0;
 }
 

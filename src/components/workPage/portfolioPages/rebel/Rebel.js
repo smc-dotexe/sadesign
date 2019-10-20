@@ -10,6 +10,7 @@ import phase1Image4 from '../../../../images/rebelPhase1Image4.png'
 import phase1Image5 from '../../../../images/rebelPhase1Image5.png'
 import rebelSocialMedia from '../../../../images/rebelSocialMedia.png'
 import rebelScreenShot from '../../../../images/rebelScreenShot.png'
+import storylineImageMobile from '../../../../images/rebelStorylineImage_Mobile.png'
 
 
 
@@ -57,6 +58,7 @@ class Rebel extends React.Component {
                         with the status-quo. From amongst society, an individual or group
                         arises with a philosophy to change the system - against all and 
                         any odds.<br/><br/>
+                        <img className='storylineImageMobile' src={storylineImageMobile} alt='rebel storyline' />
                         With the right tools. With the right medium, change is possible.
                         There is strength in Numbers. There is strength in stories. What 
                         gets measured gets done. When stories are well told and numbers 

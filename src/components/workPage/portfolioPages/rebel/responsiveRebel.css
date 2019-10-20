@@ -1,0 +1,184 @@
+@media (max-width: 1230px) {
+    .storylineImage {
+        justify-self: end;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .storylineImage {
+        margin-right: 0;
+    }
+}
+@media (max-width: 1024px) {
+    .steveJobsQuote {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1014px) {
+    .rebelDescription {
+        grid-column: 2 / span 3;
+        justify-self: center;
+        width: 70%;
+    }
+    .storylineImage {
+        display: none;
+    }
+    .storylineImageMobile {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 981px) {
+    .rebelSocialMediaHeading {
+        margin-top: 100px;
+        grid-column: 2 / span 3;
+        justify-self: center;
+    }
+
+    .rebelSocialMediaImage {
+        grid-row: 7;
+        margin-top: 50px;
+        /* width: 174px; */
+        width: 250px;
+    }
+    
+    .rebelScreenShot {
+        grid-row: 8;
+        /* width: 230px; */
+        width: 300px;
+        justify-self: center;
+        margin-top: -100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 924px) {
+    .rebelHeading {
+        font-size: 47px;
+        line-height: 51px;
+    }
+
+    .rebelDescription {
+        font-size: 16px;
+    }
+
+    .iconHeading {
+        font-size: 47px;
+        line-height: 51px;
+    }
+
+    .rebelLogoDescription {
+        grid-column: 2/ span 3;
+        font-size: 16px;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .rebelImageContainer {
+        margin-top: 50px;
+    }
+    .phase1Image {
+        width: 318px;
+    }
+
+    .rebelDotContainer {
+        bottom: 0px;
+    }
+
+    .rebelSocialMediaHeading {
+        font-size: 47px;
+        line-height: 51px;
+        width: 270px;
+    }
+
+    .rebelSocialMediaImage {
+        width: 174px;
+    }
+
+    .rebelScreenShot {
+        width: 230px;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    .rebelDescription {
+        justify-self: start;
+    }
+    
+    .rebelImageContainer {
+        justify-self: start;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 710px) {
+    .steveJobsQuote {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .steveJobsQuote {
+        grid-column: 1 / span 2;
+    }
+
+    .rebelHeading {
+        grid-column: 1 / span 2;
+    }
+
+    .rebelDescription {
+        grid-column: 1 / span 3;
+    }
+
+    .iconHeading {
+        grid-column: 1 / span 2;
+    }
+
+    .rebelImageContainer {
+        grid-column: 1/ span 3;
+    }
+    .rebelDotContainer {
+        bottom: -25px;
+    }
+    .dot {
+        background-color: white;
+    }
+    .dotClear {
+        border: 1px solid white;
+    }
+
+    .rebelLogoDescription {
+        grid-column: 1 / span 3;
+        margin-top: 50px;
+        font-size: 16px;
+        width: 80%;
+    }
+
+    .rebelSocialMediaHeading {
+        grid-column: 1 / span 3;
+        justify-self: start;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .rebelHeading {
+        margin-left: 5px;
+    }
+    .phase1Image {
+        width: 250px;
+    }
+    
+    .rebelLogoDescription {
+        /* width: 30%; */
+    }
+}
