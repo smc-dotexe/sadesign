@@ -1,0 +1,232 @@
+@media (max-width: 1200px) {
+    .earlyBirdDescription {
+        width: 60%;
+        margin-top: 150px;
+    }
+
+    .celebrityContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 975px) {
+    .earlyBirdHeading {
+        width: 70%;
+    }
+
+    .earlyBirdDescription {
+        /* margin-top: 200px; */
+        font-size: 16px;
+        grid-column: 2;
+        width: 100%;
+    }
+
+    .celebrityDescription {
+        font-size: 16px;
+        width: 80%;
+        margin-top: -100px;
+        margin-left: 10px;
+    }
+
+    .greyBGDiv {
+        height: 80%;
+    }
+}
+
+@media (max-width: 841px) {
+    .celebrityImage {
+        margin-right: -375px;
+    }
+}
+
+@media (max-width: 800px) {
+    .rumbleQuote {
+        width: 70%;
+    }
+
+    .rumbleBlackArrow {
+        margin-right: 30px;
+    }
+
+    .rumbleHeading {
+        font-size: 67px;
+        line-height: 67px;
+    }
+
+    .rumbleDescription {
+        font-size: 16px;
+    }
+
+    .earlyBirdDescription {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 726px) {
+    .ebPhone {
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
+    .earlyBirdHeading {
+        display: none;
+    }
+    
+    .earlyBirdDescription {
+        grid-row: 3;
+        grid-column: 1;
+        align-self: start;
+        margin-top: 0;
+    }
+
+    .celebrityHeading {
+        display: none;
+    }
+
+    .celebrityImage {
+        display: none;
+    }
+
+    .celebrityImageMobile {
+        display: block;
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+        justify-self: end;
+        margin-top: -100px;
+        margin-right: -100px;
+        min-width: 852px;
+    }
+
+    .celebrityDescription {
+        grid-row: 3;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .greyBGDiv {
+        grid-column: 1;
+        height: 130%;
+        width: 70%;
+        justify-self: start;
+    }
+}
+
+@media (max-width: 700px) {
+    .roleOnTheTeamDiv {
+        grid-template-rows: repeat(2, min-content);
+    }
+    .roleOnTheTeamHeading {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+        padding-bottom: 20px;
+    }
+    
+    .roleList1 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .roleList2{
+        grid-column: 2; 
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 560px) {
+    .celebrityImageMobile {
+        margin-right: -150px;
+    }
+
+    .celebrityDescription {
+        width: 140%;
+    }
+}
+
+@media (max-width: 500px) {
+    .rumbleQuote {
+        grid-column: 1 / span 2;
+        align-self: center;
+        font-size: 19px;
+    }
+
+    .rumbleQuoteAuthor {
+        font-size: 16px;
+    }
+
+    .rumbleBlackArrow {
+        justify-self: center;
+        margin-right: 0;
+    }
+
+    .rumbleHeading {
+        grid-column: 1 / span 4;
+    }
+
+    .rumbleDescription {
+        grid-column: 1 / span 4;
+    }
+
+    .roleOnTheTeamDiv {
+        grid-column: 1 / span 4;
+    } 
+    
+    .earlyBirdContainer {
+        grid-column: 1 / span 4;
+        width: 100%;
+    }
+
+    .ebPhone {
+        justify-self: start;
+    }
+
+    #ebPhone1, #ebPhone2, #ebPhone3 {
+        grid-column: 1 / span 2;
+        justify-self: center;
+    }
+
+    .earlyBirdDescription {
+        width: 60%;
+        grid-column: 1 / span 4;
+        justify-self: center;
+        margin-left: 10px;
+    }
+
+    .celebrityContainer {
+        grid-column: 1 / span 4;
+    }
+
+    .greyBGDiv {
+        justify-self: center;
+        width: 200px;
+    }
+
+    .celebrityDescription {
+        margin-left: 30px;
+    }
+
+    .celebrityImageMobile {
+       /* width: 100%; */
+
+    }
+}
+
+@media (max-width: 375px) {
+    .roleList2 {
+        grid-column: 1; 
+        grid-row: 3;
+    }
+
+    .earlyBirdContainer {
+        margin-left: 0;
+    }
+
+    .earlyBirdDescription {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 340px) {
+    .celebrityImage {
+        margin-right: -50%;
+    }
+}

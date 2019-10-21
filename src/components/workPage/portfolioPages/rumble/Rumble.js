@@ -2,10 +2,12 @@ import React from 'react'
 import './rumble.css'
 import './responsiveRumble.css'
 import HeaderComp from '../../../headerComp/HeaderComp'
+import blackArrowDown from '../../../../images/arrowBlackDown.png'
 import ebPhone1 from '../../../../images/rumbleEarlyBirdPhone1.png'
 import ebPhone2 from '../../../../images/rumbleEarlyBirdPhone2.png'
 import ebPhone3 from '../../../../images/rumbleEarlyBirdPhone3.png'
 import celebrityImage from '../../../../images/rumbleRandiPoster.png'
+import celebrityImageMobile from '../../../../images/rumbleRandiPoster_Mobile.png'
 import gutsGlory1 from '../../../../images/rebelGutsGlory1.png'
 import gutsGlory2 from '../../../../images/rebelGutsGlory2.png'
 import gutsGlory3 from '../../../../images/rebelGutsGlory3.png'
@@ -37,13 +39,14 @@ class Rumble extends React.Component {
             <div className='rumbleContainer'>
                 <div className='slide rumble'>
                     <HeaderComp />
-                    <p className='steveJobsQuote'>
+                    <p className='rumbleQuote'>
                         " Great things in business are never done by one person; 
                         they're done by a team of people. "<br/><br/>
-                        <span className='steveJobsQuoteAuthor'>
+                        <span className='rumbleQuoteAuthor'>
                             - Steve Jobs, CEO & Co-founder of Apple Inc.
                         </span>
                     </p>
+                    <img className='rumbleBlackArrow' src={blackArrowDown} alt='arrow facing down' />
                 </div>
                 <div className='rumbleDetails'>
                     <h1 className='rumbleHeading'>
@@ -112,6 +115,8 @@ class Rumble extends React.Component {
                             that positively impacts the brand.
                         </p>
                         <img className='celebrityImage' src={celebrityImage} alt='Randi Kennedy Poster' />
+                        <img className='celebrityImageMobile' src={celebrityImageMobile} alt='Randi Kennedy Poster' />
+                        
                     </div>
 
                     <div className='rebrandingContainer'>

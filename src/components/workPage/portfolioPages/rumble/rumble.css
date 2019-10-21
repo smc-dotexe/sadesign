@@ -6,6 +6,30 @@
     background-size: cover;
 }
 
+.rumbleQuote {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    align-self: end;
+    font-size: 24px;
+    font-family: Cerabasic;
+    width: 35%;
+}
+
+.rumbleQuoteAuthor {
+    font-size: 19px;
+}
+
+.rumbleBlackArrow {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+    align-self: end;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+
 .rumbleDetails {
     display: grid;
     grid-template-columns: minmax(88px, 10%) 1fr 1fr 1fr;
@@ -17,10 +41,12 @@
     grid-row: 1;
     font-family: ChapLight;
     font-size: 110px;
+    font-size: 8.59375VW;
     margin-left: 20px;
     margin-top: 50px;
     width: 80%;
     line-height: 110px;
+    line-height: 8.59375VW;
 }
 
 .rumbleDescription {
@@ -102,9 +128,10 @@
     justify-self: end;
     width: 80%;
     font-size: 82px;
+    font-size: 6.406249999999999VW;
     font-family: ChapLight;
     color: #E5E5E5;
-    line-height: 82px;
+    line-height: 6.406249999999999VW;
 }
 
 .earlyBirdDescription {
@@ -114,6 +141,7 @@
     justify-self: end;
     width: 70%;
     margin-top: 100px;
+    
     font-family: Cerabasic;
     font-size: 23px;
 }
@@ -147,6 +175,7 @@
     font-family: ChapLight;
     font-size: 82px;
     font-weight: normal;
+    z-index: 1;
 }
 
 .celebrityDescription {
@@ -167,6 +196,10 @@
     justify-self: end;
     margin-top: -100px;
     margin-right: -300px;
+}
+
+.celebrityImageMobile {
+    display: none;
 }
 
 .rebrandingContainer {
