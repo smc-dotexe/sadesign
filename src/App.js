@@ -3,11 +3,13 @@ import { BrowserRouter as Router, Route, Link, Switch, NavLink } from 'react-rou
 import './App.css';
 import './components/sandwichComp/sandwichMenu.css'
 import './animations.css';
-import saLogo from './images/sa.png'
+import saLogoWhite from './images/sa.png'
+import saLogoBlack from './images/saBlack.png'
 import SandwichMenu from './components/sandwichComp/SandwichMenu.js'
 import Home from './components/Home'
 import AboutPage from './components/aboutPage/About.js'
 import WorkPage from './components/workPage/WorkList'
+import ContactPage from './components/contactPage/Contact'
 import WorkingForMyself from './components/workPage/portfolioPages/workingForMyself/WorkingForMyself'
 import Renu from './components/workPage/portfolioPages/renuPage/Renu'
 import VisualCulture from './components/workPage/portfolioPages/visualCulturePage/VisualCulture'
@@ -17,12 +19,19 @@ import Crossing from './components/workPage/portfolioPages/crossing/Crossing'
 import IrvingCrea from './components/workPage/portfolioPages/irvingCrea/IrvingCrea'
 import Rumble from './components/workPage/portfolioPages/rumble/Rumble'
 import ScrollToTop from 'react-router-scroll-top'
+import { whileStatement } from '@babel/types';
 
+const hoursStyleBlack = {
+  color:'black'
+}
 
+const sandwichStyleBlack = {
+  backgroundColor: 'black'
+}
 
 class App extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       displayMenu: true,
     }
@@ -42,6 +51,7 @@ class App extends React.Component {
 
   render() {
     console.log('WINDOW WIDTH', window.innerWidth)
+    console.log('this.props', window.location.pathname)
     let sandwichBtnAnimation;
     if (this.state.displayMenu===false) {
         sandwichBtnAnimation = 'sandwichButtonContainer close'
@@ -56,19 +66,43 @@ class App extends React.Component {
         menuClass ='sandwichComp'
     }
 
+    let saLogo
+    // if (window.location.pathname==='/contact') {
+    //   saLogo = saLogoBlack
+    // } else {
+    //   saLogo = saLogoWhite
+    // }
+
     return (
       <Router>
       <ScrollToTop>
       <div className='App'>
         <div className='containerBorder'>
-                <img id='saLogo' src={saLogo} alt='logo' onClick={this.scrollToTop}/>
-                <p id='hours'>M-M <br/> 00:00-00:00</p>        
+          {window.location.pathname === '/contact' ? 
+            <><img id='saLogo' src={saLogoBlack} alt='logo' onClick={this.scrollToTop}/>
+            <p id='hours' style={hoursStyleBlack}>M-M <br/> 00:00-00:00</p></>
+            :
+            <><img id='saLogo' src={saLogoWhite} alt='logo' onClick={this.scrollToTop}/>
+            <p id='hours'>M-M <br/> 00:00-00:00</p></> 
+          }
+
+                   
         </div>
 
         <div className={sandwichBtnAnimation} onClick={this.sandwichMenu}>
+          {window.location.pathname === '/contact' ? 
+            <>
+            <div className='sandwich' style={sandwichStyleBlack}></div>
+            <div className='sandwich' style={sandwichStyleBlack}></div>
+            <div className='sandwich' style={sandwichStyleBlack}></div>
+            </> :
+            <>
             <div className='sandwich'></div>
             <div className='sandwich'></div>
             <div className='sandwich'></div>
+            </>
+          }
+
         </div>
         <div className='sandwichContainer'>
           <div className={menuClass}>
@@ -109,7 +143,16 @@ class App extends React.Component {
                       Work
                     </NavLink>
                   </li>
-                  <li>Contact</li>
+                  <li onClick={this.sandwichMenu}>
+                    <NavLink
+                      activeStyle={{
+                        textDecoration: 'underline',
+                        color: 'red'
+                      }}
+                      to='/contact'>
+                        Contact
+                    </NavLink>
+                  </li>
               </ul>
           </div>         
         </div>
@@ -117,6 +160,7 @@ class App extends React.Component {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={AboutPage} />
           <Route exact path='/work' component={WorkPage} />
+          <Route path='/contact' component={ContactPage} />
           <Route path='/work/workingformyself' component={WorkingForMyself} />
           <Route path='/work/renu' component={Renu} />
           <Route path='/work/visualculture' component={VisualCulture} />

@@ -68,6 +68,7 @@ html {
 #saLogo {
   transform: translateX(50%);
   cursor: pointer;
+  margin-top: 20px;
 }
 
 #hours {
@@ -76,6 +77,20 @@ html {
   position: fixed;
   bottom:0;
   color: white;
+  margin-bottom: 40px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#contactHours {
+  font-family: ChapLight;
+  font-size: 18px;
+  position: fixed;
+  bottom:0;
+  color: black;
   margin-bottom: 40px;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
