@@ -300,6 +300,7 @@
     #arr2 {
         align-self: center;
         grid-column: 3;
+        margin-left: 20px;
     }
     
 }
@@ -342,7 +343,12 @@
     #daTitle {
         align-self: start;
     }
+
+    #arr2 {
+        margin-left: 0;
+    }
 }
+
 
 /******************
 HEIGHT PROPERTIES

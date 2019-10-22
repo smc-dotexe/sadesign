@@ -124,7 +124,7 @@ header {
   padding-left: 5px;
   justify-self: start;
   align-self: center;
-  line-height: 85px;
+  /* line-height: 85px; */
   width: 55%;
 }
 
@@ -135,6 +135,7 @@ header h1 {
   font-size: 87px;
   font-size: 6.359649122807018VW;
   font-weight: normal;
+  line-height: 87px;
 }
 
 header #sarah {
@@ -308,6 +309,7 @@ DESIGNERS ART SECTION
   line-height: 45px;
   grid-row: 2;
   justify-self: center;
+  margin-bottom: 30px;
 } 
 
 #myBrand {

@@ -9,6 +9,21 @@
     }
 }
 
+@media (max-width: 1110px) {
+    .rebrandingImageContainer img {
+        width: 80vw;
+    }
+
+    .rebrandingDescription {
+        grid-row: 3;
+        grid-column: 1;
+        margin-top: 40px;
+        margin-bottom: 100px;
+        width: 80%;
+        justify-self: center;
+    }
+}
+
 @media (max-width: 975px) {
     .earlyBirdHeading {
         width: 70%;
@@ -131,6 +146,25 @@
     }
 }
 
+@media (max-width: 674px) {
+    .rebrandingHeading {
+        font-size: 43px;
+        line-height: 43px;
+    }
+}
+
+@media (max-width: 653px) {
+    .rumbleDotContainer {
+        right: 50px;
+    }
+}
+
+@media (max-width: 597px) {
+    .rebrandingImageContainer img {
+        width: 70vw;
+    }
+}
+
 @media (max-width: 560px) {
     .celebrityImageMobile {
         margin-right: -150px;
@@ -205,7 +239,17 @@
 
     .celebrityImageMobile {
        /* width: 100%; */
+        
+    }
 
+    .rebrandingContainer {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media (max-width: 387px) {
+    .rebrandingImageContainer img {
+        width: 280px;
     }
 }
 
@@ -228,5 +272,11 @@
 @media (max-width: 340px) {
     .celebrityImage {
         margin-right: -50%;
+    }
+}
+
+@media (max-width: 323px) {
+    .rebrandingContainer {
+        margin-left: 0;
     }
 }
