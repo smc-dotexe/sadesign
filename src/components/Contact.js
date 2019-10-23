@@ -1,13 +1,25 @@
 import React from 'react'
 import '../styles/responsiveContact.css'
-
+import { BrowserRouter as Router, Route, Link, Switch, NavLink, withRouter, connect } from 'react-router-dom'
 class Contact extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
     render() {
+        console.log('contact props', this.props)
+
         return (
+            
             <div className='contact'>
                 <div className='border'></div>
                 <div id='contactInfo'>
-                    <h5 id='contactMe'>Contact Me</h5>
+                    <h5 
+                        id='contactMe'
+                        onClick={()=> this.props.passProp.history.push('/contact')}
+                    >
+                        Contact Me
+                    </h5>
                     <p id='contactAddress'>
                         U-101 #342 15Ave, SW<br/>
                         Calgary, AB<br/>

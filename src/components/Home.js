@@ -14,7 +14,12 @@ class Home extends React.Component {
 
     }
 
+    componentDidMount() {
+        this.props.passLogoDisplay(window.location.pathname)
+    }
+
     render() {
+    
         console.log('width', this.props.passWindowWidth)
         console.log('home.props', this.props)
         return (
@@ -24,7 +29,7 @@ class Home extends React.Component {
                 <DesignersArt passProp={this.props}/>
                 {/* <DesignTraining /> */}
                 {/* <SmallBusiness /> */}
-                <Contact />
+                <Contact passProp={this.props}/>
             </div>
             </Router>
         )

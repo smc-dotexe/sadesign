@@ -29,13 +29,20 @@ const sandwichStyleBlack = {
   backgroundColor: 'black'
 }
 
+
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       displayMenu: true,
+      count: 0,
     }
   }
+
+//   componentDidMount() {
+//     this.logoDisplay(window.location.pathname)
+//     console.log('componentDidMount at App ran')
+// }
 
   scrollToTop = () => {
     window.scrollTo({
@@ -49,9 +56,19 @@ class App extends React.Component {
       this.setState(prevState => ({displayMenu: !prevState.displayMenu}))
   }
 
+  logoDisplay = (pathname) => {
+    console.log('logoDisplay ran', pathname)
+    if (pathname==='/contact') {
+      console.log('if statement: saLogoBlack')
+      return saLogoBlack
+    } else {
+      console.log('else statement: saLogoWhite')
+      return saLogoWhite
+    }
+  }
+
   render() {
-    console.log('WINDOW WIDTH', window.innerWidth)
-    console.log('this.props', window.location.pathname)
+    // this.logoDisplay(window.location.pathname)
     let sandwichBtnAnimation;
     if (this.state.displayMenu===false) {
         sandwichBtnAnimation = 'sandwichButtonContainer close'
@@ -66,25 +83,22 @@ class App extends React.Component {
         menuClass ='sandwichComp'
     }
 
-    let saLogo
-    // if (window.location.pathname==='/contact') {
-    //   saLogo = saLogoBlack
-    // } else {
-    //   saLogo = saLogoWhite
-    // }
 
     return (
       <Router>
       <ScrollToTop>
       <div className='App'>
         <div className='containerBorder'>
-          {window.location.pathname === '/contact' ? 
-            <><img id='saLogo' src={saLogoBlack} alt='logo' onClick={this.scrollToTop}/>
-            <p id='hours' style={hoursStyleBlack}>M-M <br/> 00:00-00:00</p></>
-            :
-            <><img id='saLogo' src={saLogoWhite} alt='logo' onClick={this.scrollToTop}/>
-            <p id='hours'>M-M <br/> 00:00-00:00</p></> 
-          }
+              <NavLink to='/'>
+                <img id='saLogo' src={this.logoDisplay(window.location.pathname)} alt='logo'/>
+              </NavLink>
+              <p id='hours' style={hoursStyleBlack}>M-M <br/> 00:00-00:00</p>
+           
+              {/* <NavLink to='/'>
+                <img id='saLogo' src={saLogoWhite} alt='logo'/>
+              </NavLink> */}
+              <p id='hours'>M-M <br/> 00:00-00:00</p>
+
 
                    
         </div>
@@ -104,7 +118,7 @@ class App extends React.Component {
           }
 
         </div>
-        <div className='sandwichContainer' onClick={this.sandwichMenu}>
+        <div className='sandwichContainer' >
           <div className={menuClass}>
               {/* <p id='sandwichMenuExit' onClick={this.sandwichMenu}>x</p> */}
               <h4 id='sandwichSarah'>Sarah</h4><br/>
@@ -157,10 +171,16 @@ class App extends React.Component {
           </div>         
         </div>
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/' component={(props) => 
+              (<Home passLogoDisplay={this.logoDisplay} {...props} />)
+            } 
+          />
           <Route path='/about' component={AboutPage} />
           <Route exact path='/work' component={WorkPage} />
-          <Route path='/contact' component={ContactPage} />
+          <Route path='/contact' component={(props) => 
+              (<ContactPage passLogoDisplay={this.logoDisplay} {...props}/>)
+            }
+          />
           <Route path='/work/workingformyself' component={WorkingForMyself} />
           <Route path='/work/renu' component={Renu} />
           <Route path='/work/visualculture' component={VisualCulture} />

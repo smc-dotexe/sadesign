@@ -4,6 +4,14 @@ import './responsiveContact.css'
 import contactMap from '../../images/contactMap.png'
 
 class Contact extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    componentDidMount() {
+        this.props.passLogoDisplay(window.location.pathname)
+    }
+
     render() {
         return (
             <div className='contactContainer'>
