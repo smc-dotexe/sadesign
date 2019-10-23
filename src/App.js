@@ -104,9 +104,9 @@ class App extends React.Component {
           }
 
         </div>
-        <div className='sandwichContainer'>
+        <div className='sandwichContainer' onClick={this.sandwichMenu}>
           <div className={menuClass}>
-              <p id='sandwichMenuExit' onClick={this.sandwichMenu}>x</p>
+              {/* <p id='sandwichMenuExit' onClick={this.sandwichMenu}>x</p> */}
               <h4 id='sandwichSarah'>Sarah</h4><br/>
               <h4 id='sandwichAlonso'>Alonso</h4>
               <h4 id='sandwichDesign'>Design</h4>

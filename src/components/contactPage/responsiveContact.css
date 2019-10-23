@@ -1,0 +1,45 @@
+@media (max-width: 860px) {
+    .contactHeading {
+        display: none;
+    }
+    
+    .enquiries {
+        font-size: 33px;
+        line-height: 33px;
+        align-self: center;
+        
+    }
+
+    .emailInfo {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .addressDetails {
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 2;
+        align-self: center;
+        font-size: 27px;
+        line-height: 27px;
+        margin-top: -80px;
+    }
+    
+    .map {
+        align-self: end;
+    }
+}
+
+@media (max-width: 500px) {
+    .enquiries, .addressDetails {
+        grid-column: 1 / span 3;
+        margin-left: 20px;
+        justify-self: start;
+    }
+
+    .addressDetails {
+        font-size: 23px;
+        line-height: 23px;
+    }
+
+
+}

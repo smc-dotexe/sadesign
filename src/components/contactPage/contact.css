@@ -24,7 +24,8 @@
 .enquiries, .emailInfo {
     color: black;
     font-size: 53px;
-    line-height: 53px;
+    font-size: 4.140625VW;
+    line-height: 4.140625VW;
     font-family: ChapLight;
     grid-column: 2 / span 3;
     grid-row: 1;
@@ -41,7 +42,8 @@
     color: black;
     font-family: Cerabasic;
     font-size: 42px;
-    line-height: 42px;
+    font-size: 3.28125VW;
+    line-height: 3.28125VW;
     z-index: 1;
 }
 
