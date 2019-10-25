@@ -2,20 +2,28 @@ import React from 'react'
 import './contact.css'
 import './responsiveContact.css'
 import contactMap from '../../images/contactMap.png'
+import saLogoBlack from '../../images/saBlack.png'
+import { NavLink } from 'react-router-dom'
+
 
 class Contact extends React.Component {
     constructor(props) {
         super(props)
     }
 
-    componentDidMount() {
-        this.props.passLogoDisplay(window.location.pathname)
-    }
+    // componentDidMount() {
+    //     // this.props.passLogoDisplay(window.location.pathname)
+    //     console.log('thisprops contact comonentdidmount', this.props)
+    // }
 
     render() {
         return (
             <div className='contactContainer'>
                 <div className='slide contactComp'>
+                {/* <div className='saLogo'></div> */}
+                <NavLink to='/'>
+                    <div className='saLogoBlack'></div> 
+                </NavLink>
                     <p className='contactHeading'>Contact</p>
                     <h2 className='enquiries'>
                         GENERAL ENQUIRIES<br/>

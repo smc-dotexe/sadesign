@@ -7,17 +7,11 @@ class Contact extends React.Component {
     }
 
     render() {
-        console.log('contact props', this.props)
-
-        return (
-            
+        return (         
             <div className='contact'>
                 <div className='border'></div>
                 <div id='contactInfo'>
-                    <h5 
-                        id='contactMe'
-                        onClick={()=> this.props.passProp.history.push('/contact')}
-                    >
+                    <h5 id='contactMe'>
                         Contact Me
                     </h5>
                     <p id='contactAddress'>

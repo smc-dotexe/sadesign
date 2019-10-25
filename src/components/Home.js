@@ -11,15 +11,10 @@ import { BrowserRouter as Router, Route, Link, Switch, NavLink } from 'react-rou
 class Home extends React.Component {
     constructor(props) {
         super(props)
-
-    }
-
-    componentDidMount() {
-        this.props.passLogoDisplay(window.location.pathname)
     }
 
     render() {
-    
+        
         console.log('width', this.props.passWindowWidth)
         console.log('home.props', this.props)
         return (

@@ -54,6 +54,16 @@ html {
   margin: 6px 0;
   opacity: 0.7;
 }
+
+.sandwichBlack {
+  width: 35px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+  opacity: 1;
+  z-index: 5;
+}
+
 .containerBorder {
   display: block;
   width: 10%;
@@ -65,10 +75,40 @@ html {
   z-index: 1;
 }
 
-#saLogo {
+.saLogo {
   transform: translateX(50%);
   cursor: pointer;
   margin-top: 20px;
+  background-image: url('./images/sa.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 55px;
+  position: fixed;
+  z-index: 2;
+}
+
+.saNone {
+  display: none;
+}
+
+/* .saLogo.black {
+  background-image: url('./images/saBlack.png')
+} */
+
+.saLogoBlack {
+  transform: translateX(50%);
+  cursor: pointer;
+  margin-top: 20px;
+  background-image: url('./images/saBlack.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 46px;
+  width: 55px;
+  position: fixed;
+  z-index: 10;
 }
 
 #hours {
@@ -133,17 +173,17 @@ INTRO PAGE SECTION
   width: 100%;
 }
 
-header {
+/* header {
   grid-column: 2 / span 3;
   grid-row: 1;
   padding-left: 5px;
   justify-self: start;
   align-self: center;
-  /* line-height: 85px; */
+  line-height: 85px; 
   width: 55%;
-}
+} */
 
-header h1 {
+/* header h1 {
   margin: 0;
   padding: 0;
   font-family: ChapLight;
@@ -166,7 +206,7 @@ header #design {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   float: left;
-}
+} */
 
 #year {
   font-family: ChapLight;

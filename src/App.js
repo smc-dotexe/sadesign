@@ -36,6 +36,8 @@ class App extends React.Component {
     this.state = {
       displayMenu: true,
       count: 0,
+      urlPathname:'',
+      saLogo: '',
     }
   }
 
@@ -44,14 +46,18 @@ class App extends React.Component {
 //     console.log('componentDidMount at App ran')
 // }
 
-  scrollToTop = () => {
-    window.scrollTo({
-      top:0,
-      left:0,
-      behavior: 'smooth'
-    });
-  }
+  // scrollToTop = () => {
+  //   window.scrollTo({
+  //     top:0,
+  //     left:0,
+  //     behavior: 'smooth'
+  //   });
+  // }
 
+
+  addToCount = () => {
+    this.setState({count: this.state.count + 1})
+  }
   sandwichMenu = () => {
       this.setState(prevState => ({displayMenu: !prevState.displayMenu}))
   }
@@ -60,15 +66,18 @@ class App extends React.Component {
     console.log('logoDisplay ran', pathname)
     if (pathname==='/contact') {
       console.log('if statement: saLogoBlack')
-      return saLogoBlack
+      return this.setState({saLogo: saLogoBlack})
     } else {
       console.log('else statement: saLogoWhite')
-      return saLogoWhite
+      return this.setState({saLogo: saLogoWhite})
     }
   }
 
   render() {
-    // this.logoDisplay(window.location.pathname)
+
+    console.log(this.props)
+
+
     let sandwichBtnAnimation;
     if (this.state.displayMenu===false) {
         sandwichBtnAnimation = 'sandwichButtonContainer close'
@@ -90,7 +99,14 @@ class App extends React.Component {
       <div className='App'>
         <div className='containerBorder'>
               <NavLink to='/'>
-                <img id='saLogo' src={this.logoDisplay(window.location.pathname)} alt='logo'/>
+                {/* <img id='saLogo' src={saLogoWhite} alt='logo'/> */}
+                { window.location.pathname === '/contact' ? 
+                  <div className='saLogo' style={{zIndex:'0'}}></div> :
+                  <div className='saLogo' style={{zIndex:'100'}}></div>
+                }
+                {/* <div className='saLogo' style={{display: window.location.pathname==='/contact'? 'none': 'block'}}></div> */}
+                {/* <div className='saLogo'></div> */}
+                
               </NavLink>
               <p id='hours' style={hoursStyleBlack}>M-M <br/> 00:00-00:00</p>
            
@@ -106,14 +122,14 @@ class App extends React.Component {
         <div className={sandwichBtnAnimation} onClick={this.sandwichMenu}>
           {window.location.pathname === '/contact' ? 
             <>
-            <div className='sandwich' style={sandwichStyleBlack}></div>
-            <div className='sandwich' style={sandwichStyleBlack}></div>
-            <div className='sandwich' style={sandwichStyleBlack}></div>
+            <div className='sandwich' style={{zIndex:'0'}}></div>
+            <div className='sandwich' style={{zIndex:'0'}}></div>
+            <div className='sandwich' style={{zIndex:'0'}}></div>
             </> :
             <>
-            <div className='sandwich'></div>
-            <div className='sandwich'></div>
-            <div className='sandwich'></div>
+            <div className='sandwich' style={{zIndex:'20'}}></div>
+            <div className='sandwich' style={{zIndex:'20'}}></div>
+            <div className='sandwich' style={{zIndex:'20'}}></div>
             </>
           }
 
@@ -171,16 +187,12 @@ class App extends React.Component {
           </div>         
         </div>
         <Switch>
-          <Route exact path='/' component={(props) => 
-              (<Home passLogoDisplay={this.logoDisplay} {...props} />)
-            } 
+          <Route exact path='/' render={(props) => (      
+                <Home passLogoDisplay={this.logoDisplay} {...props} />
+            )}
           />
           <Route path='/about' component={AboutPage} />
           <Route exact path='/work' component={WorkPage} />
-          <Route path='/contact' component={(props) => 
-              (<ContactPage passLogoDisplay={this.logoDisplay} {...props}/>)
-            }
-          />
           <Route path='/work/workingformyself' component={WorkingForMyself} />
           <Route path='/work/renu' component={Renu} />
           <Route path='/work/visualculture' component={VisualCulture} />
@@ -189,6 +201,27 @@ class App extends React.Component {
           <Route path='/work/crossing' component={Crossing} />
           <Route path='/work/irvingcrea' component={IrvingCrea} />
           <Route path='/work/rumble' component={Rumble} />
+          {/* <Route exact path='/' render={() => <div className='saLogo' />} /> */}
+          <Route path='/contact' component={(props) => 
+              (
+                <>
+                  <div 
+                    className={sandwichBtnAnimation}
+                    onClick={this.sandwichMenu}
+                  >
+                    <div className='sandwichBlack'></div>
+                    <div className='sandwichBlack'></div>
+                    <div className='sandwichBlack'></div>
+                  </div>
+                  <ContactPage 
+                  passSandwichmenu={this.sandwichMenu} 
+                  passSandwichAnimation={sandwichBtnAnimation}
+                  {...props}
+                  />
+                </>
+              )
+            }
+          />
         </Switch>   
       </div>
       </ScrollToTop>
