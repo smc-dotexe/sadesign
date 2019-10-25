@@ -25,9 +25,9 @@ const hoursStyleBlack = {
   color:'black'
 }
 
-const sandwichStyleBlack = {
-  backgroundColor: 'black'
-}
+// const sandwichStyleBlack = {
+//   backgroundColor: 'black'
+// }
 
 
 class App extends React.Component {
@@ -40,11 +40,6 @@ class App extends React.Component {
       saLogo: '',
     }
   }
-
-//   componentDidMount() {
-//     this.logoDisplay(window.location.pathname)
-//     console.log('componentDidMount at App ran')
-// }
 
   // scrollToTop = () => {
   //   window.scrollTo({
@@ -99,21 +94,13 @@ class App extends React.Component {
       <div className='App'>
         <div className='containerBorder'>
               <NavLink to='/'>
-                {/* <img id='saLogo' src={saLogoWhite} alt='logo'/> */}
                 { window.location.pathname === '/contact' ? 
                   <div className='saLogo' style={{zIndex:'0'}}></div> :
                   <div className='saLogo' style={{zIndex:'100'}}></div>
-                }
-                {/* <div className='saLogo' style={{display: window.location.pathname==='/contact'? 'none': 'block'}}></div> */}
-                {/* <div className='saLogo'></div> */}
-                
+                } 
               </NavLink>
-              <p id='hours' style={hoursStyleBlack}>M-M <br/> 00:00-00:00</p>
-           
-              {/* <NavLink to='/'>
-                <img id='saLogo' src={saLogoWhite} alt='logo'/>
-              </NavLink> */}
-              <p id='hours'>M-M <br/> 00:00-00:00</p>
+              <p id='hours' style={{zIndex:'1'}}>M-M <br/> 00:00-00:00</p>
+
 
 
                    
@@ -201,7 +188,6 @@ class App extends React.Component {
           <Route path='/work/crossing' component={Crossing} />
           <Route path='/work/irvingcrea' component={IrvingCrea} />
           <Route path='/work/rumble' component={Rumble} />
-          {/* <Route exact path='/' render={() => <div className='saLogo' />} /> */}
           <Route path='/contact' component={(props) => 
               (
                 <>
@@ -213,6 +199,7 @@ class App extends React.Component {
                     <div className='sandwichBlack'></div>
                     <div className='sandwichBlack'></div>
                   </div>
+                  <p id='hoursBlack' style={{zIndex: '1'}}>M-M<br/> 00:00-00:00</p>
                   <ContactPage 
                   passSandwichmenu={this.sandwichMenu} 
                   passSandwichAnimation={sandwichBtnAnimation}

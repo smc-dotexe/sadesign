@@ -11,11 +11,6 @@ class Contact extends React.Component {
         super(props)
     }
 
-    // componentDidMount() {
-    //     // this.props.passLogoDisplay(window.location.pathname)
-    //     console.log('thisprops contact comonentdidmount', this.props)
-    // }
-
     render() {
         return (
             <div className='contactContainer'>
@@ -24,6 +19,8 @@ class Contact extends React.Component {
                 <NavLink to='/'>
                     <div className='saLogoBlack'></div> 
                 </NavLink>
+                {/* <p id='hoursBlack'>M-M <br/> 00:00-00:00</p> */}
+
                     <p className='contactHeading'>Contact</p>
                     <h2 className='enquiries'>
                         GENERAL ENQUIRIES<br/>
