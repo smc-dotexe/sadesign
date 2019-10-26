@@ -39,7 +39,8 @@
     .celebrityDescription {
         font-size: 16px;
         width: 80%;
-        margin-top: -100px;
+        align-self: center;
+        margin-top: 20px;
         margin-left: 10px;
     }
 
@@ -50,7 +51,7 @@
 
 @media (max-width: 841px) {
     .celebrityImage {
-        margin-right: -375px;
+        /* margin-right: -375px; */
     }
 }
 
@@ -105,10 +106,10 @@
         display: block;
         grid-column: 1 / span 2;
         grid-row: 1 / span 2;
-        justify-self: end;
+        justify-self: start;
         margin-top: -100px;
         margin-right: -100px;
-        min-width: 852px;
+        /* min-width: 852px; */
     }
 
     .celebrityDescription {
@@ -267,16 +268,33 @@
         width: 80%;
     }
 
+    .celebrityContainer {
+        width: 100%;
+    }
+
 }
 
 @media (max-width: 340px) {
     .celebrityImage {
         margin-right: -50%;
     }
+
+    .rebrandingDescription {
+        width: 95%;
+    }
 }
 
 @media (max-width: 323px) {
     .rebrandingContainer {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 325px) {
+    .celebrityImageMobile {
+        margin-left: -10px;
+    }
+    .celebrityDescription {
+        margin-left: 5px;
     }
 }

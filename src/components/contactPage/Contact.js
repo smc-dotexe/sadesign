@@ -4,13 +4,14 @@ import './responsiveContact.css'
 import contactMap from '../../images/contactMap.png'
 import contactSaMap from '../../images/contactSaMap.png'
 import saLogoBlack from '../../images/saBlack.png'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 class Contact extends React.Component {
     constructor(props) {
         super(props)
     }
+
 
     render() {
         return (
@@ -25,9 +26,11 @@ class Contact extends React.Component {
                     <p className='contactHeading'>Contact</p>
                     <h2 className='enquiries'>
                         GENERAL ENQUIRIES<br/>
-                        <span className='emailInfo'>
-                            INFO@SARAHALONSO.COM
-                        </span>
+                            <a 
+                                className='emailInfo' 
+                                href="mailto:info@sarahalonso.com">
+                                    INFO@SARAHALONSO.COM
+                            </a>
                     </h2>
                     <p className='addressDetails'>
                         STUDIO ADDRESS<br/>
@@ -35,7 +38,13 @@ class Contact extends React.Component {
                         CALGARY, AB<br/>
                         CANADA, T2R 0P9<br />
                     </p>
-                    <img className='map' src={contactSaMap} alt='map location'/>
+
+                    <img 
+                        className='map' 
+                        src={contactSaMap} 
+                        alt='map location' 
+                        onClick={() => {window.location.href='/static/media/contactSaMap.e2042256.png'}}
+                    />
                 </div>
             </div>
         )
