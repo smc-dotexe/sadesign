@@ -70,7 +70,7 @@ class App extends React.Component {
 
   render() {
 
-    console.log(this.props)
+    console.log(window.innerWidth)
 
 
     let sandwichBtnAnimation;
@@ -95,8 +95,15 @@ class App extends React.Component {
         <div className='containerBorder'>
               <NavLink to='/'>
                 { window.location.pathname === '/contact' ? 
-                  <div className='saLogo' style={{zIndex:'0'}}></div> :
+                <>
+                  <div className='saLogo' style={{zIndex:'0'}}></div>
+                  {/* <div className='saLogoBlack' style={{zIndex: '1'}} ></div> */}
+                </>
+                  :
+                <>
                   <div className='saLogo' style={{zIndex:'100'}}></div>
+                  {/* <div className='saLogoBlack' style={{zIndex:'-20', display:'none'}}></div> */}
+                </>
                 } 
               </NavLink>
               <p id='hours' style={{zIndex:'1'}}>M-M <br/> 00:00-00:00</p>
@@ -191,6 +198,9 @@ class App extends React.Component {
           <Route path='/contact' component={(props) => 
               (
                 <>
+                <NavLink to='/'>
+                    <div className='saLogoBlack'></div> 
+                </NavLink>
                   <div 
                     className={sandwichBtnAnimation}
                     onClick={this.sandwichMenu}

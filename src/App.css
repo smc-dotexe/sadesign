@@ -61,7 +61,7 @@ html {
   background-color: black;
   margin: 6px 0;
   opacity: 1;
-  z-index: 5;
+  /* z-index: 5; */
 }
 
 .containerBorder {
@@ -814,6 +814,18 @@ CONTACT SECTION
   align-self: start;
   opacity: 0.3;
   margin-right: -70px;
+}
+
+@media (max-width: 500px) {
+  .saLogo {
+    margin-top: 5px;
+    transform: translate(0);
+  }
+
+  .saLogoBlack {
+    margin-top: 5px;
+    transform: translate(0);
+  }
 }
 
 @media

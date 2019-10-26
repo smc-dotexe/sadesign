@@ -2,6 +2,7 @@ import React from 'react'
 import './contact.css'
 import './responsiveContact.css'
 import contactMap from '../../images/contactMap.png'
+import contactSaMap from '../../images/contactSaMap.png'
 import saLogoBlack from '../../images/saBlack.png'
 import { NavLink } from 'react-router-dom'
 
@@ -16,9 +17,9 @@ class Contact extends React.Component {
             <div className='contactContainer'>
                 <div className='slide contactComp'>
                 {/* <div className='saLogo'></div> */}
-                <NavLink to='/'>
+                {/* <NavLink to='/'>
                     <div className='saLogoBlack'></div> 
-                </NavLink>
+                </NavLink> */}
                 {/* <p id='hoursBlack'>M-M <br/> 00:00-00:00</p> */}
 
                     <p className='contactHeading'>Contact</p>
@@ -34,7 +35,7 @@ class Contact extends React.Component {
                         CALGARY, AB<br/>
                         CANADA, T2R 0P9<br />
                     </p>
-                    <img className='map' src={contactMap} alt='map location'/>
+                    <img className='map' src={contactSaMap} alt='map location'/>
                 </div>
             </div>
         )

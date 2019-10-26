@@ -25,7 +25,8 @@
     }
     
     .map {
-        align-self: end;
+        width: 290px;
+        height: 192px;
     }
 }
 
@@ -41,5 +42,8 @@
         line-height: 23px;
     }
 
+    .map {
+        grid-column: 1 / span 3;
+    }
 
 }
