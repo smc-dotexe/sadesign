@@ -47,6 +47,10 @@
     .greyBGDiv {
         height: 80%;
     }
+
+    .rebrandingDescription {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 841px) {
@@ -246,6 +250,9 @@
     .rebrandingContainer {
         grid-column: 1 / span 2;
     }
+    .rebrandingDescription {
+        width: 95%;
+    }
 }
 
 @media (max-width: 387px) {
@@ -271,6 +278,8 @@
     .celebrityContainer {
         width: 100%;
     }
+
+
 
 }
 
