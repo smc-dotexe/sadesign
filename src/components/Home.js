@@ -14,9 +14,6 @@ class Home extends React.Component {
     }
 
     render() {
-        
-        console.log('width', this.props.passWindowWidth)
-        console.log('home.props', this.props)
         return (
             <Router>
             <div className='homepage'>

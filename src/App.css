@@ -21,15 +21,6 @@ html {
   color: yellow;
 }
 
-/* .pageContainer {
-  overflow-y: hidden;
-  overflow-x: auto;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-} */
-
 .sandwichButtonContainer {
   position: absolute;
   right: 0;
@@ -92,10 +83,6 @@ html {
 .saNone {
   display: none;
 }
-
-/* .saLogo.black {
-  background-image: url('./images/saBlack.png')
-} */
 
 .saLogoBlack {
   transform: translateX(50%);
@@ -187,41 +174,6 @@ INTRO PAGE SECTION
   width: 100%;
 }
 
-/* header {
-  grid-column: 2 / span 3;
-  grid-row: 1;
-  padding-left: 5px;
-  justify-self: start;
-  align-self: center;
-  line-height: 85px; 
-  width: 55%;
-} */
-
-/* header h1 {
-  margin: 0;
-  padding: 0;
-  font-family: ChapLight;
-  font-size: 87px;
-  font-size: 6.359649122807018VW;
-  font-weight: normal;
-  line-height: 87px;
-}
-
-header #sarah {
-  float: left;
-}
-
-header #alonso {
-  float: right;
-}
-
-header #design {
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  float: left;
-} */
-
 #year {
   font-family: ChapLight;
   font-size: 87px;
@@ -240,6 +192,7 @@ header #design {
   justify-self: center;
   grid-column: 3 / span 4;
   grid-row: 2;
+  margin-bottom: 100px;
 }
 
 #focusQuote {
@@ -793,6 +746,10 @@ CONTACT SECTION
   grid-row: 3;
   align-self: end;
   line-height: 2em;
+}
+
+#socialMedia a {
+  text-decoration: none;
 }
 
 #privacyPolicy {

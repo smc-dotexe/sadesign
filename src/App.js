@@ -21,23 +21,12 @@ import Rumble from './components/workPage/portfolioPages/rumble/Rumble'
 import ScrollToTop from 'react-router-scroll-top'
 import { whileStatement } from '@babel/types';
 
-const hoursStyleBlack = {
-  color:'black'
-}
-
-// const sandwichStyleBlack = {
-//   backgroundColor: 'black'
-// }
-
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      displayMenu: true,
-      count: 0,
-      urlPathname:'',
-      saLogo: '',
+      displayMenu: true,  
     }
   }
 
@@ -49,29 +38,25 @@ class App extends React.Component {
   //   });
   // }
 
-
-  addToCount = () => {
-    this.setState({count: this.state.count + 1})
-  }
   sandwichMenu = () => {
       this.setState(prevState => ({displayMenu: !prevState.displayMenu}))
   }
 
-  logoDisplay = (pathname) => {
-    console.log('logoDisplay ran', pathname)
-    if (pathname==='/contact') {
-      console.log('if statement: saLogoBlack')
-      return this.setState({saLogo: saLogoBlack})
-    } else {
-      console.log('else statement: saLogoWhite')
-      return this.setState({saLogo: saLogoWhite})
-    }
+  navLinkClicked = () => {
+    this.setState({displayMenu: true})
+  }
+
+  clickOutOfMenu = () => {
+    // if (this.state.displayMenu === false) {
+    //   this.sandwichMenu()
+    // }
+    // this.setState({displayMenu: false})
+    console.log('ran')
   }
 
   render() {
-
+    console.log('displayMenu = ', this.state.displayMenu)
     console.log(window.innerWidth)
-
 
     let sandwichBtnAnimation;
     if (this.state.displayMenu===false) {
@@ -82,28 +67,24 @@ class App extends React.Component {
 
     let menuClass;
     if (this.state.displayMenu) {
-        menuClass = 'sandwichComp slider'
+        menuClass = 'sandwichComp off'
+        console.log('current menuClass = ', menuClass)
     } else {
         menuClass ='sandwichComp'
-    }
+        console.log('current menuClass = ', menuClass)
 
+    }
 
     return (
       <Router>
       <ScrollToTop>
-      <div className='App'>
+      <div className='App' onClick={this.clickOutOfMenu}>
         <div className='containerBorder'>
               <NavLink to='/'>
                 { window.location.pathname === '/contact' ? 
-                <>
                   <div className='saLogo' style={{zIndex:'0'}}></div>
-                  {/* <div className='saLogoBlack' style={{zIndex: '1'}} ></div> */}
-                </>
                   :
-                <>
                   <div className='saLogo' style={{zIndex:'100'}}></div>
-                  {/* <div className='saLogoBlack' style={{zIndex:'-20', display:'none'}}></div> */}
-                </>
                 } 
               </NavLink>
               <p id='hours' style={{zIndex:'1'}}>M-M <br/> 00:00-00:00</p>
@@ -130,12 +111,11 @@ class App extends React.Component {
         </div>
         <div className='sandwichContainer' >
           <div className={menuClass}>
-              {/* <p id='sandwichMenuExit' onClick={this.sandwichMenu}>x</p> */}
               <h4 id='sandwichSarah'>Sarah</h4><br/>
               <h4 id='sandwichAlonso'>Alonso</h4>
               <h4 id='sandwichDesign'>Design</h4>
               <ul id='sandwichLinks'>
-                  <li onClick={this.sandwichMenu}>
+                  <li onClick={this.navLinkClicked}>
                     <NavLink 
                       exact
                       activeStyle={{
@@ -182,7 +162,7 @@ class App extends React.Component {
         </div>
         <Switch>
           <Route exact path='/' render={(props) => (      
-                <Home passLogoDisplay={this.logoDisplay} {...props} />
+                <Home {...props} />
             )}
           />
           <Route path='/about' component={AboutPage} />
@@ -195,6 +175,10 @@ class App extends React.Component {
           <Route path='/work/crossing' component={Crossing} />
           <Route path='/work/irvingcrea' component={IrvingCrea} />
           <Route path='/work/rumble' component={Rumble} />
+
+          {/*passing black colored elements to contact page.
+          need to do it this way to render original elements when
+          user presses the back button*/}
           <Route path='/contact' component={(props) => 
               (
                 <>

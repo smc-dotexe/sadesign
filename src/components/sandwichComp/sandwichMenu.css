@@ -18,7 +18,7 @@
     /* border-left: 1px solid #D9D9D9; */
 }
 
-.sandwichComp.slider {
+.sandwichComp.off {
     display: grid;
     transform: translateX(100%);
     overflow-y: hidden;

@@ -27,9 +27,21 @@ class Contact extends React.Component {
                         Collaborate
                     </p>
                     <p id='socialMedia'>
-                        Facebook<br/>
-                        Instagram<br/>
-                        LinkedIn<br/>
+                        <a 
+                            href="https://www.facebook.com/sarahalonsographicart/"
+                            target="_blank">
+                                Facebook
+                        </a><br/>
+                        <a 
+                            href="https://www.instagram.com/sarahalonso.design/"
+                            target="_blank">
+                                Instagram
+                        </a><br/>
+                        <a
+                            href="https://www.linkedin.com/in/sarah-alonso-d3s1gn/"
+                            target="_blank">
+                                LinkedIn
+                        </a><br/>
                     </p>
                     <p id='privacyPolicy'>
                         Privacy Policy 
