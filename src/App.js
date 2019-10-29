@@ -26,8 +26,18 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      displayMenu: true,  
+      displayMenu: true,
+      clickOut: false,  
     }
+
+  }
+
+  componentWillMount() {
+    document.addEventListener('mousedown', this.testFunction, false) 
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.testFunction, false)
   }
 
   // scrollToTop = () => {
@@ -39,19 +49,28 @@ class App extends React.Component {
   // }
 
   sandwichMenu = () => {
-      this.setState(prevState => ({displayMenu: !prevState.displayMenu}))
+      this.setState(prevState => ({
+        displayMenu: !prevState.displayMenu,
+        clickOut: true}))
   }
 
   navLinkClicked = () => {
     this.setState({displayMenu: true})
   }
 
-  clickOutOfMenu = () => {
-    // if (this.state.displayMenu === false) {
-    //   this.sandwichMenu()
-    // }
-    // this.setState({displayMenu: false})
-    console.log('ran')
+  testFunction = (e) => {
+    // this.setState({
+    //   displayMenu: true
+    // })
+
+    if (this.node2.contains(e.target)) {
+      return 
+    }
+    this.setState({
+      displayMenu: true
+    })
+
+    console.log('testFunction ran')
   }
 
   render() {
@@ -78,7 +97,11 @@ class App extends React.Component {
     return (
       <Router>
       <ScrollToTop>
-      <div className='App' onClick={this.clickOutOfMenu}>
+      <div 
+        className='App' 
+        ref={c => this.node = c}
+        onBlur={this.testFunction}>
+      {/* <div className='App'> */}
         <div className='containerBorder'>
               <NavLink to='/'>
                 { window.location.pathname === '/contact' ? 
@@ -109,8 +132,12 @@ class App extends React.Component {
           }
 
         </div>
-        <div className='sandwichContainer' >
-          <div className={menuClass}>
+        <div className='sandwichContainer'>
+          <div 
+            className={menuClass} 
+            // onClick={()=>this.refFunc.blur()}
+            ref={e => this.node2 = e}
+            >
               <h4 id='sandwichSarah'>Sarah</h4><br/>
               <h4 id='sandwichAlonso'>Alonso</h4>
               <h4 id='sandwichDesign'>Design</h4>
