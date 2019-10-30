@@ -42,7 +42,7 @@
 .crossingOriginalLogoDescription {
     grid-column: 3;
     grid-row: 2;
-    width: 90%;
+    width: 70%;
     font-family: Cerabasic;
     font-size: 16px;
 }
@@ -65,12 +65,35 @@
 .crossingNewLogoDescription {
     grid-column: 3;
     grid-row: 3;
-    width: 90%;
+    width: 70%;
 }
 
 .crossingNewLogoDescription span {
     font-weight: bold;
 }
+
+.logoUtil {
+    grid-column: 2;
+    grid-row: 4;
+    margin-top: 200px;
+    width: 40%;
+    justify-self: center;
+}
+
+.crossingImageContainer {
+    grid-column: 3;
+    grid-row: 4;
+    margin-bottom: 100px;
+    position: relative;
+    width: min-content;
+}
+
+.crossingDotContainer {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
 
 
 

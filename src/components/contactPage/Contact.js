@@ -4,7 +4,7 @@ import './responsiveContact.css'
 import contactMap from '../../images/contactMap.png'
 import contactSaMap from '../../images/contactSaMap.png'
 import saLogoBlack from '../../images/saBlack.png'
-import { Link } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 
 
 class Contact extends React.Component {
@@ -17,11 +17,6 @@ class Contact extends React.Component {
         return (
             <div className='contactContainer'>
                 <div className='slide contactComp'>
-                {/* <div className='saLogo'></div> */}
-                {/* <NavLink to='/'>
-                    <div className='saLogoBlack'></div> 
-                </NavLink> */}
-                {/* <p id='hoursBlack'>M-M <br/> 00:00-00:00</p> */}
 
                     <p className='contactHeading'>Contact</p>
                     <h2 className='enquiries'>

@@ -33,22 +33,15 @@ class App extends React.Component {
   }
 
   componentWillMount() {
-    document.addEventListener('mousedown', this.testFunction, false) 
+    document.addEventListener('mousedown', this.clickOutsideNav, false) 
   }
 
   componentWillUnmount() {
-    document.removeEventListener('mousedown', this.testFunction, false)
+    document.removeEventListener('mousedown', this.clickOutsideNav, false)
   }
 
-  // scrollToTop = () => {
-  //   window.scrollTo({
-  //     top:0,
-  //     left:0,
-  //     behavior: 'smooth'
-  //   });
-  // }
-
   sandwichMenu = () => {
+      console.log('sandwichMenu')
       this.setState(prevState => ({
         displayMenu: !prevState.displayMenu,
         clickOut: true}))
@@ -58,25 +51,18 @@ class App extends React.Component {
     this.setState({displayMenu: true})
   }
 
-  testFunction = (e) => {
-    // this.setState({
-    //   displayMenu: true
-    // })
-
-    if (this.node2.contains(e.target)) {
+  clickOutsideNav = (e) => {
+    if (this.node.contains(e.target)) {
       return 
+    } else {
+      this.navLinkClicked()
     }
-    this.setState({
-      displayMenu: true
-    })
-
-    console.log('testFunction ran')
   }
 
   render() {
-    console.log('displayMenu = ', this.state.displayMenu)
-    console.log(window.innerWidth)
+     console.log(window.innerWidth)
 
+  //Sandwich button animation
     let sandwichBtnAnimation;
     if (this.state.displayMenu===false) {
         sandwichBtnAnimation = 'sandwichButtonContainer close'
@@ -84,59 +70,35 @@ class App extends React.Component {
         sandwichBtnAnimation = 'sandwichButtonContainer'
     }
 
+  //Show / Hide Navbar Menu
     let menuClass;
     if (this.state.displayMenu) {
         menuClass = 'sandwichComp off'
-        console.log('current menuClass = ', menuClass)
     } else {
         menuClass ='sandwichComp'
-        console.log('current menuClass = ', menuClass)
-
     }
 
     return (
       <Router>
       <ScrollToTop>
-      <div 
-        className='App' 
-        ref={c => this.node = c}
-        onBlur={this.testFunction}>
-      {/* <div className='App'> */}
+      <div className='App'>
+
         <div className='containerBorder'>
               <NavLink to='/'>
-                { window.location.pathname === '/contact' ? 
-                  <div className='saLogo' style={{zIndex:'0'}}></div>
-                  :
-                  <div className='saLogo' style={{zIndex:'100'}}></div>
-                } 
+                <div className='saLogo'></div>
               </NavLink>
-              <p id='hours' style={{zIndex:'1'}}>M-M <br/> 00:00-00:00</p>
-
-
-
-                   
+              <p id='hours' style={{zIndex:'1'}}>M-M <br/> 00:00-00:00</p>                
         </div>
 
         <div className={sandwichBtnAnimation} onClick={this.sandwichMenu}>
-          {window.location.pathname === '/contact' ? 
-            <>
-            <div className='sandwich' style={{zIndex:'0'}}></div>
-            <div className='sandwich' style={{zIndex:'0'}}></div>
-            <div className='sandwich' style={{zIndex:'0'}}></div>
-            </> :
-            <>
-            <div className='sandwich' style={{zIndex:'20'}}></div>
-            <div className='sandwich' style={{zIndex:'20'}}></div>
-            <div className='sandwich' style={{zIndex:'20'}}></div>
-            </>
-          }
-
+              <div className='sandwich' style={{zIndex:'20'}}></div>
+              <div className='sandwich' style={{zIndex:'20'}}></div>
+              <div className='sandwich' style={{zIndex:'20'}}></div>
         </div>
         <div className='sandwichContainer'>
           <div 
             className={menuClass} 
-            // onClick={()=>this.refFunc.blur()}
-            ref={e => this.node2 = e}
+            ref={e => this.node = e}
             >
               <h4 id='sandwichSarah'>Sarah</h4><br/>
               <h4 id='sandwichAlonso'>Alonso</h4>
@@ -206,12 +168,12 @@ class App extends React.Component {
           {/*passing black colored elements to contact page.
           need to do it this way to render original elements when
           user presses the back button*/}
-          <Route path='/contact' component={(props) => 
+          <Route path='/contact' render={(props) => 
               (
                 <>
-                <NavLink to='/'>
-                    <div className='saLogoBlack'></div> 
-                </NavLink>
+                <Link to='/'>
+                  <div className='saLogoBlack'></div> 
+                </Link>
                   <div 
                     className={sandwichBtnAnimation}
                     onClick={this.sandwichMenu}
