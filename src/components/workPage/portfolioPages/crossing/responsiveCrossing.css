@@ -1,0 +1,106 @@
+@media (max-width: 1017px) {
+    .crossingImageContainer {
+        grid-column: 2 / span 3;
+        grid-row: 4;
+        justify-self: center;
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+
+    .logoUtil {
+        grid-column: 2 / span 3;
+        grid-row: 5;
+        margin-bottom: 100px;
+    }
+
+    .crossingOriginalLogoDescription,
+    .crossingNewLogoDescription {
+        width: 90%;
+    }
+}
+
+@media (max-width: 867px) {
+    .crossingOriginalLogoDiv {
+        grid-column: 2 / span 3;
+    }
+    
+    .crossingOriginalLogoDescription {
+        grid-column: 2 / span 3;
+        grid-row: 3;
+        width: 70%;
+        justify-self: center;
+        margin-bottom: 50px;
+    }
+
+    .crossingNewLogoDiv {
+        grid-column: 2 / span 3;
+        grid-row: 4;
+    }
+
+    .crossingNewLogoDescription {
+        grid-column: 2 / span 3;
+        grid-row: 5;
+        justify-self: center;
+        width: 70%;
+        margin-top: 30px;
+    }
+
+    .crossingImageContainer {
+        grid-row: 6;
+    }
+
+    .logoUtil {
+        grid-row: 7;
+        width: 70%;
+    }
+}
+
+@media (max-width: 734px) {
+    .crossingArrowDown {
+        margin-right: 20px;
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .crossingHeading {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 650px) {
+    .crossingCaption {
+        display: block;
+        grid-column: 2;
+        grid-row: 2;
+        align-self: center;
+        font-family: ChapLight;
+        font-size: 25px;
+        width: 221px;
+        margin-left: 10px;
+    }
+
+    .crossingOriginalLogo,
+    .crossingNewLogo {
+        display: none;
+    }
+
+    .crossingsOldLogoMobile {
+        display: block;
+    }
+
+    .crossingsNewLogoMobile {
+        display: block;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .crossing {
+        background-position: left bottom;
+    }
+    .crossingCaption {
+        grid-column: 1 / span 2;
+    }
+
+    
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import './crossing.css'
+import './responsiveCrossing.css'
 import HeaderComp from '../../../headerComp/HeaderComp'
 import crossingArrowBlackDown from '../../../../images/arrowBlackDown.png'
 import crossingOldLogo from '../../../../images/crossingOldLogo.png'
@@ -8,7 +9,8 @@ import crossingsImage1 from '../../../../images/crossingsImage1.png'
 import crossingsImage2 from '../../../../images/crossingsImage2.png'
 import crossingsImage3 from '../../../../images/crossingsImage3.png'
 import crossingsImage4 from '../../../../images/crossingsImage4.png'
-
+import crossingsOldLogoMobile from '../../../../images/crossingsOldLogoMobile.png'
+import crossingsNewLogoMobile from '../../../../images/crossingsNewLogoMobile.png'
 
 
 class Crossing extends React.Component {
@@ -36,6 +38,10 @@ class Crossing extends React.Component {
             <div className='crossingContainer'>
                 <div className='slide crossing'>
                     <HeaderComp />
+                    <p className='crossingCaption'>
+                        CREATING AN INCLUSIVE SPACE
+                        OF INTERSECTION
+                    </p>
                     <img 
                         className='crossingArrowDown'
                         src={crossingArrowBlackDown} 
@@ -48,6 +54,7 @@ class Crossing extends React.Component {
                     </h1>
                     <div className='crossingOriginalLogoDiv'>
                         <img className='crossingOriginalLogo' src={crossingOldLogo} alt='original crossing logo'/>
+                        <img className='crossingsOldLogoMobile' src={crossingsOldLogoMobile} alt='original logo mobile' />
                         <p className='crossingOriginalLogoCaption'>Old Logo</p>
                     </div>
                     <p className='crossingOriginalLogoDescription'>
@@ -60,6 +67,7 @@ class Crossing extends React.Component {
                     </p>
                     <div className='crossingNewLogoDiv'>
                         <img className='crossingNewLogo' src={crossingNewLogo} alt='new crossing logo'/>
+                        <img className='crossingsNewLogoMobile' src={crossingsNewLogoMobile} alt='new crossing logo mobile'/>
                         <p className='crossingNewLogoCaption'>New Logo</p>
                     </div>
                     <p className='crossingNewLogoDescription'>

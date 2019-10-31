@@ -4,7 +4,11 @@
     background-image: url('../../../../images/crossingBG.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
+}
+
+.crossingCaption {
+    display: none;
 }
 
 .crossingArrowDown {
@@ -28,7 +32,8 @@
     margin-bottom: 50px;
     font-family: ChapLight;
     font-size: 110px;
-    line-height: 110px;
+    font-size: 8.59375VW;
+    line-height: 8.59375VW;
 }
 
 .crossingOriginalLogoDiv {
@@ -37,6 +42,10 @@
     justify-self: center;
     text-align: center;
     margin-bottom: 20px;
+}
+
+.crossingsOldLogoMobile {
+    display: none;
 }
 
 .crossingOriginalLogoDescription {
@@ -52,6 +61,10 @@
     grid-row: 3;
     justify-self: center;
     text-align: center;
+}
+
+.crossingsNewLogoMobile {
+    display: none;
 }
 
 
@@ -75,17 +88,19 @@
 .logoUtil {
     grid-column: 2;
     grid-row: 4;
-    margin-top: 200px;
     width: 40%;
     justify-self: center;
+    align-self: center;
 }
 
 .crossingImageContainer {
     grid-column: 3;
     grid-row: 4;
+    align-self: end;
     margin-bottom: 100px;
     position: relative;
     width: min-content;
+
 }
 
 .crossingDotContainer {
