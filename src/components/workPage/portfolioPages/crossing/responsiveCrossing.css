@@ -64,6 +64,7 @@
 
     .crossingHeading {
         font-size: 55px;
+        line-height: 55px;
     }
 }
 
@@ -84,13 +85,56 @@
         display: none;
     }
 
+    .crossingOriginalLogoDescription {
+        grid-row: 2;
+    }
+
     .crossingsOldLogoMobile {
         display: block;
+    }
+
+    .crossingOriginalLogoDiv {
+        grid-row: 3;
+        grid-column: 2;
+        justify-self: end;
+        margin-right: 5px;
     }
 
     .crossingsNewLogoMobile {
         display: block;
     }
+
+    .crossingNewLogoDiv {
+        grid-row: 3;
+        grid-column: 3;
+        justify-self: start;
+        margin-left: 5px;
+    }
+
+    .crossingNewLogoDescription {
+        grid-row: 4;
+    }
+
+    .crossingImageContainer {
+        display: none;
+    }
+
+    .crossingImageContainerMobile {
+        display: block;
+        grid-row: 5;
+        grid-column: 2 / span 3;
+        justify-self: center;
+        margin-top: 50px;
+        /* margin-left: 48px; */
+    }
+
+    .logoUtil {
+        grid-row: 7;
+        grid-column: 2 / span 3;
+        margin-top: 20px;
+        text-align: center;
+    }
+
 
 }
 
@@ -102,5 +146,33 @@
         grid-column: 1 / span 2;
     }
 
-    
+    .crossingHeading {
+        grid-column: 1 / span 3;
+    }
+
+    .crossingOriginalLogoDescription {
+        grid-column: 1 / span 3;
+    }
+
+    .crossingOriginalLogoDiv {
+        grid-column: 1 / span 2; 
+        justify-self: center;
+    }
+
+    .crossingNewLogoDiv {
+        grid-column: 2 / span 3;
+        justify-self: center;
+    }
+
+    .crossingNewLogoDescription {
+        grid-column: 1 / span 3;
+    }
+
+    .crossingImageContainerMobile {
+        grid-column: 1 / span 3;
+    }
+
+    .logoUtil {
+        grid-column: 1 / span 3;
+    }
 }

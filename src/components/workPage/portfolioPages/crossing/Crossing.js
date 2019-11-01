@@ -9,6 +9,10 @@ import crossingsImage1 from '../../../../images/crossingsImage1.png'
 import crossingsImage2 from '../../../../images/crossingsImage2.png'
 import crossingsImage3 from '../../../../images/crossingsImage3.png'
 import crossingsImage4 from '../../../../images/crossingsImage4.png'
+import crossingsImage1Mobile from '../../../../images/crossingsImage1Mobile.png'
+import crossingsImage2Mobile from '../../../../images/crossingsImage2Mobile.png'
+import crossingsImage3Mobile from '../../../../images/crossingsImage3Mobile.png'
+import crossingsImage4Mobile from '../../../../images/crossingsImage4Mobile.png'
 import crossingsOldLogoMobile from '../../../../images/crossingsOldLogoMobile.png'
 import crossingsNewLogoMobile from '../../../../images/crossingsNewLogoMobile.png'
 
@@ -18,7 +22,9 @@ class Crossing extends React.Component {
         super()
         this.state={
             counter: 0,
-            imageList: [crossingsImage1, crossingsImage2, crossingsImage3, crossingsImage4]
+            imageList: [crossingsImage1, crossingsImage2, crossingsImage3, crossingsImage4],
+            mobileImageList: [crossingsImage1Mobile, crossingsImage2Mobile, 
+                            crossingsImage3Mobile, crossingsImage4Mobile]
         }
     }
 
@@ -33,6 +39,7 @@ class Crossing extends React.Component {
     render() {
         const imageNo = this.state.counter 
         const imageList = this.state.imageList 
+        const mobileImageList = this.state.mobileImageList
         let imageIndex
         return (
             <div className='crossingContainer'>
@@ -102,6 +109,27 @@ class Crossing extends React.Component {
                                     )
                             })}
                         </div>
+
+                    </div>
+                    <div className='crossingImageContainerMobile' onClick={this.imageChange}>
+                        <img
+                            className='crossingImageMobile'
+                            src={mobileImageList[imageNo]}
+                            alt='crossing dance designs'
+                        />
+                            <div className='crossingDotContainerMobile'>
+                                {mobileImageList.map(img => {
+                                    imageIndex=mobileImageList.indexOf(img)
+                                    if(imageIndex === imageNo) {
+                                        return (
+                                            <span key={imageNo} className='crossingDotMobile'></span>
+                                        )
+                                    }
+                                        return (
+                                            <span key={imageIndex} className='crossingDotClearMobile'></span>
+                                        )
+                                })}
+                            </div>
                     </div>
                 </div>
             </div>

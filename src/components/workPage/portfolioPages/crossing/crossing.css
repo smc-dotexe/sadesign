@@ -8,7 +8,13 @@
 }
 
 .crossingCaption {
-    display: none;
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    font-family: ChapLight;
+    font-size: 25px;
+    width: 221px;
+    margin-left: 10px;    
 }
 
 .crossingArrowDown {
@@ -100,6 +106,8 @@
     margin-bottom: 100px;
     position: relative;
     width: min-content;
+    /* width: 41.640625VW;
+    height: 25.703125VW; */
 
 }
 
@@ -107,6 +115,40 @@
     position: absolute;
     bottom: 10px;
     right: 5px;
+}
+
+.crossingImageContainerMobile {
+    display: none;
+    position: relative;
+    width: min-content;
+}
+
+.crossingDotContainerMobile {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.crossingDotMobile{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.crossingDotClearMobile {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: #454545;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 
