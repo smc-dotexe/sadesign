@@ -15,6 +15,6 @@
 @media (max-width: 500px) {
     .headerDiv {
         grid-column: 1 / span 2;
-        width: 75%;
+        width: max-content;
     }
 }
