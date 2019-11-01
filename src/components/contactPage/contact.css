@@ -1,11 +1,11 @@
 .contactContainer {
     padding-bottom: 100px;
-    background-color: white;
+    background-color: #fff;
 }
 .contactComp {
     /* height: 100vmin; */
     margin-top: -1px;
-    background-color: white;
+    background-color: #fff;
     display: grid;
     grid-template-columns: minmax(88px, 10%) 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -13,7 +13,7 @@
 }
 
 .contactHeading {
-    color: black;
+    color: #000;
     font-size: 16px;
     font-family: Cerabasic;
     grid-column: 2;
@@ -22,7 +22,7 @@
 }
 
 .enquiries, .emailInfo {
-    color: black;
+    color: #000;
     font-size: 53px;
     font-size: 4.140625VW;
     line-height: 4.140625VW;
@@ -39,7 +39,7 @@
 .addressDetails {
     grid-column: 2;
     grid-row: 2;
-    color: black;
+    color: #000;
     font-family: Cerabasic;
     font-size: 42px;
     font-size: 3.28125VW;
