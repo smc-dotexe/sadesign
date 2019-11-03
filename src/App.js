@@ -25,13 +25,15 @@ import { whileStatement } from '@babel/types';
 
 
 const Loader = (props) => {
-  console.log('here', props)
-	if (props.pastDelay) {
-    console.log('at if')
-		return <h2>POOPOOPEEPEE.</h2>
+	if (props.error) {
+    console.log('ran error')
+		return <div>Oh no, something went wrong!</div>;
+	} else if (props.delay) {
+    console.log('delay went true')
+		return <h2>Loading...</h2>
 	} else {
-    console.log('at else')
-		return null
+    console.log('return null')
+		return null;
 	}
 }
 const LoadableHome = Loadable({
