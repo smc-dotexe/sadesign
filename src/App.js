@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, NavLink } from 'react-router-dom'
+import Loadable from 'react-loadable'
+// import Loader from './Loader'
 import './App.css';
 import './components/sandwichComp/sandwichMenu.css'
 import './animations.css';
@@ -20,6 +22,41 @@ import IrvingCrea from './components/workPage/portfolioPages/irvingCrea/IrvingCr
 import Rumble from './components/workPage/portfolioPages/rumble/Rumble'
 import ScrollToTop from 'react-router-scroll-top'
 import { whileStatement } from '@babel/types';
+
+
+const Loader = (props) => {
+  console.log('here', props)
+	if (props.pastDelay) {
+    console.log('at if')
+		return <h2>POOPOOPEEPEE.</h2>
+	} else {
+    console.log('at else')
+		return null
+	}
+}
+const LoadableHome = Loadable({
+  loader: () => import('./components/Home'),
+  loading: Loader,
+  delay: 100
+})
+
+const LoadableAbout = Loadable({
+  loader: () => import ('./components/aboutPage/About.js'),
+  loading: Loader,
+  delay: 100
+})
+
+const LoadableWork = Loadable({
+  loader: () => import ('./components/workPage/WorkList'),
+  loading: Loader,
+  delay: 100
+})
+
+const LoadableRumble = Loadable({
+  loader: () => import('./components/workPage/portfolioPages/rumble/Rumble'),
+  loading: Loader,
+  delay: 1
+})
 
 
 class App extends React.Component {
@@ -151,11 +188,11 @@ class App extends React.Component {
         </div>
         <Switch>
           <Route exact path='/' render={(props) => (      
-                <Home {...props} />
+                <LoadableHome {...props} />
             )}
           />
-          <Route path='/about' component={AboutPage} />
-          <Route exact path='/work' component={WorkPage} />
+          <Route path='/about' component={LoadableAbout} />
+          <Route exact path='/work' component={LoadableWork} />
           <Route path='/work/workingformyself' component={WorkingForMyself} />
           <Route path='/work/renu' component={Renu} />
           <Route path='/work/visualculture' component={VisualCulture} />
