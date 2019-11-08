@@ -3,7 +3,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid yellow;
 }
 
 
@@ -25,11 +24,65 @@
 }
 
 .practiceSpotDescription {
-    grid-column: 2 / span 4;
+    grid-column: 3 / span 4;
     grid-row: 2;
     font-family: Cerabasic;
     font-size: 23px;
     color: white;
-    width: 60%;
+    width: 90%;
     justify-self: center;
+    margin-bottom: 100px;
+}
+
+.practiceSpotUserHeading {
+    grid-column: 3 / span 4;
+    grid-row: 3;
+    justify-self: end;
+    margin-right: 80px;
+    font-family: ChapLight;
+    font-size: 110px;
+    font-weight: normal;
+    color: white;
+}
+
+.practiceSpotUserDescription {
+    grid-column: 3 / span 4;
+    grid-row: 4;
+    font-family: Cerabasic;
+    font-size: 23px;
+    color: white;
+    width: 80%;
+    z-index: 1;
+}
+
+.practiceSpotUserImage {
+    grid-column: 2 / span 3;
+    grid-row: 4;
+}
+
+.initialConceptHeading {
+    grid-column: 2 / span 4;
+    grid-row: 5;
+    justify-self: start;
+    margin-left: 100px;
+    font-family: ChapLight;
+    font-size: 110px;
+    font-weight: normal;
+    color: white;
+}
+
+.initialConceptDescription {
+    grid-column: 2 / span 3;
+    grid-row: 6;
+    justify-self: start;
+    margin-left: 100px;
+    width: 50%;
+    font-family: Cerabasic;
+    font-size: 23px;
+    color: white;
+}
+
+.initialConceptImage {
+    grid-column: 4;
+    grid-row: 5 / span 6;
 }
