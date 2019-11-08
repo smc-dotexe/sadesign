@@ -7,6 +7,15 @@ import rebelImage from '../../images/rebelPreview.png'
 import crossingImage from '../../images/crossingPreview.png'
 import irvingCreaImage from '../../images/irvingCreaPreview.png'
 import rumbleImage from '../../images/rumblePreview.png'
+import practiceSpotImage from '../../images/practiceSpotPreview.png'
+import blurSA from '../../images/blurImages/blurSA.png'
+import blurCrossing from '../../images/blurImages/blurCrossing.png'
+import blurIrving from '../../images/blurImages/blurIriving.png'
+import blurPDB from '../../images/blurImages/blurPDB.png'
+import blurRebel from '../../images/blurImages/blurRebel.png'
+import blurRenu from '../../images/blurImages/blurRenu.png'
+import blurRumble from '../../images/blurImages/blurRumble.png'
+import blurVC from '../../images/blurImages/blurVC.png'
 
 const workForMyselfDescription = 
 'As a Designer sometimes we fail to design for ourselves. We work oftentimes to build platforms for others to stand out. I thought... "What about me?"'
@@ -24,6 +33,8 @@ const irvingCreaDescription =
 `Having been a fine-arts student I brushed off old skills and incorporated them into new skills. Working from hand-drawn to digital, Irving's dog, Dingo came to be immortalized...`
 const rumbleDescription =
 `Being an in-house designer at Rumble boxing has allowed me the opportunity to design a wide gambit of digital, print, strategy.`
+const practiceSpotDescription = 
+`This is an on-going project that is on a mission to create greater accessibility amongst the global b-boy community. Currently the team we hope to launch and test the app admist the community Spring 2020`
 
 
 export const workInfo = [
@@ -33,7 +44,8 @@ export const workInfo = [
         passPreviewHeading:'WORK FOR MYSELF',
         passPreviewImage:workForMySelfImage,
         passPreviewDescription: workForMyselfDescription,
-        pageId:'workingformyself',      
+        passLoadingImage: blurSA,
+        pageId:'workingformyself',   
     },
     {
         num:2,
@@ -41,6 +53,7 @@ export const workInfo = [
         passPreviewHeading:'RENU YOUR HEALTH',
         passPreviewImage:renuImage,
         passPreviewDescription: renuDescription,
+        passLoadingImage: blurRenu,
         pageId:'renu',      
     },
     {
@@ -49,6 +62,7 @@ export const workInfo = [
         passPreviewHeading:'VISUAL CULTURE',
         passPreviewImage:visualCultureImage,
         passPreviewDescription: visualCultureDescription,
+        passLoadingImage: blurVC,
         pageId: 'visualculture',  
     },
     {
@@ -57,6 +71,7 @@ export const workInfo = [
         passPreviewHeading:'PHO DAU BO',
         passPreviewImage:pdbImage,
         passPreviewDescription: pdbDescription,
+        passLoadingImage: blurPDB,
         pageId:'phodaubo',      
     },
     {
@@ -65,6 +80,7 @@ export const workInfo = [
         passPreviewHeading:'THE REBEL IN ME',
         passPreviewImage:rebelImage,
         passPreviewDescription: rebelDescription,
+        passLoadingImage: blurRebel,
         pageId:'rebel',      
     },
     {
@@ -73,6 +89,7 @@ export const workInfo = [
         passPreviewHeading:'CROSSING',
         passPreviewImage:crossingImage,
         passPreviewDescription: crossingDescription,
+        passLoadingImage: blurCrossing,
         pageId:'crossing',      
     },
     {
@@ -81,6 +98,7 @@ export const workInfo = [
         passPreviewHeading:'IRVING CREA',
         passPreviewImage:irvingCreaImage,
         passPreviewDescription: irvingCreaDescription,
+        passLoadingImage: blurIrving,
         pageId:'irvingcrea',    
     },
     {
@@ -89,8 +107,18 @@ export const workInfo = [
         passPreviewHeading:'RUMBLE GET READY',
         passPreviewImage:rumbleImage,
         passPreviewDescription: rumbleDescription,
+        passLoadingImage: blurRumble,
         pageId:'rumble',      
     },
+    {
+        num:9,
+        passDateHeading:'06.19',
+        passPreviewHeading:'The Practice Spot',
+        passPreviewImage: practiceSpotImage,
+        passPreviewDescription: practiceSpotDescription,
+        passLoadingImage:practiceSpotImage,
+        pageId:'thepracticespot',
+    }
 
 ]
 

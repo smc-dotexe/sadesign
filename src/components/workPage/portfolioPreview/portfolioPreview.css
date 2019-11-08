@@ -22,6 +22,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr 1fr;
+    position: relative;
 }
 
 .previewImage, .previewHeading, .previewLink:hover {
@@ -48,8 +49,23 @@
     grid-row: 1 / span 3;
     align-self: center;
     justify-self: start;
+    max-width: 440px;
+    width: 80%;
+    min-width: 164px;  
+}
+
+.previewImageOverlay {
+    width: 80%;
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    max-width: 440px;
     width: 80%;
     min-width: 164px;
+    height: 253px;
+    border: 1px solid white;
+    /* -webkit-filter: blur(6px); */
+    /* position: absolute; */
+
 }
 
 .previewDescription {

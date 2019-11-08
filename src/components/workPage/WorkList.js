@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import './worklist.css'
 import './responsiveWorkList.css'
 import PortfolioPreview from './portfolioPreview/portfolioPreview'
 import { workInfo } from './workListInfo'
 
+
 function WorkPage (props) {
+    // const WorkPage = lazy(() => import('./WorkList'))
         return (
             <div className='workDiv'>
                 <h1 className='workPageHeading'>

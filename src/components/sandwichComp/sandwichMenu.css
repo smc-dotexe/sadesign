@@ -75,7 +75,7 @@
     list-style-type: none;
     grid-column: 1/ span 2;
     grid-row: 4;
-    line-height: 45px;
+    line-height: 55px;
     font-family: ChapLight;
     font-size: 30px;
     color: white;
@@ -89,10 +89,80 @@
 
 #sandwichLinks li {
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     /* grid-row: 5; */
     grid-column: 1 / span 2;
     justify-self: center;
+}
+
+.workLink:hover .workArrow {
+    transform: rotate(90deg);
+    transition: transform 0.7s ease;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg); 
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.workArrow {
+    color: #d9d9d9;
+    transition: 0.7s;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px;
+    width: min-content;
+    height: min-content;
+}
+
+.workArrow:hover{
+    transform: rotate(90deg);
+    transition: transform 2s ease;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg); 
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.workLinkMenu {
+    visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    width: min-content;
+    transition: visibility 0s, opacity 1s ease-in, height 2s ease;
+    font-size: 16px;
+    line-height: 20px;
+    height: 0;
+}
+
+.workLinkMenu ul {
+    list-style-type: none;
+}
+
+#workLinkMenu.displayWorkLinks {
+    visibility: visible;
+    opacity: 1;
+    height: min-content;
+}
+
+.workLinksList li {
+    margin-bottom: 20px;
+}
+
+#uxUiLink {
+    margin-bottom: 20px;
+}
+
+#graphicDesignLink {
+    margin-bottom: 20px;
+}
+
+#contactLink {
+    margin:0;
+    transition: margin 0.7s;
+}
+
+#contactLink.moveDown {
+    margin-top: 10px;
 }
 
 @media (min-width: 600px) and (max-width: 799px) {

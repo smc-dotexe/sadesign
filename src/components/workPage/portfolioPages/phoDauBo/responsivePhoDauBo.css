@@ -198,7 +198,7 @@
 
 @media (max-width: 500px) {
     .phoDauBo {
-        margin-bottom: 150px;
+        margin-bottom: 0px;
     }
     .pdbLogo {
         grid-column: 1 / span 3;

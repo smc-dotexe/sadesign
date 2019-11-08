@@ -16,10 +16,18 @@ html {
 @font-face { font-family: ChapLight; src: url('./fonts/ChapLight.otf')}
 @font-face { font-family: Cerabasic; src: url('./fonts/CerabasicRegular.ttf')}
 
-.active {
+.loading {
+  text-align: center;
+  color: white;
+  background-color: grey;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+/* .active {
   text-decoration: underline;
   color: yellow;
-}
+} */
 
 .sandwichButtonContainer {
   position: absolute;
@@ -777,6 +785,8 @@ CONTACT SECTION
   .saLogo {
     margin-top: 5px;
     transform: translate(0);
+    width: 35px;
+    height: 35px;
   }
 
   .saLogoBlack {

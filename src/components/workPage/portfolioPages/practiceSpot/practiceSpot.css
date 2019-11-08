@@ -1,0 +1,35 @@
+.practiceSpot {
+    background-image: url('../../../../images/practiceSpotBG.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid yellow;
+}
+
+
+.practiceSpotDetails {
+    display: grid;
+    grid-template-columns: minmax(88px, 10%) 1fr 1fr 1fr;
+    grid-template-rows: repeat(8, min-content);
+}
+
+.practiceSpotHeading {
+    grid-column: 2 / span 4;
+    grid-row: 1;
+    margin-top: 50px;
+    font-family: ChapLight;
+    font-size: 110px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+}
+
+.practiceSpotDescription {
+    grid-column: 2 / span 4;
+    grid-row: 2;
+    font-family: Cerabasic;
+    font-size: 23px;
+    color: white;
+    width: 60%;
+    justify-self: center;
+}

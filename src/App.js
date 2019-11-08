@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, NavLink } from 'react-router-dom'
 import Loadable from 'react-loadable'
+import LazyLoad from 'react-lazyload'
 // import Loader from './Loader'
 import './App.css';
 import './components/sandwichComp/sandwichMenu.css'
@@ -8,10 +9,10 @@ import './animations.css';
 import saLogoWhite from './images/sa.png'
 import saLogoBlack from './images/saBlack.png'
 import SandwichMenu from './components/sandwichComp/SandwichMenu.js'
-import Home from './components/Home'
-import AboutPage from './components/aboutPage/About.js'
-import WorkPage from './components/workPage/WorkList'
-import ContactPage from './components/contactPage/Contact'
+// import Home from './components/Home'
+// import AboutPage from './components/aboutPage/About.js'
+// import WorkPage from './components/workPage/WorkList'
+//import ContactPage from './components/contactPage/Contact'
 import WorkingForMyself from './components/workPage/portfolioPages/workingForMyself/WorkingForMyself'
 import Renu from './components/workPage/portfolioPages/renuPage/Renu'
 import VisualCulture from './components/workPage/portfolioPages/visualCulturePage/VisualCulture'
@@ -20,45 +21,55 @@ import Rebel from './components/workPage/portfolioPages/rebel/Rebel'
 import Crossing from './components/workPage/portfolioPages/crossing/Crossing'
 import IrvingCrea from './components/workPage/portfolioPages/irvingCrea/IrvingCrea'
 import Rumble from './components/workPage/portfolioPages/rumble/Rumble'
+import PracticeSpot from './components/workPage/portfolioPages/practiceSpot/PracticeSpot'
 import ScrollToTop from 'react-router-scroll-top'
 import { whileStatement } from '@babel/types';
 
+import lazyImport from './lazyImport'
 
-const Loader = (props) => {
-	if (props.error) {
-    console.log('ran error')
-		return <div>Oh no, something went wrong!</div>;
-	} else if (props.delay) {
-    console.log('delay went true')
-		return <h2>Loading...</h2>
-	} else {
-    console.log('return null')
-		return null;
-	}
-}
-const LoadableHome = Loadable({
-  loader: () => import('./components/Home'),
-  loading: Loader,
-  delay: 100
-})
+const Home = lazyImport('./components/Home')
+const AboutPage = lazyImport('./components/aboutPage/About')
+const WorkPage = lazyImport('./components/workPage/WorkList')
+const ContactPage = lazyImport('./components/contactPage/Contact')
+// const Home = lazy(() => import('./components/Home'))
+// const AboutPage = lazy(() => import('./components/aboutPage/About.js'))
+// const WorkPage = lazy(() => import('./components/workPage/WorkList'))
 
-const LoadableAbout = Loadable({
-  loader: () => import ('./components/aboutPage/About.js'),
-  loading: Loader,
-  delay: 100
-})
+// const Loader = (props) => {
+// 	if (props.error) {
+//     console.log('ran error')
+// 		return <div>Oh no, something went wrong!</div>;
+// 	} else if (props.delay) {
+//     console.log('delay went true')
+// 		return <h2>Loading...</h2>
+// 	} else {
+//     console.log('return null')
+// 		return null;
+// 	}
+// }
+// const LoadableHome = Loadable({
+//   loader: () => import('./components/Home'),
+//   loading: Loader,
+//   delay: 100
+// })
 
-const LoadableWork = Loadable({
-  loader: () => import ('./components/workPage/WorkList'),
-  loading: Loader,
-  delay: 100
-})
+// const LoadableAbout = Loadable({
+//   loader: () => import ('./components/aboutPage/About.js'),
+//   loading: Loader,
+//   delay: 100
+// })
 
-const LoadableRumble = Loadable({
-  loader: () => import('./components/workPage/portfolioPages/rumble/Rumble'),
-  loading: Loader,
-  delay: 1
-})
+// const LoadableWork = Loadable({
+//   loader: () => import ('./components/workPage/WorkList'),
+//   loading: Loader,
+//   delay: 100
+// })
+
+// const LoadableRumble = Loadable({
+//   loader: () => import('./components/workPage/portfolioPages/rumble/Rumble'),
+//   loading: Loader,
+//   delay: 1
+// })
 
 
 class App extends React.Component {
@@ -66,7 +77,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       displayMenu: true,
-      clickOut: false,  
+      clickOut: false,
     }
 
   }
@@ -98,8 +109,17 @@ class App extends React.Component {
     }
   }
 
+  // displayWorkLinks = () => {
+  //   const workLinkMenu = document.getElementById('workLinkMenu');
+  //   workLinkMenu.classList.toggle('displayWorkLinks')
+
+  //   const contactLink = document.getElementById('contactLink')
+  //   contactLink.classList.toggle('moveDown')
+  // }
+
+
   render() {
-     console.log(window.innerWidth)
+    console.log(window.innerWidth)
 
   //Sandwich button animation
     let sandwichBtnAnimation;
@@ -116,10 +136,10 @@ class App extends React.Component {
     } else {
         menuClass ='sandwichComp'
     }
-
+    
     return (
       <Router>
-      <ScrollToTop>
+      {/* <ScrollToTop> */}
       <div className='App'>
 
         <div className='containerBorder'>
@@ -165,7 +185,12 @@ class App extends React.Component {
                       About
                     </NavLink>
                   </li>
-                  <li onClick={this.sandwichMenu}>
+                  <li 
+                    onClick={this.sandwichMenu} 
+                    className='workLink'
+                    // onMouseEnter={this.displayWorkLinks}
+                    // onMouseLeave={this.displayWorkLinks}
+                  >
                     <NavLink
                       activeStyle={{
                         textDecoration: 'underline',
@@ -174,8 +199,22 @@ class App extends React.Component {
                       to='/work'>
                       Work
                     </NavLink>
+                    {/* <div className='workArrow'> > </div>
+                    <div
+                      id='workLinkMenu'
+                      className='workLinkMenu'
+                    >
+                      <ul> 
+                        <li id='uxUiLink'>UX / UI</li>
+                        <li id='graphicDesignLink'>Graphic Design</li>
+                      </ul>
+                    </div> */}
                   </li>
-                  <li onClick={this.sandwichMenu}>
+                  <li 
+                    onClick={this.sandwichMenu}
+                    className='contactLink'
+                    id='contactLink'
+                  >
                     <NavLink
                       activeStyle={{
                         textDecoration: 'underline',
@@ -188,13 +227,14 @@ class App extends React.Component {
               </ul>
           </div>         
         </div>
+        <Suspense fallback={<div className='loading'></div>}>
         <Switch>
           <Route exact path='/' render={(props) => (      
-                <LoadableHome {...props} />
+                <Home {...props} />
             )}
           />
-          <Route path='/about' component={LoadableAbout} />
-          <Route exact path='/work' component={LoadableWork} />
+          <Route path='/about' component={AboutPage} />
+          <Route exact path='/work' component={WorkPage} />
           <Route path='/work/workingformyself' component={WorkingForMyself} />
           <Route path='/work/renu' component={Renu} />
           <Route path='/work/visualculture' component={VisualCulture} />
@@ -203,6 +243,7 @@ class App extends React.Component {
           <Route path='/work/crossing' component={Crossing} />
           <Route path='/work/irvingcrea' component={IrvingCrea} />
           <Route path='/work/rumble' component={Rumble} />
+          <Route path='/work/thepracticespot' component={PracticeSpot} />
 
           {/*passing black colored elements to contact page.
           need to do it this way to render original elements when
@@ -232,9 +273,10 @@ class App extends React.Component {
             }
           />
           
-        </Switch>   
+        </Switch> 
+        </Suspense>  
       </div>
-      </ScrollToTop>
+      {/* </ScrollToTop> */}
       </Router>
     );
   }

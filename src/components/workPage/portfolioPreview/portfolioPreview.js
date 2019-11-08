@@ -2,12 +2,30 @@ import React from 'react'
 import './portfolioPreview.css'
 import './responsivePortfolioPreview.css'
 import { Link } from 'react-router-dom'
+import LazyLoad from 'react-lazyload'
+import { SimpleImg } from 'react-simple-img'
 
-function PortfolioPreview (props) {
-    
+
+
+class PortfolioPreview extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            loaded: false
+        }
+    }
+
+    onImageLoad = () => {
+        this.setState({ loaded: true })
+    }
+
+    render() {
+        
         const { 
-            passDateHeading, passPreviewHeading, passPreviewImage, passPreviewDescription 
-        } = props
+            passDateHeading, passPreviewHeading, 
+            passPreviewImage, passPreviewDescription,
+            passLoadingImage
+        } = this.props
 
         return (
                 <div className='portPreviewDiv'>
@@ -15,28 +33,37 @@ function PortfolioPreview (props) {
                         {passDateHeading}
                     </h3>
                     <div className='overlay'>
-                    <div id={props.pageId} className='previewBody'>
-                        <img 
+                    <div id={this.props.pageId} className='previewBody'>
+             
+                        <img
                             className='previewImage' 
                             src={passPreviewImage} 
                             alt='portfolio preview' 
+                            onLoad={this.onImageLoad}
                             onClick={
-                                ()=>props.passProps.history
-                                    .push(`${props.passProps.match.url}/${props.pageId}`)
+                                ()=>this.props.passProps.history
+                                    .push(`${this.props.passProps.match.url}/${this.props.pageId}`)
                                 }
                         />
+                        {!this.state.loaded && 
+                            <img 
+                                className='previewImageOverlay'
+                                src={passLoadingImage}
+                            />
+                        }
+              
                         <h1 
                             className='previewHeading' 
                             onClick={
-                                ()=>props.passProps.history
-                                    .push(`${props.passProps.match.url}/${props.pageId}`)
+                                ()=>this.props.passProps.history
+                                    .push(`${this.props.passProps.match.url}/${this.props.pageId}`)
                                 }
                         >
                             {passPreviewHeading}
                         </h1>
                         <p className='previewDescription'>{passPreviewDescription}</p>
                         <Link 
-                            to={`${props.passProps.match.url}/${props.pageId}`} 
+                            to={`${this.props.passProps.match.url}/${this.props.pageId}`} 
                             className='previewLink' 
                         >
                             More
@@ -46,6 +73,10 @@ function PortfolioPreview (props) {
                 </div>
         )
     }
+}
+
+
+
 
 
 export default PortfolioPreview

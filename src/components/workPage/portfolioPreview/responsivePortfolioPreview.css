@@ -19,6 +19,13 @@
         justify-self: start;
     }
 
+    .previewImageOverlay {
+        width: 250px;
+        height: 149px;
+        grid-row: 1 / span 2;
+        justify-self: start;
+    }
+
     .previewHeading {
         margin-top: 0;
         padding-left: 5px;
@@ -77,6 +84,11 @@
         grid-row: 1;
         margin-left: 10px;
         width: 80%;
+    }
+
+    .previewImageOverlay {
+        width: 164px;
+        height: 99px;
     }
 
     .previewHeading {

@@ -19,6 +19,24 @@ class About extends React.Component {
             challenges with an ambition to produce good design and a need to 
             make an impact.
             </p>
+            <div className='mySkillsDiv'>
+                <h1 className='mySkillsHeading'>My Skills</h1>
+                <ul className='mySkillsList1'>
+                   <li>Adobe CC</li>
+                   <li>Informational Architecture Development</li>
+                   <li>Digital Graphics - Digital & Print</li>
+                   <li>Brand Development & Strategy</li>
+                   <li>WireFraming</li>
+                </ul>
+                <ul className='mySkillsList2'>
+                    <li>Flow Charting</li>
+                    <li>High Fidelity Prototyping</li>
+                    <li>Logo Design</li>
+                    <li>High focus on Typography</li>
+                    <li>Social Media Content Creation</li>
+                    <li>HTML, CSS</li>
+                </ul>
+            </div>
         </div>
     )
     }

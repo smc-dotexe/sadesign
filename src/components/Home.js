@@ -1,4 +1,4 @@
-import React from 'react' 
+import React, { Suspense } from 'react' 
 import Intro from './Intro'
 import DesignersArt from './DesignersArt'
 import DesignTraining from './DesignTraining'
@@ -16,6 +16,7 @@ class Home extends React.Component {
     render() {
         return (
             <Router>
+            {/* <Suspense fallback={<div><h1>POOPOOPEEPEE</h1></div>}> */}
             <div className='homepage'>
                 <Intro />
                 <DesignersArt passProp={this.props}/>
@@ -23,6 +24,7 @@ class Home extends React.Component {
                 {/* <SmallBusiness /> */}
                 <Contact passProp={this.props}/>
             </div>
+            {/* </Suspense> */}
             </Router>
         )
     }
