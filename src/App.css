@@ -13,6 +13,10 @@ html {
   position: relative;
 }
 
+a {
+  color: white;
+}
+
 @font-face { font-family: ChapLight; src: url('./fonts/ChapLight.otf')}
 @font-face { font-family: Cerabasic; src: url('./fonts/CerabasicRegular.ttf')}
 
