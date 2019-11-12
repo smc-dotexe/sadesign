@@ -139,7 +139,7 @@ class App extends React.Component {
     
     return (
       <Router>
-      {/* <ScrollToTop> */}
+      <ScrollToTop>
       <div className='App'>
 
         <div className='containerBorder'>
@@ -276,7 +276,7 @@ class App extends React.Component {
         </Switch> 
         </Suspense>  
       </div>
-      {/* </ScrollToTop> */}
+      </ScrollToTop>
       </Router>
     );
   }

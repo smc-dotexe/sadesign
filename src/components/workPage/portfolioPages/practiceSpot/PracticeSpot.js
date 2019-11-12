@@ -3,13 +3,42 @@ import './practiceSpot.css'
 import './responsivePracticeSpot.css'
 import practiceSpotUserImage from '../../../../images/practiceSpotUserImage.png'
 import initialConceptImage from '../../../../images/practiceSpotInitialConcept.png'
+import arrowRight from '../../../../images/arrow-circle-right.svg'
+import { tpsInfo } from './practiceSpotInfo'
+import { TpsCard } from './TpsCard'
 
 class PracticeSpot extends React.Component {
+    constructor() {
+        super()
+
+        this.state={
+            tpsCardInfo: tpsInfo,
+            tpsCardItem: tpsInfo[0]
+        }
+    }
+
+    nextCard = () => {
+        console.log('next clicked')
+        const newIndex = this.state.tpsCardItem.num+1
+        this.setState({ tpsCardItem: tpsInfo[newIndex]})
+    }
+
+    prevCard = () => {
+        console.log('prev clicked')
+        const newIndex = this.state.tpsCardItem.num-1
+        this.setState({ tpsCardItem: tpsInfo[newIndex]})
+    }
+
     render() {
+
+        const { tpsCardInfo, tpsCardItem } = this.state
         return(
             <div className='practiceSpotContainer'>
                 <div className='slide practiceSpot'></div>
                 <div className='practiceSpotDetails'>
+                    <div className='leftBlock'>
+
+                    </div>
                     <h1 className='practiceSpotHeading'>
                         The Practice Spot
                     </h1>
@@ -48,7 +77,42 @@ class PracticeSpot extends React.Component {
                     spots is as important as booking accommodations. 
                     </p>
                     <img className='initialConceptImage' src={initialConceptImage} />
-
+                    <div className='tpsImageBannerContainer'>
+                        <button 
+                            className='tpsNextBtn' 
+                            onClick={() => this.nextCard()}
+                            disabled={tpsCardItem.num === tpsInfo.length-1}>
+                                &#62;
+                        </button>
+                        <button 
+                            className='tpsPrevBtn'
+                            onClick={() => this.prevCard()}
+                            disabled={tpsCardItem.num === 0}>
+                                &#60; 
+                        </button>
+                        <div className={`practiceSpotImageBanner active-card-${tpsCardItem.num}`}>
+                            <div 
+                                className='tpsCardWrapper'
+                                style={{ transform: `translateX(-${tpsCardItem.num*(100/tpsCardInfo.length)}%)`}}
+                            >
+                                {/* <TpsCard passTpsInfo={tpsCardItem}/> */}
+                                { tpsCardInfo.map(info => <TpsCard key={info.num} passTpsInfo={info}/>)}
+                            </div>
+                            {/* <ul className='tpsBannerList'>
+                            {tpsInfo.map(info => {
+                                return (
+                                    <li className='tpsBannerListItem' key={info.num}>
+                                        <div id={info.divName} className='tpsCardDiv'>
+                                            <img src={info.bannerImg} alt='banner card'/>
+                                            <p className='tpsCardTitle'>{info.bannerTitle}</p>
+                                            <p className='tpsCardDescription'>{info.bannerDescription}</p>
+                                        </div>
+                                    </li>
+                                )
+                            })}
+                            </ul> */}
+                        </div>
+                    </div>
                 </div>
             </div>
         )
