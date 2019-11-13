@@ -3,7 +3,7 @@ import './practiceSpot.css'
 import './responsivePracticeSpot.css'
 import practiceSpotUserImage from '../../../../images/practiceSpotUserImage.png'
 import initialConceptImage from '../../../../images/practiceSpotInitialConcept.png'
-import arrowRight from '../../../../images/arrow-circle-right.svg'
+import arrowRight from '../../../../images/practiceSpotRightArrow.svg'
 import { tpsInfo } from './practiceSpotInfo'
 import { TpsCard } from './TpsCard'
 
@@ -82,14 +82,41 @@ class PracticeSpot extends React.Component {
                             className='tpsNextBtn' 
                             onClick={() => this.nextCard()}
                             disabled={tpsCardItem.num === tpsInfo.length-1}>
-                                &#62;
+                                <img
+                                    src={arrowRight}
+                                    className='tpsBannerRightBtn'
+                                    width='50px'
+                                    height='50px'
+                                />
                         </button>
+                        {/* <img 
+                            src={arrowRight} 
+                            className='tpsNextBtn'
+                            onClick={this.nextCard}
+                            alt='right arrow' 
+                            width='50px' 
+                            height='50px'
+                        /> */}
                         <button 
                             className='tpsPrevBtn'
-                            onClick={() => this.prevCard()}
+                            onClick={this.prevCard}
                             disabled={tpsCardItem.num === 0}>
-                                &#60; 
+                                <img 
+                                    src={arrowRight}
+                                    className='tpsBannerLeftBtn'
+                                    width='50px'
+                                    height='50ppx'
+                                />
                         </button>
+                        {/* <img 
+                            src={arrowRight} 
+                            className='tpsPrevBtn'
+                            onClick={() => this.prevCard()}
+                            disabled={tpsCardItem.num === 0}
+                            alt='left arrow' 
+                            width='50px' 
+                            height='50px'
+                        /> */}
                         <div className={`practiceSpotImageBanner active-card-${tpsCardItem.num}`}>
                             <div 
                                 className='tpsCardWrapper'

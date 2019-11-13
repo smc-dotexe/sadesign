@@ -111,16 +111,21 @@
 
 .tpsNextBtn {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 0;
     z-index: 1;
+    background: none;
+    border: none;
 }
 
 .tpsPrevBtn {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0;
     z-index: 1;
+    transform: rotate(180deg);
+    background:none;
+    border: none;
 }
 
 .practiceSpotImageBanner {
