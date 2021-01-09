@@ -91,7 +91,6 @@ class App extends React.Component {
   }
 
   sandwichMenu = () => {
-      console.log('sandwichMenu')
       this.setState(prevState => ({
         displayMenu: !prevState.displayMenu,
         clickOut: true}))
@@ -159,9 +158,15 @@ class App extends React.Component {
             className={menuClass} 
             ref={e => this.node = e}
             >
-              <h4 id='sandwichSarah'>Sarah</h4><br/>
+              {/* <h4 id='sandwichSarah'>Sarah</h4><br/>
               <h4 id='sandwichAlonso'>Alonso</h4>
-              <h4 id='sandwichDesign'>Design</h4>
+              <h4 id='sandwichDesign'>Design</h4> */}
+              <div 
+                id='sandwichCloseBtnContainer'
+                onClick={this.sandwichMenu}
+              >
+                <p>X</p>
+              </div>
               <ul id='sandwichLinks'>
                   <li onClick={this.navLinkClicked}>
                     <NavLink 

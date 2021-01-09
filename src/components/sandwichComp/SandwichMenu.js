@@ -15,7 +15,6 @@ class SandwichMenu extends React.Component {
         } else {
             menuClass ='sandwichComp'
         }
-        console.log('about page', AboutPage)
         return (
             <Router>
                 {/* <div className='sandwichContainer'>

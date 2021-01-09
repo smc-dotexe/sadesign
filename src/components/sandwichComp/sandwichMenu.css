@@ -66,11 +66,28 @@
     -webkit-text-stroke-color: #707070;
 }
 
+#sandwichCloseBtnContainer {
+    grid-column: 1;
+    grid-row: 1/-1;
+    align-self: start;
+    /* border: 1px solid white; */
+    width: min-content;
+    padding-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#sandwichCloseBtnContainer p {
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
 #sandwichLinks {
     padding: 0;
     /* margin-top: -200px;
     margin-left: -50px; */
-    margin-top: 80px;
+    margin-top: 150px;
     text-align: left;
     list-style-type: none;
     grid-column: 1/ span 2;
