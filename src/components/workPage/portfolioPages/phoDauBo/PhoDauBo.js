@@ -56,7 +56,6 @@ class PhoDauBo extends React.Component {
                     </div>
                     <img className='pdbMenu1' src={pdbMenuFoldout} alt='menu foldout' />
                     <img className='pdbMenu1_Mobile' src={pdbMenuFoldoutMobile} alt='menu foldout' />
-                    {/* <img className='pdbMenu1_Tablet' src={pdbMenuFoldoutTablet} alt='menu foldout' /> */}
                     <h1 className='pdbHeading2'>PHO DAU BO</h1>
                     <img className='pdbMenu2' src={pdbMenuFoldout2} alt='menu foldout 2' />
                     <img className='pdbMenu2_Mobile' src={pdbMenuFoldout2Mobile} alt='menu foldout' />

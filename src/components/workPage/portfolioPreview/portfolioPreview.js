@@ -2,10 +2,6 @@ import React from 'react'
 import './portfolioPreview.css'
 import './responsivePortfolioPreview.css'
 import { Link } from 'react-router-dom'
-import LazyLoad from 'react-lazyload'
-import { SimpleImg } from 'react-simple-img'
-
-
 
 class PortfolioPreview extends React.Component {
     constructor(props) {
@@ -49,6 +45,7 @@ class PortfolioPreview extends React.Component {
                             <img 
                                 className='previewImageOverlay'
                                 src={passLoadingImage}
+                                alt="loading"
                             />
                         }
               

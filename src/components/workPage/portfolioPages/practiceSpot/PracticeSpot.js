@@ -10,7 +10,6 @@ import { TpsCard } from './TpsCard'
 class PracticeSpot extends React.Component {
     constructor() {
         super()
-
         this.state={
             tpsCardInfo: tpsInfo,
             tpsCardItem: tpsInfo[0]
@@ -68,7 +67,7 @@ class PracticeSpot extends React.Component {
                     Our goal is to laugh the mobile app this coming Spring 2020. In hopes to gauge interest, obtain 
                     sponsorship and gather intelligence as to how to improve later versions of the app.
                     </p>
-                    <img className='practiceSpotUserImage' src={practiceSpotUserImage} />
+                    <img className='practiceSpotUserImage' src={practiceSpotUserImage} alt='practiceSpotUser'/>
 
                     <h1 className='initialConceptHeading'>Initial Concept</h1>
                     <p className='initialConceptDescription'>
@@ -76,7 +75,7 @@ class PracticeSpot extends React.Component {
                     spots from around the world. Be it that breakers often travel for competitions finding practice 
                     spots is as important as booking accommodations. 
                     </p>
-                    <img className='initialConceptImage' src={initialConceptImage} />
+                    <img className='initialConceptImage' src={initialConceptImage} alt='initialConcept'/>
                     <div className='tpsImageBannerContainer'>
                         <button 
                             className='tpsNextBtn' 
@@ -87,6 +86,7 @@ class PracticeSpot extends React.Component {
                                     className='tpsBannerRightBtn'
                                     width='50px'
                                     height='50px'
+                                    alt='arrowRight'
                                 />
                         </button>
                         {/* <img 
@@ -106,38 +106,16 @@ class PracticeSpot extends React.Component {
                                     className='tpsBannerLeftBtn'
                                     width='50px'
                                     height='50ppx'
+                                    alt='right arrow'
                                 />
                         </button>
-                        {/* <img 
-                            src={arrowRight} 
-                            className='tpsPrevBtn'
-                            onClick={() => this.prevCard()}
-                            disabled={tpsCardItem.num === 0}
-                            alt='left arrow' 
-                            width='50px' 
-                            height='50px'
-                        /> */}
                         <div className={`practiceSpotImageBanner active-card-${tpsCardItem.num}`}>
                             <div 
                                 className='tpsCardWrapper'
                                 style={{ transform: `translateX(-${tpsCardItem.num*(100/tpsCardInfo.length)}%)`}}
                             >
-                                {/* <TpsCard passTpsInfo={tpsCardItem}/> */}
                                 { tpsCardInfo.map(info => <TpsCard key={info.num} passTpsInfo={info}/>)}
                             </div>
-                            {/* <ul className='tpsBannerList'>
-                            {tpsInfo.map(info => {
-                                return (
-                                    <li className='tpsBannerListItem' key={info.num}>
-                                        <div id={info.divName} className='tpsCardDiv'>
-                                            <img src={info.bannerImg} alt='banner card'/>
-                                            <p className='tpsCardTitle'>{info.bannerTitle}</p>
-                                            <p className='tpsCardDescription'>{info.bannerDescription}</p>
-                                        </div>
-                                    </li>
-                                )
-                            })}
-                            </ul> */}
                         </div>
                     </div>
                 </div>

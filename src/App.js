@@ -1,18 +1,8 @@
-import React, { lazy, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, NavLink } from 'react-router-dom'
-import Loadable from 'react-loadable'
-import LazyLoad from 'react-lazyload'
-// import Loader from './Loader'
 import './App.css';
 import './components/sandwichComp/sandwichMenu.css'
 import './animations.css';
-import saLogoWhite from './images/sa.png'
-import saLogoBlack from './images/saBlack.png'
-import SandwichMenu from './components/sandwichComp/SandwichMenu.js'
-// import Home from './components/Home'
-// import AboutPage from './components/aboutPage/About.js'
-// import WorkPage from './components/workPage/WorkList'
-//import ContactPage from './components/contactPage/Contact'
 import WorkingForMyself from './components/workPage/portfolioPages/workingForMyself/WorkingForMyself'
 import Renu from './components/workPage/portfolioPages/renuPage/Renu'
 import VisualCulture from './components/workPage/portfolioPages/visualCulturePage/VisualCulture'
@@ -23,8 +13,6 @@ import IrvingCrea from './components/workPage/portfolioPages/irvingCrea/IrvingCr
 import Rumble from './components/workPage/portfolioPages/rumble/Rumble'
 import PracticeSpot from './components/workPage/portfolioPages/practiceSpot/PracticeSpot'
 import ScrollToTop from 'react-router-scroll-top'
-import { whileStatement } from '@babel/types';
-
 import lazyImport from './lazyImport'
 
 const Home = lazyImport('./components/Home')
@@ -137,8 +125,6 @@ class App extends React.Component {
                       <li 
                         onClick={this.sandwichMenu} 
                         className='workLink'
-                        // onMouseEnter={this.displayWorkLinks}
-                        // onMouseLeave={this.displayWorkLinks}
                       >
                         <NavLink
                           activeStyle={{
@@ -148,16 +134,6 @@ class App extends React.Component {
                           to='/work'>
                           Work
                         </NavLink>
-                        {/* <div className='workArrow'> > </div>
-                        <div
-                          id='workLinkMenu'
-                          className='workLinkMenu'
-                        >
-                          <ul> 
-                            <li id='uxUiLink'>UX / UI</li>
-                            <li id='graphicDesignLink'>Graphic Design</li>
-                          </ul>
-                        </div> */}
                       </li>
                       <li 
                         onClick={this.sandwichMenu}
@@ -177,52 +153,52 @@ class App extends React.Component {
               </div>         
             </div>
             <Suspense fallback={<div className='loading'></div>}>
-            <Switch>
-              <Route exact path='/' render={(props) => (      
-                    <Home {...props} />
-                )}
-              />
-              <Route path='/about' component={AboutPage} />
-              <Route exact path='/work' component={WorkPage} />
-              <Route path='/work/workingformyself' component={WorkingForMyself} />
-              <Route path='/work/renu' component={Renu} />
-              <Route path='/work/visualculture' component={VisualCulture} />
-              <Route path='/work/phodaubo' component={PhoDauBo} />
-              <Route path='/work/rebel' component={Rebel} />
-              <Route path='/work/crossing' component={Crossing} />
-              <Route path='/work/irvingcrea' component={IrvingCrea} />
-              <Route path='/work/rumble' component={Rumble} />
-              <Route path='/work/thepracticespot' component={PracticeSpot} />
+              <Switch>
+                <Route exact path='/' render={(props) => (      
+                      <Home {...props} />
+                  )}
+                />
+                <Route path='/about' component={AboutPage} />
+                <Route exact path='/work' component={WorkPage} />
+                <Route path='/work/workingformyself' component={WorkingForMyself} />
+                <Route path='/work/renu' component={Renu} />
+                <Route path='/work/visualculture' component={VisualCulture} />
+                <Route path='/work/phodaubo' component={PhoDauBo} />
+                <Route path='/work/rebel' component={Rebel} />
+                <Route path='/work/crossing' component={Crossing} />
+                <Route path='/work/irvingcrea' component={IrvingCrea} />
+                <Route path='/work/rumble' component={Rumble} />
+                <Route path='/work/thepracticespot' component={PracticeSpot} />
 
-              {/*passing black colored elements to contact page.
-              need to do it this way to render original elements when
-              user presses the back button*/}
-              <Route path='/contact' render={(props) => 
-                  (
-                    <>
-                    <Link to='/'>
-                      <div className='saLogoBlack'></div> 
-                    </Link>
-                      <div 
-                        className={sandwichBtnAnimation}
-                        onClick={this.sandwichMenu}
-                      >
-                        <div className='sandwichBlack'></div>
-                        <div className='sandwichBlack'></div>
-                        <div className='sandwichBlack'></div>
-                      </div>
-                      <p id='hoursBlack' style={{zIndex: '1'}}>M-M<br/> 00:00-00:00</p>
-                      <ContactPage 
-                      passSandwichmenu={this.sandwichMenu} 
-                      passSandwichAnimation={sandwichBtnAnimation}
-                      {...props}
-                      />
-                    </>
-                  )
-                }
-              />
-              
-            </Switch> 
+                {/*passing black colored elements to contact page.
+                need to do it this way to render original elements when
+                user presses the back button*/}
+                <Route path='/contact' render={(props) => 
+                    (
+                      <>
+                      <Link to='/'>
+                        <div className='saLogoBlack'></div> 
+                      </Link>
+                        <div 
+                          className={sandwichBtnAnimation}
+                          onClick={this.sandwichMenu}
+                        >
+                          <div className='sandwichBlack'></div>
+                          <div className='sandwichBlack'></div>
+                          <div className='sandwichBlack'></div>
+                        </div>
+                        <p id='hoursBlack' style={{zIndex: '1'}}>M-M<br/> 00:00-00:00</p>
+                        <ContactPage 
+                        passSandwichmenu={this.sandwichMenu} 
+                        passSandwichAnimation={sandwichBtnAnimation}
+                        {...props}
+                        />
+                      </>
+                    )
+                  }
+                />
+                
+              </Switch> 
             </Suspense>  
           </div>
         </ScrollToTop>

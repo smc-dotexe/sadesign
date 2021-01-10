@@ -1,4 +1,3 @@
-import PortfolioPreview from './portfolioPreview/portfolioPreview'
 import workForMySelfImage from '../../images/workForMyselfImage.png'
 import renuImage from '../../images/renuPreview.png'
 import visualCultureImage from '../../images/visualCulturePreview.png'

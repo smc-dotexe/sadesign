@@ -8,8 +8,6 @@ import renu2 from '../../../../images/renu2.png'
 import renu3 from '../../../../images/renu3.png'
 import renu4 from '../../../../images/renu4.png'
 
-
-
 class Renu extends React.Component {
     constructor() {
         super() 
@@ -61,7 +59,7 @@ class Renu extends React.Component {
                         <img 
                             className='renuImage' 
                             src={imageList[imageNo]} 
-                            alt='renu card image' />
+                            alt='renu card' />
                         <p className='renuThanks'>
                             - Special thanks to Irving Crea for helping me 
                             capture the subtleties of this business card.

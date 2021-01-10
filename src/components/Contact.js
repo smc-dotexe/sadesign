@@ -1,11 +1,6 @@
 import React from 'react'
 import '../styles/responsiveContact.css'
-import { BrowserRouter as Router, Route, Link, Switch, NavLink, withRouter, connect } from 'react-router-dom'
 class Contact extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (         
             <div className='contact'>
@@ -28,18 +23,15 @@ class Contact extends React.Component {
                     </p>
                     <p id='socialMedia'>
                         <a 
-                            href="https://www.facebook.com/sarahalonsographicart/"
-                            target="_blank">
+                            href="https://www.facebook.com/sarahalonsographicart/">
                                 Facebook
                         </a><br/>
                         <a 
-                            href="https://www.instagram.com/sarahalonso.design/"
-                            target="_blank">
+                            href="https://www.instagram.com/sarahalonso.design/">
                                 Instagram
                         </a><br/>
                         <a
-                            href="https://www.linkedin.com/in/sarah-alonso-d3s1gn/"
-                            target="_blank">
+                            href="https://www.linkedin.com/in/sarah-alonso-d3s1gn/">
                                 LinkedIn
                         </a><br/>
                     </p>

@@ -8,13 +8,6 @@ class SandwichMenu extends React.Component {
         super(props)
     }
     render() {
-        console.log('props display menu', this.props.passDisplayMenu)
-        let menuClass;
-        if (this.props.passDisplayMenu) {
-            menuClass = 'sandwichComp slider'
-        } else {
-            menuClass ='sandwichComp'
-        }
         return (
             <Router>
                 {/* <div className='sandwichContainer'>

@@ -1,18 +1,12 @@
 import React from 'react'
 import '../styles/responsiveSmallBusiness.css'
 import pdb from '.././images/pdbImage.png'
-import pdbMenuMobile from '.././images/pdbMenu_Mobile.png'
-// import pdbGlitch from '.././images/saDualGlitch_Web.svg'
 import pdbGlitch from '.././images/pdbDualGlitch.png'
-
 import pdbGlitchMobile from '.././images/saDualGlitch_Mobile.png'
 import greyArrow from '../images/greyarrowright.png'
 
 
 class SmallBusiness extends React.Component {
-    constructor(props) {
-        super(props) 
-    }
     render() {
         //Switch web and mobile images depending on window size
         let menuImageSwitch, glitchImageSwitch

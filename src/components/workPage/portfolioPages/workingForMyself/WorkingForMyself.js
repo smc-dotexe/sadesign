@@ -59,7 +59,7 @@ class WorkingForMyself extends React.Component {
                         className='wfmImage' 
                         id={`wfmImage${imageNo}`} 
                         src={imageList[imageNo]} 
-                        alt='working for myself image' 
+                        alt='working for myself' 
                     />
 
                     <p className='wfmThanks'>

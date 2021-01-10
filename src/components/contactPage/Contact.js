@@ -1,18 +1,9 @@
 import React from 'react'
 import './contact.css'
 import './responsiveContact.css'
-import contactMap from '../../images/contactMap.png'
 import contactSaMap from '../../images/contactSaMap.png'
-import saLogoBlack from '../../images/saBlack.png'
-import { NavLink, Link } from 'react-router-dom'
-
 
 class Contact extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
-
     render() {
         return (
             <div className='contactContainer'>

@@ -2,17 +2,24 @@ import React from 'react'
 import './headerstyles.css'
 import './responsiveHeaderStyles.css'
 
-function HeaderComp(props) {
-
-    const bgImage = props.passBgImage
+function HeaderComp() {
     return (
         <div 
             className='headerDiv'
-            // style={{backgroundImage:`url(${bgImage})`}}
         >
             <header>
-                <h1 className='sarah'>SARAH</h1>
-                <h1 className='alonso'>ALONSO</h1>
+                <h1 
+                    className='sarah'
+                    style={{color:'white'}}
+                >
+                    SARAH
+                </h1>
+                <h1 
+                    className='alonso'
+                    style={{color:'white'}}
+                >
+                    ALONSO
+                </h1>
                 <h1 className='design'>DESIGN</h1>
             </header>
 
