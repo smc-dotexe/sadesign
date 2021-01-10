@@ -11,7 +11,6 @@ import vietKitchen2 from '../../../../images/pdbVietKitchen2.svg'
 import vietKitchenMobile from '../../../../images/pdbVietKitchenMobile.svg'
 import pdbMenuFoldoutMobile from '../../../../images/pdbMenuFoldOut_Mobile.png'
 import pdbMenuFoldout2Mobile from '../../../../images/pdbMenuFoldOut2_Mobile.png'
-import pdbMenuFoldoutTablet from '../../../../images/pdbMenuFoldOut_Tablet.png'
 import pdbMenuFoldout2Tablet from '../../../../images/pdbMenuFoldOut2_Tablet.png'
 
 

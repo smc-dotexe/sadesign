@@ -8,7 +8,7 @@
 }
 
 .headerDiv {
-    align-self: start;
+    align-self: start !important;
     margin-top: 51px;
 }
 

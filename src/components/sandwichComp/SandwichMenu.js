@@ -1,7 +1,7 @@
+/* eslint-disable no-useless-constructor */
 import React from 'react'
 import './sandwichMenu.css'
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
-import AboutPage from '../aboutPage/About.js'
+import { BrowserRouter as Router} from 'react-router-dom'
 
 class SandwichMenu extends React.Component {
     constructor(props) {
