@@ -4,12 +4,12 @@ import visualCultureImage from '../../images/visualCulturePreview.png'
 import pdbImage from '../../images/pdbPreview.png'
 import rebelImage from '../../images/rebelPreview.png'
 import crossingImage from '../../images/crossingPreview.png'
-import irvingCreaImage from '../../images/irvingCreaPreview.png'
+//import irvingCreaImage from '../../images/irvingCreaPreview.png' !!!STILL NEED FILES AND LAYOUT
 import rumbleImage from '../../images/rumblePreview.png'
 //import practiceSpotImage from '../../images/practiceSpotPreview.png' !!!STILL NEEDS TO GET RESPONSIVE FILES
 import blurSA from '../../images/blurImages/blurSA.png'
 import blurCrossing from '../../images/blurImages/blurCrossing.png'
-import blurIrving from '../../images/blurImages/blurIriving.png'
+//import blurIrving from '../../images/blurImages/blurIriving.png'
 import blurPDB from '../../images/blurImages/blurPDB.png'
 import blurRebel from '../../images/blurImages/blurRebel.png'
 import blurRenu from '../../images/blurImages/blurRenu.png'
@@ -28,8 +28,8 @@ const rebelDescription =
 'Upon beginning my full-time work with Rumble Boxing the owner expressed her vision to create her own marketing agency. I did preliminary research, UI/UX and Strategy. I am the right rebel for the job...'
 const crossingDescription = 
 'Crossing Dance had been formed out of a Christian Dance academy. Seeking to rebrand but maintain elements of faith I was tasked to create a logo that reflected their... '
-const irvingCreaDescription = 
-`Having been a fine-arts student I brushed off old skills and incorporated them into new skills. Working from hand-drawn to digital, Irving's dog, Dingo came to be immortalized...`
+//const irvingCreaDescription = 
+//`Having been a fine-arts student I brushed off old skills and incorporated them into new skills. Working from hand-drawn to digital, Irving's dog, Dingo came to be immortalized...`
 const rumbleDescription =
 `Being an in-house designer at Rumble boxing has allowed me the opportunity to design a wide gambit of digital, print, strategy.`
 // const practiceSpotDescription = 
@@ -91,15 +91,15 @@ export const workInfo = [
         passLoadingImage: blurCrossing,
         pageId:'crossing',      
     },
-    {
-        num:7,
-        passDateHeading:'05.19',
-        passPreviewHeading:'IRVING CREA',
-        passPreviewImage:irvingCreaImage,
-        passPreviewDescription: irvingCreaDescription,
-        passLoadingImage: blurIrving,
-        pageId:'irvingcrea',    
-    },
+    // {
+    //     num:7,
+    //     passDateHeading:'05.19',
+    //     passPreviewHeading:'IRVING CREA',
+    //     passPreviewImage:irvingCreaImage,
+    //     passPreviewDescription: irvingCreaDescription,
+    //     passLoadingImage: blurIrving,
+    //     pageId:'irvingcrea',    
+    // },
     {
         num:8,
         passDateHeading:'12.18',
