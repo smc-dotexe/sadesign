@@ -6,7 +6,7 @@ import rebelImage from '../../images/rebelPreview.png'
 import crossingImage from '../../images/crossingPreview.png'
 import irvingCreaImage from '../../images/irvingCreaPreview.png'
 import rumbleImage from '../../images/rumblePreview.png'
-import practiceSpotImage from '../../images/practiceSpotPreview.png'
+//import practiceSpotImage from '../../images/practiceSpotPreview.png' !!!STILL NEEDS TO GET RESPONSIVE FILES
 import blurSA from '../../images/blurImages/blurSA.png'
 import blurCrossing from '../../images/blurImages/blurCrossing.png'
 import blurIrving from '../../images/blurImages/blurIriving.png'
@@ -32,8 +32,8 @@ const irvingCreaDescription =
 `Having been a fine-arts student I brushed off old skills and incorporated them into new skills. Working from hand-drawn to digital, Irving's dog, Dingo came to be immortalized...`
 const rumbleDescription =
 `Being an in-house designer at Rumble boxing has allowed me the opportunity to design a wide gambit of digital, print, strategy.`
-const practiceSpotDescription = 
-`This is an on-going project that is on a mission to create greater accessibility amongst the global b-boy community. Currently the team we hope to launch and test the app admist the community Spring 2020`
+// const practiceSpotDescription = 
+// `This is an on-going project that is on a mission to create greater accessibility amongst the global b-boy community. Currently the team we hope to launch and test the app admist the community Spring 2020`
 
 
 export const workInfo = [
@@ -109,15 +109,15 @@ export const workInfo = [
         passLoadingImage: blurRumble,
         pageId:'rumble',      
     },
-    {
-        num:9,
-        passDateHeading:'06.19',
-        passPreviewHeading:'The Practice Spot',
-        passPreviewImage: practiceSpotImage,
-        passPreviewDescription: practiceSpotDescription,
-        passLoadingImage:practiceSpotImage,
-        pageId:'thepracticespot',
-    }
+    // {
+    //     num:9,
+    //     passDateHeading:'06.19',
+    //     passPreviewHeading:'The Practice Spot',
+    //     passPreviewImage: practiceSpotImage,
+    //     passPreviewDescription: practiceSpotDescription,
+    //     passLoadingImage:practiceSpotImage,
+    //     pageId:'thepracticespot',
+    // }
 
 ]
 

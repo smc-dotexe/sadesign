@@ -40,11 +40,26 @@ class WorkingForMyself extends React.Component {
             </div>
 
             <div className='wfmDetails'>
-                <h1 className='mtom'>
+                <h1 
+                    className='mtom'
+                    // style={{
+                    //     fontSize:'8.052708638360176VW',
+                    //     fontFamily: 'ChapLight',
+                    //     color:'white',
+                    //     fontWeight: 'normal'
+                    // }}
+                >
                     M - M<br />
                     <span className='wfmHours'>00:00 - 00:00</span>
                 </h1>
-                <p className='wfmDescription'>
+                <p 
+                    className='wfmDescription'
+                    // style={{
+                    //     fontSize: '23px',
+                    //     fontFamily: 'Cerabasic',
+                    //     color: 'white'
+                    // }}
+                >
                     Working as a Freelance Graphic Designer is a 24hr job.
                     Although there are slow times during the dips, those times 
                     are the most creative. When designing is constant and busy, that's when technical

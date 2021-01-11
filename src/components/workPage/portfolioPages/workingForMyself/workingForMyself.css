@@ -21,6 +21,7 @@
 .mtom {
     font-size: 110px;
     font-size: 8.052708638360176VW;
+    font-weight: normal;
     font-family: ChapLight;
     grid-column: 2;
     grid-row: 1;
@@ -28,7 +29,7 @@
     margin-left: 10px;
     margin-top: -40px;
     line-height: 90px;
-
+    color: white;
 }
 
 .wfmDescription {
@@ -40,6 +41,7 @@
     justify-self: center;
     padding-top: 80px;
     padding-bottom: 80px;
+    color: white;
 }
 
 .wfmImageContainer {

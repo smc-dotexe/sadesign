@@ -52,6 +52,7 @@
     font-size: 110px;
     font-size: 8.59375VW;
     font-family: ChapLight;
+    font-weight: normal;
     color: #92A66E;
 }
 
@@ -65,6 +66,7 @@
     justify-self: center;
     padding-top: 20px;
     padding-bottom: 80px; 
+    color: white;
 }
 
 .renuImageContainer {

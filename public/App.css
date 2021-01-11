@@ -1,0 +1,1076 @@
+* {
+  margin: 0;
+  color: white;
+  font-weight: normal;
+}
+
+html {
+  overflow-y: auto;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+a {
+  color: white;
+}
+
+@font-face { font-family: ChapLight; src: url('./fonts/ChapLight.otf')}
+@font-face { font-family: Cerabasic; src: url('./fonts/CerabasicRegular.ttf')}
+
+.loading {
+  text-align: center;
+  color: white;
+  background-color: grey;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+/* .active {
+  text-decoration: underline;
+  color: yellow;
+} */
+
+.sandwichButtonContainer {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  width: 35px;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 1.1s linear;
+}
+
+.sandwichButtonContainer.close {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.sandwich {
+  width: 35px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  opacity: 0.7;
+}
+
+.sandwichBlack {
+  width: 35px;
+  height: 2px;
+  background-color: black;
+  margin: 6px 0;
+  opacity: 1;
+  /* z-index: 5; */
+}
+
+.containerBorder {
+  display: block;
+  width: 10%;
+  max-width: 185px;
+  min-width: 88px;
+  border-right: 1px solid white;  
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.saLogo {
+  transform: translateX(50%);
+  cursor: pointer;
+  margin-top: 20px;
+  background-image: url('./images/sa.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 55px;
+  width: 55px;
+  position: fixed;
+  z-index: 2;
+}
+
+.saNone {
+  display: none;
+}
+
+.saLogoBlack {
+  transform: translateX(50%);
+  cursor: pointer;
+  margin-top: 20px;
+  background-image: url('./images/saBlack.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 46px;
+  width: 55px;
+  position: fixed;
+  z-index: 10;
+}
+
+#hours {
+  font-family: ChapLight;
+  font-size: 18px;
+  position: fixed;
+  bottom:0;
+  color: white;
+  margin-bottom: 40px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#hoursBlack {
+  font-family: ChapLight;
+  font-size: 19px;
+  position: fixed;
+  bottom:0;
+  color: black;
+  margin-bottom: 40px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#contactHours {
+  font-family: ChapLight;
+  font-size: 18px;
+  position: fixed;
+  bottom:0;
+  color: black;
+  margin-bottom: 40px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.slide {
+  /* height: 100vmin; */
+  height: 100vh;
+  /* min-height: 300px; */
+  /* min-height: 100%; */
+  width: 100vw;
+  min-height:400px;
+  min-height: -webkit-fill-available;
+
+}
+
+
+h1 {margin:0;}
+
+a:visited {
+  color: grey;
+}
+
+/*****************
+INTRO PAGE SECTION
+******************/
+
+.intro {
+  background-image: url('./images/introbg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  display: grid;
+  grid-template-columns: minmax(88px, 10%) 1fr 1fr 170px minmax(150px,14%);
+  width: 100%;
+}
+
+#year {
+  font-family: ChapLight;
+  font-size: 87px;
+  font-size: 6.359649122807018VW;
+  font-weight: normal;
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+  margin-top: 125px;
+  justify-self: end;
+}
+
+#quote {
+  width: 63%;
+  align-self: start;
+  justify-self: center;
+  grid-column: 3 / span 4;
+  grid-row: 2;
+  margin-bottom: 100px;
+}
+
+#focusQuote {
+font-family: Cerabasic;
+font-size: 23px;
+}
+
+#authorQuote {
+  font-family: Cerabasic;
+  font-size: 19px;
+  text-align: right;
+  float: right;
+  transform: translateX(-25%);
+  padding-top: 10px;
+}
+
+#goalDiv {
+  grid-column: 2 / -1;
+  grid-row: 2;
+  justify-self: start;
+  position: absolute;
+  bottom: -10px;
+}
+
+#goal {
+  font-family: ChapLight;
+  font-weight: normal;
+  font-size: 107px;
+  font-size: 7.833089311859444VW;
+  color: white;
+  padding-left: 5px;
+}
+
+/*********************
+DESIGNERS ART SECTION
+**********************/
+.designersArt {
+  background-color: black;
+  display: grid;
+  height: 100%;
+  min-height: 100vmin;
+  grid-template-columns: minmax(88px, 10%) minmax(min-content,auto) minmax(min-content,auto) minmax(min-content,20%);
+  /* grid-template-rows: minmax(min-content, auto) 40vmin minmax(min-content, auto) minmax(min-content, auto); */
+}
+
+
+#goodDesignTitle {
+  font-size: 107px;
+  font-size: 7.833089311859444VW;;
+  color: white;
+  font-family: ChapLight;
+  margin-top: 0;
+  margin-left: 10px;
+  grid-row: 1;
+  grid-column: 2 / span 3;
+  line-height: 1;
+  justify-self: start;
+  align-self: start;
+  font-weight: normal;
+  padding-bottom: 100px;
+}
+
+#daTitle {
+  display: block;
+  margin-left: 10px;
+  /* margin-top: 79px; */
+  grid-column: 2;
+  grid-row: 2;
+  /* height: 15vmin; */
+  align-self: center;
+  color: #D9D9D9;
+  font-family: Cerabasic;
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.designersArt p {
+  grid-column: 3;
+  grid-row: 2;
+  margin-top: 1rem;
+  padding-right: 10px;
+  align-self: center;
+  text-align: left;
+  color: white;
+  font-family: Cerabasic;
+  font-size: 18px;
+}
+
+.arrowLink {
+  align-self: center;
+  margin-left: 50px;
+  margin-top: 10px;
+  grid-column: 4;
+  grid-row: 2;
+  cursor: pointer;
+}
+
+#daBG {
+  background-image: url('./images/webstrokebg.png');
+  background-size: cover; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 5;
+  line-height: 6em;
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(88px,10%) 1fr 2fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+}
+
+#daBG h1{
+  color: white;
+  padding: 0;
+  text-align: left;
+  font-family: ChapLight;
+  font-weight: normal;
+  font-size: 110px;
+  font-size: 8.052708638360176VW;
+  height: 100%;
+  width: 80%;
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  margin-left: 10%;
+  justify-self: center;
+  line-height: 110px;
+  /* align-self: center; */
+}
+
+#daAuthor {
+  font-size: 24px;
+  font-family: Cerabasic;
+  color: #D9D9D9;
+  grid-column: 2 / span 3;
+  line-height: 45px;
+  grid-row: 2;
+  justify-self: center;
+  margin-bottom: 30px;
+} 
+
+#myBrand {
+  grid-row: 3;
+  grid-column: 3;
+  font-family: Cerabasic;
+  font-size: 34px;
+  color: #D9D9D9;
+  justify-self: end;
+  align-self: end;
+  margin: 0;
+  cursor: pointer;
+  /* height: 50px; */
+  /* line-height: 0; */
+}
+
+
+.brandLink {
+  /* grid-column: 4;
+  grid-row: 3; */
+  /* display: inline-block; */
+  /* width: 50px;
+  height: 50px; */
+  /* position: relative;
+  height: 100%; */
+}
+
+#arr2 {
+  grid-column: 4;
+  grid-row: 3;
+  align-self: center;
+  cursor: pointer;
+  /* position: absolute;
+  top: 50%;
+  margin-top: -15px; */
+}
+/************************
+DESIGN TRAINING SECTION
+************************/
+
+.designTraining {
+  margin-top: 25vh;
+  background-color: black;
+  display: grid;
+  grid-template-columns: minmax(88px, 10%) 1fr 1fr;
+
+}
+
+#dtBorder {
+  grid-column: 1;
+  border-right: 1px solid white;
+}
+
+#dtDescriptorDiv {
+  grid-column: 2;
+  color: white;
+  align-self: center;
+  display: grid;
+  grid-row-gap: 5px;
+  box-sizing: border-box;
+  margin-left: 50px;
+}
+
+#designTrainingTitle {
+  color: #D9D9D9;
+  font-family: Cerabasic;
+  font-size: 34px;
+  font-weight: normal;
+  grid-row: 1;
+  grid-column: 1 / span 2;
+}
+
+
+#dtDescription {
+  font-family: Cerabasic;
+  font-size: 23px;
+  font-size: 1.6837481698389458VW;
+  text-align: left;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  justify-self: center;
+}
+
+#rumbleCaseStudyHeader {
+  color: #D9D9D9;
+  font-family: ChapLight;
+  font-size: 36px;
+  font-weight: normal;
+  /* grid-row: 3; */
+  grid-column: 2;
+  justify-self: center;
+}
+
+#redBoxArrowRight {
+  grid-row: 3;
+  grid-column: 1;
+  justify-self: end;
+  align-self: center;
+}
+
+#rumbleCaseStudyHeader {
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: start;
+  margin-left: 10px;
+}
+
+
+#rumbleSlideShow {
+  grid-column: 3;
+  align-self: center;
+  cursor: pointer;
+  width: 609px;
+  height: 456px;
+  width: 44.58272327964861VW;
+  height: 33.38213762811127VW;
+  min-width: 432px;
+  min-height: 305px;
+  /* border: 1px solid yellow; */
+}
+
+#slideShowCircles {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotClear {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px;
+  background-color: #454545;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+#rumbleGram1 {
+  width: 100%;
+  height: 90%;
+  min-width: 340px;
+  min-height: 273px;
+  background-image:url('./images/rumblegram1.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: fading 0.6s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rumbleGram1None {
+  display: none;
+}
+
+#rumbleGram2 {
+  grid-column: 3;
+  width: 100%;
+  height: 90%;
+  min-width: 340px;
+  min-height: 273px;
+  background-image: url('./images/laptop.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: fading 0.6s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#rumbleGram2None {
+  display: none;
+}
+
+@keyframes fading {
+  from {opacity: 0.1;}
+  to {opacity:1;}
+}
+
+/**********************
+SMALL BUSINESS SECTION
+***********************/
+.smallBusiness {
+  margin-top: 40px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: minmax(88px, 10%) auto 1fr;
+  /* grid-template-rows: minmax(min-content, max-content) minmax(min-content, auto) minmax(min-content, max-content); */
+  grid-gap: 10px;
+}
+
+#smlContainer {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  display: grid;
+  position: relative;
+}
+
+#smlHeading {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: start;
+  align-self: start;
+  margin-left: 40px;
+  margin-left: 2.9282576866764276VW;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: ChapLight;
+  font-size: 82px;
+  font-size: 6.002928257686676VW;
+  font-weight: normal;
+  z-index: 1;
+  position: absolute;
+  top: 5vmin;
+}
+
+#pdb {
+  background-color: rgba(0, 0, 0, 0.3);
+  grid-column: 2 / span 3;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+  margin-left: 20px;
+  height: 358.66px;
+  width: 956.42px;
+  height: 26.251830161054173VW;
+  width: 70.01610541727672VW;
+  position: relative;
+}
+
+#pdbGlitch {
+  grid-column: 2;
+  grid-row: 1;
+  height: 542.4px;
+  width: 980.49px;
+  height: 39.70717423133235VW;
+  width: 71.77818448023426VW;
+  opacity: 0.5;
+}
+
+#lrgROI {
+  color: white;
+  font-family: ChapLight;
+  font-size: 82px;
+  font-size: 6.002928257686676VW;
+  font-weight: normal;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  justify-self: start;
+  margin-left: 40px;
+  margin-bottom: 47px;
+  margin-left: 2.9282576866764276VW;
+  margin-bottom: 3.4407027818448026VW;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#onethousand {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: ChapLight;
+  font-size: 82px;
+  font-size: 6.002928257686676VW;
+  font-weight: normal;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-self: end;
+  margin-bottom: 60px;
+  margin-right: 115px;
+  margin-bottom: 4.392386530014641VW;
+  margin-right: 8.41874084919473VW;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#pdbQuote {
+  font-family: Cerabasic;
+  color: white;
+  font-size: 24px;
+  font-size: 1.7569546120058566VW;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: start;
+  align-self: center;
+  margin-left: 30px;
+  width: 70%;
+}
+
+#phoDauBoLink {
+  font-family: ChapLight;
+  color: white;
+  font-size: 36px;
+  font-size: 2.635431918008785VW;
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: end;
+  align-self: center;
+  display: block;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+#pdbArrow {
+  grid-column: 3;
+  grid-row: 2;
+  color: white;
+  justify-self: start;
+  align-self: center;
+  /* margin-left: 30px; */
+  padding-right: 15px;
+}
+
+/******************
+CONTACT SECTION
+******************/
+.contact {
+  /* min-height: 60vh;
+  height: 110vh; */
+  background-color: black;
+  display: grid;
+  grid-template-columns: minmax(88px, 10%) 1fr;
+  grid-gap: 10vmin;
+  margin-top: 20vh;
+}
+
+#contactBorder {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  border-right: 1px solid white;
+  
+}
+
+#contactInfo {
+  height: 100%;
+  grid-column: 2;
+  grid-row: 2;
+  border-top: 1px solid #D9D9D9;
+  display: grid;
+  grid-template-columns: 75%;
+  grid-template-rows: 100px 50px 100px 50px;
+}
+
+#contactMe {
+  margin-top: 11px;
+  font-family: Cerabasic;
+  font-size: 18px;
+  color: #D9D9D9;
+  font-weight: normal;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#contactAddress {
+  margin-top: 11px;
+  font-family: ChapLight;
+  font-size: 16px;
+  color: #D9D9D9;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: center;
+}
+
+#contactPhone {
+  margin-top: 11px;
+  font-family: ChapLight;
+  font-size: 11px;
+  color: #D9D9D9;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
+}
+
+#collaborate {
+  font-family: Cerabasic;
+  font-size: 12px;
+  color: white;
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: start;
+  align-self: center;
+  height: 10px;
+}
+
+#socialMedia {
+  font-family: Cerabasic;
+  font-size: 11px;
+  color: #D9D9D9;
+  text-align: left;
+  grid-column: 1;
+  grid-row: 3;
+  align-self: end;
+  line-height: 2em;
+}
+
+#socialMedia a {
+  text-decoration: none;
+}
+
+#privacyPolicy {
+  font-family: Cerabasic;
+  font-size: 10px;
+  color: #D9D9D9;
+  grid-column: 1;
+  grid-row: 4;
+  justify-self: center;
+}
+
+#copyright {
+  font-family: ChapLight;
+  font-size: 11px;
+  color: #D9D9D9;
+  grid-column: 1;
+  grid-row: 4;
+  justify-self: end;
+  align-self: start;
+  opacity: 0.3;
+  margin-right: -70px;
+}
+
+@media (max-width: 500px) {
+  .saLogo {
+    margin-top: 5px;
+    transform: translate(0);
+    width: 35px;
+    height: 35px;
+  }
+
+  .saLogoBlack {
+    margin-top: 5px;
+    transform: translate(0);
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  #sarah, #alonso, #design {
+    line-height: 55px;
+  }
+
+  #year {
+    grid-column: 4;
+    justify-self: start;
+  }
+
+  #quote {
+    justify-self: end;
+    margin-right: 50px;
+  }
+
+  #focusQuote {
+    font-size: 17px;
+  }
+
+  #authorQuote {
+    font-size: 13px;
+  }
+
+  #arrow {
+    grid-column: 5;
+    align-self: center;
+  }
+
+  #goal {
+    padding-left: 10px;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  header {
+    width: 65%;
+  }
+
+  #sarah, #alonso, #design {
+    line-height: 45px;
+  }
+
+  #year {
+    grid-column: 4;
+    
+  }
+
+  #quote {
+    display: none;
+    grid-row: 1;
+    align-self: center;
+    grid-column: 2 / span 5;
+    justify-self: center;
+    margin-right: 20px;
+    margin-top: 7 0px;
+    width: 50%;
+    /* background-color: black; */
+  }
+
+  #focusQuote {
+    font-size: 17px;
+  }
+
+  #authorQuote {
+    justify-self: end;
+    font-size: 12px;
+  }
+
+  #arrow {
+    grid-column: 5;
+    padding-top: 25px;
+    
+  }
+  
+}
+
+@media (min-width: 450px) and (max-width: 480px) {
+
+  .sandwichButtonContainer {
+    grid-column: 4;
+    grid-row: 1;
+    justify-self: start;
+  }
+
+  header {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    margin-top: 30px;
+    margin-left: 25px;
+    width: 100%;
+  }
+
+  #sarah, #alonso, #design {
+    line-height: 39px;
+    font-size: 49px;
+  }
+
+  #year {
+    font-size: 35px;
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: start;
+    align-self: end;
+    margin-bottom: 150px;
+  }
+
+  #quote {
+    display: none;
+  }
+
+  /* #arrow {
+    grid-column: 4;
+    justify-self: start;
+  } */
+  
+  #goalDiv {
+    grid-column: 2;
+    grid-row: 2;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 449px) {
+
+  #saLogo {
+    transform: translateX(0%);
+  }
+
+  #hours {
+    display: none;
+  }
+
+  header {
+    grid-column: 4 / span 5;
+    justify-self: start;
+    align-self: start;
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  #sarah, #alonso, #design {
+    line-height: 45px;
+    font-size: 49px;
+    font-size: 12.827225130890053VW;
+  }
+
+  #year {
+    grid-column: 5;
+    grid-row: 1;
+    justify-self: end;
+    align-self: start;
+    font-size: 35px;
+    margin-bottom: -50px;
+    
+  }  
+
+  #quote {
+    display: none;
+  }
+
+  /* #arrow {
+    grid-column: 5;
+    align-self: start;
+  } */
+
+  .sandwichButtonContainer {
+    grid-column: 5;
+    justify-self: end;
+    margin-left: 10px;
+  }
+
+  #goalDiv {
+    margin-bottom: 7px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .containerBorder {
+    border-right: none !important;
+  }
+
+  #saLogo {
+    transform: translateX(0%);
+  }
+
+  #hours {
+    display: none;
+  }
+
+  .sandwichButtonContainer {
+    grid-column: 4 / span 5;
+  }
+
+  header {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    align-self: start;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  #sarah, #alonso, #design {
+    line-height: 40px;
+    font-size: 49px;
+  }
+
+  #year {
+    font-size: 40px;
+    grid-column: 4 / span 5;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    margin-top: 0;
+  }
+
+  #quote {
+    display: none;
+  }
+
+  #arrow {
+    grid-column: 5;
+  }
+
+  #goalDiv {
+    grid-column: 1;
+    margin-bottom: 8px;
+  }
+
+}
+
+@media (max-width: 360px) {
+  #year {
+    align-self: end;
+  }
+}
+
+/***************
+HEIGHT PROPERTIES
+*****************/
+
+
+@media (max-height: 500px) {
+  #quote {
+    display: none;
+  }
+
+  #hours {
+    display: none;
+  }
+  
+  #arrow {
+    justify-self: end;
+  }
+}
